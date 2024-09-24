@@ -1,6 +1,0 @@
-import{u as f,f as d,w as s,T as A,m as h}from"./directive-helpers-a6c66f8a.js";import{e as y,i as E,t as o}from"./static-c19bae7e.js";const O=(t="value")=>(e,n)=>{const r=e.constructor,p=r.prototype.attributeChangedCallback;r.prototype.attributeChangedCallback=function(u,b,a){const i=r.getPropertyOptions(t),T=typeof i.attribute=="string"?i.attribute:t;if(u===T){const c=i.converter||f,l=(typeof c=="function"?c:c?.fromAttribute??f.fromAttribute)(a,i.type);this[t]!==l&&(this[n]=l)}p.call(this,u,b,a)}};/**
- * @license
- * Copyright 2020 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */const v=y(class extends E{constructor(t){if(super(t),t.type!==o.PROPERTY&&t.type!==o.ATTRIBUTE&&t.type!==o.BOOLEAN_ATTRIBUTE)throw Error("The `live` directive is not allowed on child or event bindings");if(!d(t))throw Error("`live` bindings can only contain a single expression")}render(t){return t}update(t,[e]){if(e===s||e===A)return e;const n=t.element,r=t.name;if(t.type===o.PROPERTY){if(e===n[r])return s}else if(t.type===o.BOOLEAN_ATTRIBUTE){if(!!e===n.hasAttribute(r))return s}else if(t.type===o.ATTRIBUTE&&n.getAttribute(r)===e+"")return s;return h(t),e}});export{O as d,v as l};
-//# sourceMappingURL=live-50407c8a.js.map
