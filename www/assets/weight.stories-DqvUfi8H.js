@@ -1,0 +1,14 @@
+import{x as t}from"./directive-helpers-Dvm_Ferq.js";import{g as o,a,s as n,b as i,d as p}from"./component-DHkdqIA6.js";import{r as m}from"./styles-sAOxSYKc.js";import"./if-defined-zGpnP1OK.js";import"./ref-BbXSZ-3a.js";import"./chunk-L4EGOTBX-Boit2UGA.js";import"./entry-preview-DkJqm5dP.js";import"./index-DrFu-skq.js";import"./icon-button-BPEjE2OL.js";import"./library-C58jM0s5.js";import"./icon.component-D6ywNx23.js";import"./index-Vx7n56Jp.js";import"./index-_2TAQcTa.js";import"./_commonjsHelpers-CqkleIqs.js";import"./icon-D6tUsI5c.js";const{args:c,argTypes:l}=n("syn-weight"),{overrideArgs:g}=i("syn-weight"),_={args:g([{name:"default",type:"slot",value:"This is a default body text"}],c),argTypes:l,component:"syn-weight",parameters:{design:a("4415-2387"),docs:{description:{component:o("styles","weight")}}},title:"Styles/syn-weight"},e={parameters:{controls:{disable:!1}},render:s=>m(s)},d={render:()=>t`
+    <p class="syn-weight--normal">syn-weight--normal</p>
+    <p class="syn-weight--semibold">syn-weight--semibold</p>
+    <p class="syn-weight--bold">syn-weight--bold</p>
+  `},r=p({Weight:d});e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    controls: {
+      disable: false
+    }
+  },
+  render: (args: unknown) => renderStyles(args as RenderArgs)
+}`,...e.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`generateScreenshotStory({
+  Weight
+})`,...r.parameters?.docs?.source}}};const j=["Default","Screenshot"];export{e as Default,r as Screenshot,j as __namedExportsOrder,_ as default};
