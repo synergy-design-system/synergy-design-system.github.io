@@ -1,0 +1,9 @@
+import{j as r,M as u}from"./index-CBdoT7DT.js";import{useMDXComponents as l}from"./index-CHrGa5Tm.js";import{g as x,s as h,M as j,B as m,C as p,a as o,b as n,c as d}from"./TokenHelpers-BRXigIIq.js";import{d as i}from"./icon-button-dyHaNbso.js";import"./iframe-pPpPM5Pm.js";import"./index-_2TAQcTa.js";import"./_commonjsHelpers-CqkleIqs.js";import"./index-BwkS7JH_.js";import"./index-DrFu-skq.js";import"./index-BmTV649i.js";import"./library-BeKtmk-e.js";import"./directive-helpers-Dvm_Ferq.js";import"./functions-CDi3doZH.js";const C=(t=!1)=>Object.fromEntries(x("borderradius",t).sort((e,s)=>h(e,s,{orderArray:["none","small","medium","circle","pill"],replaceString:"synborderradius",sortType:"order"})));function a(t){const e={h1:"h1",td:"td",tr:"tr",...l(),...t.components};return r.jsxs(r.Fragment,{children:[r.jsx(u,{title:"Tokens/Border Radius"}),`
+`,r.jsx(e.h1,{id:"",children:i?.tokens?.["border-radius"]?.title.value}),`
+`,r.jsx(j,{value:i?.tokens?.["border-radius"]?.description?.value}),`
+`,r.jsx("table",{children:r.jsx("tbody",{children:r.jsxs(r.Fragment,{children:[r.jsxs("tr",{children:[r.jsx("th",{children:i?.tokens?.["border-radius"]?.title.value}),r.jsx("th",{children:"Raw Value"}),r.jsx("th",{children:"CSS Token"}),r.jsx("th",{children:"SCSS Token"}),r.jsx("th",{children:"JS Token"})]}),Object.entries(C(!0)).map(([s,c])=>r.jsxs(e.tr,{children:[r.jsx(e.td,{children:r.jsx(m,{className:s.toLowerCase(),value:c})}),r.jsx(e.td,{children:r.jsx(p,{value:s.toLowerCase(),cssProperty:"border-radius"})}),r.jsx(e.td,{children:r.jsx(o,{value:n(s),children:n(s)})}),r.jsx(e.td,{children:r.jsx(o,{value:d(s),children:d(s)})}),r.jsx(e.td,{children:r.jsx(o,{value:s,children:s})})]},`${s}-row`))]})})}),`
+`,r.jsx("style",{children:`
+.synborderradiuspill {
+  width: 80px !important;
+}
+`})]})}function L(t={}){const{wrapper:e}={...l(),...t.components};return e?r.jsx(e,{...t,children:r.jsx(a,{...t})}):a(t)}export{L as default};
