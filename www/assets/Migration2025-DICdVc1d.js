@@ -1,0 +1,96 @@
+import{j as e,M as i,a as o}from"./blocks-D1DATqoK.js";import{useMDXComponents as a}from"./index-HFfDaqO8.js";import"./preload-helper-Ct5FWWRu.js";import"./iframe-BU6pI8GJ.js";const r=`# Migration to Synergy 3.0
+
+This document outlines the changes and migration steps required to upgrade from Synergy 2.x to the new Synergy 3.0.
+
+> Please note that this migration is still in progress, and some features may not be fully implemented yet. We recommend reviewing the [GitHub repository](https://github.com/orgs/synergy-design-system/projects/2/views/37) for the latest updates.
+
+## Roadmap
+
+We are currently working on the migration to Synergy 3.0, which includes significant updates to the brand appearance, fonts and icon library.
+This migration will ensure that your application remains up-to-date with the latest design standards and functionality improvements.
+
+It is currently not adviced to use the new version in production, as we are still finalizing the migration process.
+However, you can start preparing your codebase for the upcoming changes.
+
+A roadmap and current status of the migration can be found in our [GitHub repository](https://github.com/orgs/synergy-design-system/projects/2/views/37).
+
+## Breaking Changes
+
+### Icons
+
+#### System Icon Library
+
+Some Synergy components depend on a set of icons that must always be available. To make sure those components display correctly, even if the \`@synergy-design-system/assets\` package is not installed or configured properly, these icons are baked into Synergies core directly.
+
+Components that use those icons include:
+
+- \`<syn-header>\`: Uses the SICK logo if not told otherwise
+- \`<syn-select>\`: Shows a caret sign to indicate the possibility to open the select box.
+- \`<syn-alert>\`: Shows an "x" icon to be able to close the alert dialog.
+
+As Synergy transitions to the new SICK brand, the icon library has been updated to include a new iconset.
+For backwards compatibility, Synergy will ship two system icon libraries during the 2.0 support cycle.
+For applications that plan to continue using Synergy 2.0, there **are no changes needed** to the icon library.
+For applications that want to use the new icon library, we have added a new utility function \`setSystemIconLibrary\`.
+After calling this function, the system icon library will be set to the new iconset.
+
+> Make sure to call this function before rendering any components that use the system icon library!
+
+\`\`\`javascript
+import { setSystemIconLibrary } from "@synergy-design-system/icons";
+setSystemIconLibrary("sick2025");
+\`\`\`
+
+#### New SICK 2025 icons
+
+The new SICK 2025 theme comes with an updated icon library that includes both outline and filled versions of icons. These icons are available in the \`@synergy-design-system/assets\` package and can be used with the \`<syn-icon>\` or \`<syn-icon-button>\` component.
+
+The new icon library provides two main styles:
+
+- **Outline icons**: These are the standard outlined icons, which are the default
+- **Filled icons**: These are filled versions of the same icons. The icons have the same name as the outline icons but with a suffix of \`_fill\`
+
+To use the new SICK 2025 icons in your application, you have several options:
+
+The outline and fill version can be used simultaneously.
+
+\`\`\`html
+<!-- Outline version -->
+<syn-icon name="home"></syn-icon>
+
+<!-- Filled version -->
+<syn-icon name="home_fill"></syn-icon>
+\`\`\`
+
+\`\`\`javascript
+// Example vite config
+import { defineConfig } from "vite";
+import { viteStaticCopy } from "vite-plugin-static-copy";
+
+export default defineConfig({
+  plugins: [
+    viteStaticCopy({
+      targets: [
+        {
+          src: "node_modules/@synergy-design-system/assets/src/sick2025/outline/*",
+          dest: "./assets/icons/",
+        },
+        {
+          src: "node_modules/@synergy-design-system/assets/src/sick2025/fill/*",
+          dest: "./assets/icons/",
+        },
+      ],
+    }),
+  ],
+});
+\`\`\`
+
+## Migration Steps
+
+These steps are only needed when switching to the new Synergy 3.0 layout.
+
+1. Always make sure to use the latest versions of the Synergy packages. You can check for updates using your package manager.
+2. Call \`setSystemIconLibrary\` with \`sick2025\` to enable the new system icons.
+3. Adjust your bundler to copy the new icons to your build output. This is necessary to ensure that the new icons are available in your application.
+`;function s(n){return e.jsxs(e.Fragment,{children:[e.jsx(i,{title:"Migration to Synergy 3.0",tags:["Migration"]}),`
+`,e.jsx(o,{children:r})]})}function u(n={}){const{wrapper:t}={...a(),...n.components};return t?e.jsx(t,{...n,children:e.jsx(s,{...n})}):s()}export{u as default};
