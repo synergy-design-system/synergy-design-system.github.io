@@ -4,9 +4,10 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("https://cdn.sick.com/media/fonts/opensans-v1/Regular/OpenSans-Regular.woff2") format("woff2"),
-        url("https://cdn.sick.com/media/fonts/opensans-v1/Regular/OpenSans-Regular.woff") format("woff"),
-        url("https://cdn.sick.com/media/fonts/opensans-v1/Regular/OpenSans-Regular.ttf") format("truetype");
+  src: 
+      url("https://www.sick.com/media/fonts/opensans-v1/Regular/OpenSans-Regular.woff2") format("woff2"),
+      url("https://www.sick.com/media/fonts/opensans-v1/Regular/OpenSans-Regular.woff") format("woff"),
+      url("https://www.sick.com/media/fonts/opensans-v1/Regular/OpenSans-Regular.ttf") format("truetype");
 }
  
 /* Semi Bold */
@@ -15,9 +16,10 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  src: url("https://cdn.sick.com/media/fonts/opensans-v1/SemiBold/OpenSans-SemiBold.woff2") format("woff2"),
-        url("https://cdn.sick.com/media/fonts/opensans-v1/SemiBold/OpenSans-SemiBold.woff") format("woff"),
-        url("https://cdn.sick.com/media/fonts/opensans-v1/SemiBold/OpenSans-SemiBold.ttf") format("truetype");
+  src: 
+      url("https://www.sick.com/media/fonts/opensans-v1/SemiBold/OpenSans-SemiBold.woff2") format("woff2"),
+      url("https://www.sick.com/media/fonts/opensans-v1/SemiBold/OpenSans-SemiBold.woff") format("woff"),
+      url("https://www.sick.com/media/fonts/opensans-v1/SemiBold/OpenSans-SemiBold.ttf") format("truetype");
 }
  
 /* Bold */
@@ -26,7 +28,30 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("https://cdn.sick.com/media/fonts/opensans-v1/Bold/OpenSans-Bold.woff2") format("woff2"),
-        url("https://cdn.sick.com/media/fonts/opensans-v1/Bold/OpenSans-Bold.woff") format("woff"),
-        url("https://cdn.sick.com/media/fonts/opensans-v1/Bold/OpenSans-Bold.ttf") format("truetype");
+  src: 
+      url("https://www.sick.com/media/fonts/opensans-v1/Bold/OpenSans-Bold.woff2") format("woff2"),
+      url("https://www.sick.com/media/fonts/opensans-v1/Bold/OpenSans-Bold.woff") format("woff"),
+      url("https://www.sick.com/media/fonts/opensans-v1/Bold/OpenSans-Bold.ttf") format("truetype");
+}
+
+/* Regular SICK Intl */
+@font-face {
+  font-display: swap;
+  font-family: "SICK Intl";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+      url("https://www.sick.com/media/fonts/sickintl-v1/regular/SICKIntl-Regular.woff2") format("woff2"),
+      url("https://www.sick.com/media/fonts/sickintl-v1/regular/SICKIntl-Regular.ttf") format("truetype");
+}
+ 
+/* Semi Bold SICK Intl */
+@font-face {
+  font-display: swap;
+  font-family: "SICK Intl";
+  font-style: normal;
+  font-weight: 600;
+  src: 
+      url("https://www.sick.com/media/fonts/sickintl-v1/semibold/SICKIntl-Semibold.woff2") format("woff2"),
+      url("https://www.sick.com/media/fonts/sickintl-v1/semibold/SICKIntl-Semibold.ttf") format("truetype");
 }
