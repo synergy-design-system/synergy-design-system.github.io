@@ -45,7 +45,7 @@
       window.LOGLEVEL = 'info';
       window.FRAMEWORK_OPTIONS = {};
       window.CHANNEL_OPTIONS = {};
-      window.FEATURES = {"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":true,"viewport":true,"highlight":true,"controls":true,"interactions":true,"actions":true,"backgrounds":true,"outline":true,"measure":true};
+      window.FEATURES = {"argTypeTargetsV7":true,"legacyDecoratorFileOrder":false,"disallowImplicitActionsInRenderV8":true,"viewport":true,"highlight":true,"controls":true,"interactions":true,"actions":true,"backgrounds":true,"outline":true,"measure":true,"sidebarOnboardingChecklist":true};
       window.STORIES = [{"titlePrefix":"","directory":"./stories","files":"Welcome.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/Welcome\\.mdx)$"},{"titlePrefix":"","directory":"./stories","files":"Prerequisites.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/Prerequisites\\.mdx)$"},{"titlePrefix":"","directory":"./stories","files":"ComponentOverview.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/ComponentOverview\\.mdx)$"},{"titlePrefix":"","directory":"./stories","files":"IconSearch.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/IconSearch\\.mdx)$"},{"titlePrefix":"","directory":"./stories","files":"GoalsAndGuidelines.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/GoalsAndGuidelines\\.mdx)$"},{"titlePrefix":"","directory":"./stories","files":"Presentation.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/Presentation\\.mdx)$"},{"titlePrefix":"","directory":"./stories","files":"Accessibility.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/Accessibility\\.mdx)$"},{"titlePrefix":"","directory":"./stories","files":"Contributing.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/Contributing\\.mdx)$"},{"titlePrefix":"","directory":"./stories/migration","files":"**/*.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/migration(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.mdx)$"},{"titlePrefix":"","directory":"./stories","files":"Migration2025.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/Migration2025\\.mdx)$"},{"titlePrefix":"","directory":"./stories/limitations","files":"**/*.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/limitations(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.mdx)$"},{"titlePrefix":"","directory":"./stories/packages","files":"**/*.mdx","importPathMatcher":"^\\.[\\\\/](?:stories\\/packages(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.mdx)$"},{"titlePrefix":"","directory":"./stories/tokens","files":"**/*.@(mdx|stories.*)","importPathMatcher":"^\\.[\\\\/](?:stories\\/tokens(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(mdx|stories\\.(?!\\.{0,1}(?:\\/|$))(?=.)[^/]*?))$"},{"titlePrefix":"","directory":"./stories/components","files":"**/*.@(mdx|stories.*)","importPathMatcher":"^\\.[\\\\/](?:stories\\/components(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(mdx|stories\\.(?!\\.{0,1}(?:\\/|$))(?=.)[^/]*?))$"},{"titlePrefix":"","directory":"./stories/styles","files":"**/*.@(mdx|stories.*)","importPathMatcher":"^\\.[\\\\/](?:stories\\/styles(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(mdx|stories\\.(?!\\.{0,1}(?:\\/|$))(?=.)[^/]*?))$"},{"titlePrefix":"","directory":"./stories/templates","files":"**/*.@(mdx|stories.*)","importPathMatcher":"^\\.[\\\\/](?:stories\\/templates(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.(mdx|stories\\.(?!\\.{0,1}(?:\\/|$))(?=.)[^/]*?))$"}];
       window.DOCS_OPTIONS = {"defaultName":"Docs"};
       window.TAGS_OPTIONS = {};
@@ -169,7 +169,13 @@
     margin: auto;
     padding: 30px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.03);
+    background: rgb(247, 247, 247);
+    color: rgb(46, 52, 56);
+
+    & * {
+      background: rgb(247, 247, 247);
+      color: rgb(46, 52, 56);
+    }
   }
 
   .sb-nopreview_heading {
@@ -183,10 +189,33 @@
     width: 100vw;
     min-height: 100vh;
     box-sizing: border-box;
+  }
+
+  .sb-errordisplay_main {
+    margin: auto;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    background: white;
+    color: black;
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 64px rgba(0, 0, 0, 0.1);
+    gap: 24px;
 
     & ol {
       padding-left: 18px;
       margin: 0;
+    }
+
+    /* Redefine colors to ensure readability regardless of user-provided * selectors. */
+    * {
+      background: white;
+      color: black;
     }
 
     & h1 {
@@ -226,46 +255,35 @@
     & a {
       color: currentColor;
     }
-  }
 
-  .sb-errordisplay_main {
-    margin: auto;
-    padding: 24px;
-    display: flex;
-    box-sizing: border-box;
+    & .sb-errordisplay_code {
+      padding: 10px;
+      flex: 1;
+      background: #242424;
+      color: #c6c6c6;
+      box-sizing: border-box;
 
-    flex-direction: column;
-    min-height: 100%;
-    width: 100%;
-    border-radius: 6px;
-    background: white;
-    border: 1px solid #ff0000;
-    box-shadow: 0 0 64px rgba(0, 0, 0, 0.1);
-    gap: 24px;
-  }
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      border-radius: 4px;
 
-  .sb-errordisplay_code {
-    padding: 10px;
-    flex: 1;
-    background: #242424;
-    color: #c6c6c6;
-    box-sizing: border-box;
+      font-family:
+        'Operator Mono', 'Fira Code Retina', 'Fira Code', 'FiraCode-Retina', 'Andale Mono',
+        'Lucida Console', Consolas, Monaco, monospace;
+      margin: 0;
+      overflow: auto;
 
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px;
-    border-radius: 4px;
+      & code {
+        background-color: inherit;
+        color: inherit;
+      }
+    }
 
-    font-family:
-      'Operator Mono', 'Fira Code Retina', 'Fira Code', 'FiraCode-Retina', 'Andale Mono',
-      'Lucida Console', Consolas, Monaco, monospace;
-    margin: 0;
-    overflow: auto;
-  }
-
-  .sb-errordisplay pre {
-    white-space: pre-wrap;
-    white-space: revert;
+    & .sb-errordisplay pre {
+      white-space: pre-wrap;
+      white-space: revert;
+    }
   }
 
   @-webkit-keyframes sb-rotate360 {
@@ -554,7 +572,7 @@
 }
 </style>
 
-    <script type="module" crossorigin src="./assets/iframe-CqX6pvQ7.js"></script>
+    <script type="module" crossorigin src="./assets/iframe-HVwjyYbg.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/preload-helper-PPVm8Dsz.js">
     <link rel="stylesheet" crossorigin href="./assets/iframe-pjBa8nBw.css">
   </head>
