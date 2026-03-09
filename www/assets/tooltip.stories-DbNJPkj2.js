@@ -1,0 +1,341 @@
+import{C as d,c as o,d as u}from"./iframe-CvEK3hyS.js";import"./tooltip-C7vo6om8.js";import"./button-T6bmYOzW.js";import"./icon-button-D7_pqHNt.js";import{g as t,a as g,s as b,b as h,c as v}from"./component-CA77O2dz.js";import"./preload-helper-PPVm8Dsz.js";import"./tooltip.component-B9elxRws.js";import"./animation-registry-DyRYqZdt.js";import"./class-map-CxnJOQ98.js";import"./localize-Dh03wnLC.js";import"./index-DihgwUfS.js";import"./synergy-element-CPjip6ae.js";import"./icon.component-ZmKdh5hn.js";import"./watch-CEsCE2EF.js";import"./query-D0jTsbLw.js";import"./event-B0iVuGLD.js";import"./popup.component-BEjh5qZg.js";import"./if-defined-B09jWYPP.js";import"./form-d9hCJUdr.js";import"./slot-9EVoRGQc.js";import"./spinner.component-BGapwH13.js";import"./decorator-CWkWRMhy.js";import"./functions-bkELIyT9.js";import"./icon-button.component-DevAOAvU.js";import"./index-3hbeBem-.js";import"./_docs-GL32a4iR.js";var m=Object.freeze,x=Object.defineProperty,w=(a,M)=>m(x(a,"raw",{value:m(a.slice())})),y;const{args:f,argTypes:S}=b("syn-tooltip"),{overrideArgs:T}=v("syn-tooltip"),{generateTemplate:k}=h("syn-tooltip"),Z={args:T([{name:"content",type:"attribute",value:"This is a tooltip"},{name:"open",type:"attribute",value:!0},{name:"default",type:"slot",value:"<syn-button>Hover me</syn-button>"}],f),argTypes:S,component:"syn-tooltip",parameters:{chromatic:{modes:d},design:u("12852-79550"),docs:{description:{component:t("tooltip","default")},story:{height:"200px",inline:!1}},layout:"centered"},tags:["Feedback"],title:"Components/syn-tooltip"},n={parameters:{controls:{disable:!1},docs:{description:{story:t("tooltip","default")}}},render:a=>k({args:a})},e={parameters:{docs:{description:{story:t("tooltip","placement")},story:{height:"450px"}},layout:"padded"},render:()=>o`
+    <div class="tooltip-placement-example">
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="top-start" placement="top-start" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="top" placement="top" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="top-end" placement="top-end" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="left-start" placement="left-start" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="right-start" placement="right-start" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="left" placement="left" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="right" placement="right" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="left-end" placement="left-end" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="right-end" placement="right-end" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="bottom-start" placement="bottom-start" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="bottom" placement="bottom" open>
+        <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="bottom-end" placement="bottom-end" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+    </div>
+
+    <style>
+      .tooltip-placement-example {
+        width: 500px;
+        margin: 5rem 6rem;
+      }
+
+      .tooltip-placement-example-row:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .tooltip-placement-example syn-button {
+        float: left;
+        width: var(--syn-spacing-2x-large);
+        margin-bottom: var(--syn-spacing-medium);
+      }
+
+      .tooltip-placement-example-row:nth-child(1) syn-tooltip:first-child syn-button,
+      .tooltip-placement-example-row:nth-child(5) syn-tooltip:first-child syn-button {
+        margin-left: var(--syn-spacing-3x-large);
+        margin-right: var(--syn-spacing-4x-large);
+      }
+
+      .tooltip-placement-example-row:nth-child(1) syn-tooltip:nth-child(2) syn-button,
+      .tooltip-placement-example-row:nth-child(5) syn-tooltip:nth-child(2) syn-button {
+        margin-right: var(--syn-spacing-4x-large);
+      }
+
+      .tooltip-placement-example-row:nth-child(2) syn-tooltip:nth-child(2) syn-button,
+      .tooltip-placement-example-row:nth-child(3) syn-tooltip:nth-child(2) syn-button,
+      .tooltip-placement-example-row:nth-child(4) syn-tooltip:nth-child(2) syn-button {
+        margin-left: calc((var(--syn-spacing-2x-large) * 3) + (var(--syn-spacing-4x-large) * 2) + (var(--syn-spacing-medium) * 2));
+      }
+    </style>
+`},s={parameters:{docs:{description:{story:t("tooltip","onclick")}}},render:()=>o`
+  <syn-tooltip content="Click again to dismiss" trigger="click" open>
+    <syn-button>Click to Toggle</syn-button>
+  </syn-tooltip>
+  `},i={parameters:{docs:{description:{story:t("tooltip","manuel")}}},render:()=>o(y||(y=w([`
+  <syn-button style="margin-right: 4rem;">Toggle Manually</syn-button>
+  <syn-tooltip content="This is an avatar" trigger="manual" class="manual-tooltip" open>
+    <syn-icon-button name="person" label="Person" size="medium" color="neutral"></syn-icon-button>
+  </syn-tooltip>
+
+  <script type="module">
+    const tooltip = document.querySelector('.manual-tooltip');
+    const toggle = tooltip.previousElementSibling;
+
+    toggle.addEventListener('click', () => (tooltip.open = !tooltip.open));
+  <\/script>
+  `])))},r={parameters:{docs:{description:{story:t("tooltip","removingarrows")}}},render:()=>o`
+  <syn-tooltip content="This is a tooltip" style="--syn-tooltip-arrow-size: 0;" open>
+    <syn-button>No Arrow</syn-button>
+  </syn-tooltip>
+  `},l={parameters:{docs:{description:{story:t("tooltip","htmltooltip")}}},render:()=>o`
+  <syn-tooltip open>
+    <div slot="content">I'm not <strong>just</strong> a tooltip, I'm a <em>tooltip</em> with HTML!</div>
+
+    <syn-button>Hover me</syn-button>
+  </syn-tooltip>
+`},p={parameters:{docs:{description:{story:t("tooltip","maxwith")},story:{height:"400px"}}},render:()=>o`
+  <syn-tooltip style="--max-width: 80px;" content="This tooltip will wrap after only 80 pixels." open>
+    <syn-button>Hover me</syn-button>
+  </syn-tooltip>
+  `},c=g({Default:n,Placement:e,ClickTrigger:s,ManualTrigger:i,RemovingArrows:r,HTMLInTooltips:l,SettingAMaximumWidth:p},{heightPx:550,styleHeading:{"margin-bottom":"180px"}});n.parameters={...n.parameters,docs:{...n.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    controls: {
+      disable: false
+    },
+    docs: {
+      description: {
+        story: generateStoryDescription('tooltip', 'default')
+      }
+    }
+  },
+  render: args => generateTemplate({
+    args
+  })
+}`,...n.parameters?.docs?.source}}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    docs: {
+      description: {
+        story: generateStoryDescription('tooltip', 'placement')
+      },
+      story: {
+        height: '450px'
+      }
+    },
+    layout: 'padded'
+  },
+  render: () => html\`
+    <div class="tooltip-placement-example">
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="top-start" placement="top-start" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="top" placement="top" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="top-end" placement="top-end" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="left-start" placement="left-start" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="right-start" placement="right-start" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="left" placement="left" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="right" placement="right" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="left-end" placement="left-end" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="right-end" placement="right-end" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+
+      <div class="tooltip-placement-example-row">
+        <syn-tooltip content="bottom-start" placement="bottom-start" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="bottom" placement="bottom" open>
+        <syn-button></syn-button>
+        </syn-tooltip>
+
+        <syn-tooltip content="bottom-end" placement="bottom-end" open>
+          <syn-button></syn-button>
+        </syn-tooltip>
+      </div>
+    </div>
+
+    <style>
+      .tooltip-placement-example {
+        width: 500px;
+        margin: 5rem 6rem;
+      }
+
+      .tooltip-placement-example-row:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      .tooltip-placement-example syn-button {
+        float: left;
+        width: var(--syn-spacing-2x-large);
+        margin-bottom: var(--syn-spacing-medium);
+      }
+
+      .tooltip-placement-example-row:nth-child(1) syn-tooltip:first-child syn-button,
+      .tooltip-placement-example-row:nth-child(5) syn-tooltip:first-child syn-button {
+        margin-left: var(--syn-spacing-3x-large);
+        margin-right: var(--syn-spacing-4x-large);
+      }
+
+      .tooltip-placement-example-row:nth-child(1) syn-tooltip:nth-child(2) syn-button,
+      .tooltip-placement-example-row:nth-child(5) syn-tooltip:nth-child(2) syn-button {
+        margin-right: var(--syn-spacing-4x-large);
+      }
+
+      .tooltip-placement-example-row:nth-child(2) syn-tooltip:nth-child(2) syn-button,
+      .tooltip-placement-example-row:nth-child(3) syn-tooltip:nth-child(2) syn-button,
+      .tooltip-placement-example-row:nth-child(4) syn-tooltip:nth-child(2) syn-button {
+        margin-left: calc((var(--syn-spacing-2x-large) * 3) + (var(--syn-spacing-4x-large) * 2) + (var(--syn-spacing-medium) * 2));
+      }
+    </style>
+\`
+}`,...e.parameters?.docs?.source}}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    docs: {
+      description: {
+        story: generateStoryDescription('tooltip', 'onclick')
+      }
+    }
+  },
+  render: () => html\`
+  <syn-tooltip content="Click again to dismiss" trigger="click" open>
+    <syn-button>Click to Toggle</syn-button>
+  </syn-tooltip>
+  \`
+}`,...s.parameters?.docs?.source}}};i.parameters={...i.parameters,docs:{...i.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    docs: {
+      description: {
+        story: generateStoryDescription('tooltip', 'manuel')
+      }
+    }
+  },
+  render: () => html\`
+  <syn-button style="margin-right: 4rem;">Toggle Manually</syn-button>
+  <syn-tooltip content="This is an avatar" trigger="manual" class="manual-tooltip" open>
+    <syn-icon-button name="person" label="Person" size="medium" color="neutral"></syn-icon-button>
+  </syn-tooltip>
+
+  <script type="module">
+    const tooltip = document.querySelector('.manual-tooltip');
+    const toggle = tooltip.previousElementSibling;
+
+    toggle.addEventListener('click', () => (tooltip.open = !tooltip.open));
+  <\/script>
+  \`
+}`,...i.parameters?.docs?.source}}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    docs: {
+      description: {
+        story: generateStoryDescription('tooltip', 'removingarrows')
+      }
+    }
+  },
+  render: () => html\`
+  <syn-tooltip content="This is a tooltip" style="--syn-tooltip-arrow-size: 0;" open>
+    <syn-button>No Arrow</syn-button>
+  </syn-tooltip>
+  \`
+}`,...r.parameters?.docs?.source}}};l.parameters={...l.parameters,docs:{...l.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    docs: {
+      description: {
+        story: generateStoryDescription('tooltip', 'htmltooltip')
+      }
+    }
+  },
+  render: () => html\`
+  <syn-tooltip open>
+    <div slot="content">I'm not <strong>just</strong> a tooltip, I'm a <em>tooltip</em> with HTML!</div>
+
+    <syn-button>Hover me</syn-button>
+  </syn-tooltip>
+\`
+}`,...l.parameters?.docs?.source}}};p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    docs: {
+      description: {
+        story: generateStoryDescription('tooltip', 'maxwith')
+      },
+      story: {
+        height: '400px'
+      }
+    }
+  },
+  render: () => html\`
+  <syn-tooltip style="--max-width: 80px;" content="This tooltip will wrap after only 80 pixels." open>
+    <syn-button>Hover me</syn-button>
+  </syn-tooltip>
+  \`
+}`,...p.parameters?.docs?.source}}};c.parameters={...c.parameters,docs:{...c.parameters?.docs,source:{originalSource:`generateScreenshotStory({
+  Default,
+  Placement,
+  ClickTrigger,
+  ManualTrigger,
+  RemovingArrows,
+  HTMLInTooltips,
+  SettingAMaximumWidth
+}, {
+  heightPx: 550,
+  styleHeading: {
+    'margin-bottom': '180px'
+  }
+})`,...c.parameters?.docs?.source}}};const $=["Default","Placement","ClickTrigger","ManualTrigger","RemovingArrows","HTMLInTooltips","SettingAMaximumWidth","Screenshot"];export{s as ClickTrigger,n as Default,l as HTMLInTooltips,i as ManualTrigger,e as Placement,r as RemovingArrows,c as Screenshot,p as SettingAMaximumWidth,$ as __namedExportsOrder,Z as default};
