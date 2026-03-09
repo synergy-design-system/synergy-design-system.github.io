@@ -1,0 +1,240 @@
+import{s as v,a as h,g as m,b as u}from"./animation-registry-DyRYqZdt.js";import{b}from"./closeActiveElement-Bnbpk8Kw.js";import{e as p}from"./class-map-CR1NexEI.js";import{H as w}from"./slot-9EVoRGQc.js";import{j as z,c as d}from"./iframe-BtlaEU6c.js";import{L as _}from"./localize-Dh03wnLC.js";import{c as k,n as o,S as x}from"./synergy-element-DNCG4YnN.js";import{r as T}from"./icon.component-BaF0yqNc.js";import{a as y}from"./query-D0jTsbLw.js";import{w as g}from"./event-B0iVuGLD.js";import{w as f}from"./watch-CEsCE2EF.js";import{S}from"./icon-button.component-MkKOiMUK.js";import{e as C}from"./decorator-CWkWRMhy.js";const A=z`
+  /* stylelint-disable no-descending-specificity */
+  :host {
+    display: contents;
+
+    /* For better DX, we'll reset the margin here so the base part can inherit it */
+    margin: 0;
+  }
+
+  .alert {
+    /* Defines the used border and icon color for variants */
+    --variant-color-border: var(--syn-alert-informative-color-border);
+    --variant-color-background: var(--syn-alert-informative-color-background);
+    --variant-color-icon: var(--syn-alert-informative-color-icon);
+    --variant-color-indicator: var(--syn-alert-informative-color-indicator);
+
+    /* Defines special settings for sizes */
+    --size-font-size: var(--syn-font-size-medium);
+    --size-icon-size: var(--syn-font-size-x-large);
+    --size-min-height: 54px;
+    --size-message-padding: var(--syn-spacing-medium) var(--syn-spacing-large) var(--syn-spacing-medium) var(--syn-spacing-medium);
+    --size-icon-padding-block: var(--syn-spacing-medium);
+    --size-icon-padding-inline: var(--syn-spacing-medium);
+
+    align-items: stretch;
+    background-color: var(--variant-color-background);
+    border: var(--syn-panel-border-width) solid var(--variant-color-border);
+    border-left: 0;
+    border-radius: var(--syn-border-radius-none);
+    box-sizing: content-box;
+    color: var(--syn-typography-color-text);
+    display: flex;
+    font-family: var(--syn-font-sans);
+    font-size: var(--size-font-size);
+    font-weight: var(--syn-font-weight-normal);
+    line-height: var(--syn-line-height-normal);
+    margin: inherit;
+    min-height: var(--size-min-height);
+    position: relative;
+  }
+
+  /**
+   * Add back the items left borders
+   * This is done to prevent border clipping with the large border-left needed on .alert
+   * Note we also need to adjust our paddings to add the border width here
+   */
+  .alert::before {
+    background: var(--variant-color-indicator);
+    bottom: -1px;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -1px;
+    width: var(--syn-spacing-2x-small);
+  }
+
+  .alert :first-child {
+    margin-inline-start: var(--syn-spacing-2x-small);
+  }
+
+  .alert:not(.alert--has-icon) .alert__icon,
+  .alert:not(.alert--closable) .alert__close-button {
+    display: none;
+  }
+
+  /**
+   * Make sure everything is aligned to top
+   */
+  .alert__icon {
+    align-items: flex-start;
+    color: var(--variant-color-icon);
+    display: flex;
+    flex: 0 0 auto;
+    font-size: var(--size-icon-size);
+    padding-block-start: var(--size-icon-padding-block);
+    padding-inline-start: var(--size-icon-padding-inline);
+  }
+
+  .alert--has-countdown {
+    border-bottom: none;
+  }
+
+  .alert__message {
+    align-self: center;
+    display: block;
+    flex: 1 1 auto;
+    padding: var(--size-message-padding);
+  }
+
+  /**
+   * Close Icon
+   */
+  .alert__close-button {
+    align-items: flex-start;
+    align-self: start; /* #1135: Fix alignment for the close icon */
+    color: var(--syn-typography-color-text);
+    display: flex;
+    flex: 0 0 auto;
+    font-size: var(--size-icon-size);
+    margin-block: calc(var(--syn-spacing-x-small) - var(--syn-panel-border-width));
+    margin-inline-end: var(--syn-spacing-x-small);
+  }
+
+  .alert__countdown {
+    background-color: var(--syn-panel-border-color);
+    bottom: 0;
+    display: flex;
+    height: calc(var(--syn-panel-border-width) * 3);
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .alert__countdown--ltr {
+    justify-content: flex-end;
+  }
+
+  .alert__countdown .alert__countdown-elapsed {
+    height: 100%;
+    width: 0;
+  }
+
+  .alert--primary .alert__countdown-elapsed {
+    background-color: var(--syn-color-primary-600);
+  }
+
+  .alert--success .alert__countdown-elapsed {
+    background-color: var(--syn-color-success-600);
+  }
+
+  .alert--neutral .alert__countdown-elapsed {
+    background-color: var(--syn-color-neutral-600);
+  }
+
+  .alert--warning .alert__countdown-elapsed {
+    background-color: var(--syn-color-warning-600);
+  }
+
+  .alert--danger .alert__countdown-elapsed {
+    background-color: var(--syn-color-danger-600);
+  }
+
+  /**
+   * Variant colors
+   */
+  .alert--success {
+    --variant-color-border: var(--syn-alert-success-color-border);
+    --variant-color-background: var(--syn-alert-success-color-background);
+    --variant-color-icon: var(--syn-alert-success-color-icon);
+    --variant-color-indicator: var(--syn-alert-success-color-indicator);
+  }
+
+  .alert--neutral {
+    --variant-color-border: var(--syn-alert-neutral-color-border);
+    --variant-color-background: var(--syn-alert-neutral-color-background);
+    --variant-color-icon: var(--syn-alert-neutral-color-icon);
+    --variant-color-indicator: var(--syn-alert-neutral-color-indicator);
+  }
+
+  .alert--warning {
+    --variant-color-border: var(--syn-alert-warning-color-border);
+    --variant-color-background: var(--syn-alert-warning-color-background);
+    --variant-color-icon: var(--syn-alert-warning-color-icon);
+    --variant-color-indicator: var(--syn-alert-warning-color-indicator);
+  }
+
+  .alert--danger {
+    --variant-color-border: var(--syn-alert-error-color-border);
+    --variant-color-background: var(--syn-alert-error-color-background);
+    --variant-color-icon: var(--syn-alert-error-color-icon);
+    --variant-color-indicator: var(--syn-alert-error-color-indicator);
+  }
+
+  /* #1119: Alert Sizes */
+  .alert--small {
+    --size-font-size: var(--syn-font-size-small);
+    --size-icon-size: var(--syn-font-size-large);
+    --size-min-height: 44px;
+    --size-message-padding: var(--syn-spacing-small) var(--syn-spacing-large) var(--syn-spacing-small) var(--syn-spacing-small);
+    --size-icon-padding-block: var(--syn-spacing-small);
+    --size-icon-padding-inline: var(--syn-spacing-small);
+  }
+
+  /* Adjust close button size for small alerts */
+  .alert--small .alert__close-button {
+    font-size: var(--syn-font-size-medium);
+  }
+
+  .alert--large {
+    --size-font-size: var(--syn-font-size-large);
+    --size-icon-size: var(--syn-font-size-2x-large);
+    --size-min-height: 68px;
+    --size-message-padding: var(--syn-spacing-medium-large) var(--syn-spacing-large) var(--syn-spacing-medium-large) var(--syn-spacing-medium-large);
+    --size-icon-padding-block: var(--syn-spacing-medium-large);
+    --size-icon-padding-inline: var(--syn-spacing-medium-large);
+  }
+
+  .alert__timer {
+    display: none;
+  }
+`;var I=Object.defineProperty,H=Object.getOwnPropertyDescriptor,t=(a,r,n,s)=>{for(var i=s>1?void 0:s?H(r,n):r,l=a.length-1,c;l>=0;l--)(c=a[l])&&(i=(s?c(r,n,i):c(i))||i);return s&&i&&I(r,n,i),i};let e=class extends x{constructor(){super(...arguments),this.hasSlotController=new w(this,"icon","suffix"),this.localize=new _(this),this.open=!1,this.closable=!1,this.variant="primary",this.duration=1/0,this.size="medium",this.remainingTime=this.duration}static get toastStack(){return this.currentToastStack||(this.currentToastStack=Object.assign(document.createElement("div"),{className:"syn-toast-stack"})),this.currentToastStack}firstUpdated(){this.base.hidden=!this.open}restartAutoHide(){this.handleCountdownChange(),clearTimeout(this.autoHideTimeout),clearInterval(this.remainingTimeInterval),this.open&&this.duration<1/0&&(this.autoHideTimeout=window.setTimeout(()=>this.hide(),this.duration),this.remainingTime=this.duration,this.remainingTimeInterval=window.setInterval(()=>{this.remainingTime-=100},100))}pauseAutoHide(){this.countdownAnimation?.pause(),clearTimeout(this.autoHideTimeout),clearInterval(this.remainingTimeInterval)}resumeAutoHide(){this.duration<1/0&&(this.autoHideTimeout=window.setTimeout(()=>this.hide(),this.remainingTime),this.remainingTimeInterval=window.setInterval(()=>{this.remainingTime-=100},100),this.countdownAnimation?.play())}handleCountdownChange(){if(this.open&&this.duration<1/0&&this.countdown){const{countdownElement:a}=this,r="100%",n="0";this.countdownAnimation=a.animate([{width:r},{width:n}],{duration:this.duration,easing:"linear"})}}handleCloseClick(){this.hide()}async handleOpenChange(){if(this.open){this.emit("syn-show"),this.duration<1/0&&this.restartAutoHide(),await h(this.base),this.base.hidden=!1;const{keyframes:a,options:r}=m(this,"alert.show",{dir:this.localize.dir()});await u(this.base,a,r),this.emit("syn-after-show")}else{b(this),this.emit("syn-hide"),clearTimeout(this.autoHideTimeout),clearInterval(this.remainingTimeInterval),await h(this.base);const{keyframes:a,options:r}=m(this,"alert.hide",{dir:this.localize.dir()});await u(this.base,a,r),this.base.hidden=!0,this.emit("syn-after-hide")}}handleDurationChange(){this.restartAutoHide()}async show(){if(!this.open)return this.open=!0,g(this,"syn-after-show")}async hide(){if(this.open)return this.open=!1,g(this,"syn-after-hide")}async toast(){return new Promise(a=>{this.handleCountdownChange(),e.toastStack.parentElement===null&&document.body.append(e.toastStack),e.toastStack.appendChild(this),requestAnimationFrame(()=>{this.clientWidth,this.show()}),this.addEventListener("syn-after-hide",()=>{e.toastStack.removeChild(this),a(),e.toastStack.querySelector("syn-alert")===null&&e.toastStack.remove()},{once:!0})})}render(){return d`
+      <div
+        part="base"
+        class=${p({alert:!0,"alert--open":this.open,"alert--small":this.size==="small","alert--medium":this.size==="medium","alert--large":this.size==="large","alert--closable":this.closable,"alert--has-icon":this.hasSlotController.test("icon"),"alert--primary":this.variant==="primary","alert--success":this.variant==="success","alert--neutral":this.variant==="neutral","alert--warning":this.variant==="warning","alert--danger":this.variant==="danger"})}
+        role="alert"
+        aria-hidden=${this.open?"false":"true"}
+        @mouseenter=${this.pauseAutoHide}
+        @mouseleave=${this.resumeAutoHide}
+      >
+        <div part="icon" class="alert__icon">
+          <slot name="icon"></slot>
+        </div>
+
+        <div part="message" class="alert__message" aria-live="polite">
+          <slot></slot>
+        </div>
+
+        ${this.closable?d`
+              <syn-icon-button
+                part="close-button"
+                exportparts="base:close-button__base"
+                class="alert__close-button"
+                name="x-lg"
+                library="system"
+                label=${this.localize.term("close")}
+                @click=${this.handleCloseClick}
+              ></syn-icon-button>
+            `:""}
+
+        <div role="timer" class="alert__timer">${this.remainingTime}</div>
+
+        ${this.countdown?d`
+              <div
+                class=${p({alert__countdown:!0,"alert__countdown--ltr":this.countdown==="ltr"})}
+              >
+                <div class="alert__countdown-elapsed"></div>
+              </div>
+            `:""}
+      </div>
+    `}};e.styles=[k,A];e.dependencies={"syn-icon-button":S};t([y('[part~="base"]')],e.prototype,"base",2);t([y(".alert__countdown-elapsed")],e.prototype,"countdownElement",2);t([o({type:Boolean,reflect:!0})],e.prototype,"open",2);t([o({type:Boolean,reflect:!0})],e.prototype,"closable",2);t([o({reflect:!0})],e.prototype,"variant",2);t([o({type:Number})],e.prototype,"duration",2);t([o({reflect:!0})],e.prototype,"size",2);t([T()],e.prototype,"remainingTime",2);t([f("open",{waitUntilFirstUpdate:!0})],e.prototype,"handleOpenChange",1);t([f("duration")],e.prototype,"handleDurationChange",1);e=t([C("SynAlert")],e);v("alert.show",{keyframes:[{opacity:0,scale:.8},{opacity:1,scale:1}],options:{duration:250,easing:"ease"}});v("alert.hide",{keyframes:[{opacity:1,scale:1},{opacity:0,scale:.8}],options:{duration:250,easing:"ease"}});export{e as S};
