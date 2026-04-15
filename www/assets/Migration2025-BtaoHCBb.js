@@ -1,0 +1,1 @@
+import{j as n,M as o}from"./blocks-DFV-3-DV.js";import r from"./index-BpIam_A1.js";import"./preload-helper-PPVm8Dsz.js";import"./iframe-eRvaIELU.js";function e(t){return n.jsx(o,{title:"Migration to SICK 2025",tags:["Migration"]})}function x(t={}){return n.jsx(r,{...t,children:n.jsx(e,{...t})})}export{x as default};
