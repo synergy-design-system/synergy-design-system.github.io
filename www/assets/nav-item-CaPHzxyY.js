@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./nav-item.component-DMzZVI-Y.js";var r=e((()=>{t(),t(),n.define(`syn-nav-item`)}));export{r as t};
