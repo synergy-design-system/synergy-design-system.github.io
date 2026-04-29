@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./divider.component-BjvsU0PO.js";var r=e((()=>{t(),t(),n.define(`syn-divider`)}));export{r as t};
