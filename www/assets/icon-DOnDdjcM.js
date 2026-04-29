@@ -1,1 +1,0 @@
-import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./icon.component-CdTFbg1z.js";var r=e((()=>{t(),t(),n.define(`syn-icon`)}));export{r as t};
