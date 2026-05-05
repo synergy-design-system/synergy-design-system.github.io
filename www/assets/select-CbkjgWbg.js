@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./select.component-BjYIWnHM.js";var r=e((()=>{n(),n(),t.define(`syn-select`)}));export{r as t};
