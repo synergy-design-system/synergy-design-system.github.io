@@ -1,1 +1,0 @@
-import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./popup.component-CWwE9cvd.js";var r=e((()=>{t(),t(),n.define(`syn-popup`)}));export{r as t};

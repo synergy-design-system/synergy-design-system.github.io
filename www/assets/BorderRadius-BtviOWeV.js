@@ -1,9 +1,0 @@
-import{n as e}from"./chunk-DnJy8xQt.js";import{r as t}from"./react-EoMKkvTT.js";import{a as n}from"./chunk-RD3KTAHR--rL-eM5P.js";import{c as r,f as i}from"./blocks-BwLjF8TN.js";import{t as a}from"./mdx-react-shim-DdLl3OEo.js";import{n as o,t as s}from"./_docs-CsvZCD1j.js";import{A as c,E as l,M as u,O as d,S as f,T as p,f as m,i as h,j as g,k as _,n as v,r as y,t as b,y as x}from"./TokensForThemes-ByJZi0m2.js";function S(e){let n={h1:`h1`,table:`table`,tbody:`tbody`,td:`td`,th:`th`,tr:`tr`,...t(),...e.components};return(0,w.jsxs)(w.Fragment,{children:[(0,w.jsx)(r,{title:`Tokens/Border Radius`,tags:[`Design Tokens`]}),`
-`,(0,w.jsx)(n.h1,{id:``,children:s?.tokens?.[`border-radius`]?.title.value}),`
-`,(0,w.jsx)(f,{value:s?.tokens?.[`border-radius`]?.description?.value}),`
-`,(0,w.jsx)(b,{themes:v([`2025`,`2018`],({className:e})=>(0,w.jsx)(n.table,{children:(0,w.jsx)(n.tbody,{children:(0,w.jsxs)(w.Fragment,{children:[(0,w.jsxs)(n.tr,{children:[(0,w.jsx)(n.th,{children:s?.tokens?.[`border-radius`]?.title.value}),(0,w.jsx)(n.th,{children:`Raw Value`}),(0,w.jsx)(n.th,{children:`CSS Token`}),(0,w.jsx)(n.th,{children:`SCSS Token`}),(0,w.jsx)(n.th,{children:`JS Token`})]}),Object.entries(m(!0)).map(([t,r])=>(0,w.jsxs)(n.tr,{children:[(0,w.jsx)(n.td,{children:(0,w.jsx)(x,{className:`${e}-${t.toLowerCase()}`,value:r})}),(0,w.jsx)(n.td,{children:(0,w.jsx)(l,{value:`${e}-${t.toLowerCase()}`,cssProperty:`border-radius`})}),(0,w.jsx)(n.td,{children:(0,w.jsx)(g,{value:_(t),children:_(t)})}),(0,w.jsx)(n.td,{children:(0,w.jsx)(g,{value:c(t),children:c(t)})}),(0,w.jsx)(n.td,{children:(0,w.jsx)(g,{value:t,children:t})})]},`${t}-row`))]})})}))}),`
-`,(0,w.jsx)(`style`,{children:`
-.synborderradiuspill {
-width: 80px !important;
-}
-`})]})}function C(e={}){let{wrapper:n}={...t(),...e.components};return n?(0,w.jsx)(n,{...e,children:(0,w.jsx)(S,{...e})}):S(e)}var w;e((()=>{w=n(),a(),i(),u(),d(),o(),p(),h(),y()}))();export{C as default};
