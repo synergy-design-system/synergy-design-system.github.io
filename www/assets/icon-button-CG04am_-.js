@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./icon-button.component-BO-GF4wp.js";var r=e((()=>{t(),t(),n.define(`syn-icon-button`)}));export{r as t};

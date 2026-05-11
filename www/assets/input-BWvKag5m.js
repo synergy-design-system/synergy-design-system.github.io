@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./input.component-B6tUrpyD.js";var r=e((()=>{n(),n(),t.define(`syn-input`)}));export{r as t};

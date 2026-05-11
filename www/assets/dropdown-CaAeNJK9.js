@@ -1,1 +1,0 @@
-import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./dropdown.component-Duz6VjDt.js";var r=e((()=>{t(),t(),n.define(`syn-dropdown`)}));export{r as t};
