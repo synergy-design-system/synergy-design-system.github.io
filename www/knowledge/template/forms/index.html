@@ -1,0 +1,528 @@
+<!DOCTYPE html><script type="module" src="/knowledge/_astro/Layout.astro_astro_type_script_index_0_lang.BKMGe-wZ.js"></script> <html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/knowledge/favicon.svg"><meta name="generator" content="Astro v6.2.2"><link rel="ai-policy" href="/knowledge/llms.txt"><title>Synergy Design System - Design System Specification</title><link rel="stylesheet" href="/knowledge/_astro/ContentHeader.Efz5bW9_.css"></head> <body> <syn-header> <a href="/knowledge/" slot="logo" tabindex="0" class="header-logo"> <syn-icon name="logo-color" library="system" label="Custom Logo with link"></syn-icon> </a> <span slot="label">Synergy Design System - Design System Specification</span> <nav slot="meta-navigation"> <syn-tooltip content="Visit Synergies Storybook Developer Documentation"> <syn-icon-button href="https://synergy-design-system.github.io/?path=/docs/welcome--docs" target="_blank" name="storybook" label="Synergy on Storybook" library="logos"></syn-icon-button> </syn-tooltip> <syn-tooltip content="Visit Synergy on Figma"> <syn-icon-button href="https://www.figma.com/design/bZFqk9urD3NlghGUKrkKCR/Synergy-Digital-Design-System?t=aUVrRtmSe1QgX5Iq-0" target="_blank" name="figma" label="Synergy on Figma" library="logos"></syn-icon-button> </syn-tooltip> <syn-tooltip content="Visit Synergy on Github"> <syn-icon-button href="https://github.com/synergy-design-system/synergy-design-system" target="_blank" name="github" label="Synergy on Github" library="logos"></syn-icon-button> </syn-tooltip> <syn-tooltip> <div slot="content">
+Synergy made with love by Synergy Design System Team.
+			This documentation is built using Synergy Design System components and is currently running:
+<ul> <li>Components version 3.14.0</li> <li>Metadata version 3.8.0</li> </ul> </div> <syn-icon-button name="heart" label="Synergy made with Love" library="logos"></syn-icon-button> </syn-tooltip> </nav> </syn-header> <div class="content"> <syn-side-nav variant="sticky" open=""><syn-nav-item><syn-icon slot="prefix" name="brick" library="sidenav"></syn-icon>Components<syn-nav-item href="/knowledge/component/syn-accordion" slot="children">syn-accordion</syn-nav-item><syn-nav-item href="/knowledge/component/syn-alert" slot="children">syn-alert</syn-nav-item><syn-nav-item href="/knowledge/component/syn-badge" slot="children">syn-badge</syn-nav-item><syn-nav-item href="/knowledge/component/syn-breadcrumb" slot="children">syn-breadcrumb</syn-nav-item><syn-nav-item href="/knowledge/component/syn-breadcrumb-item" slot="children">syn-breadcrumb-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-button" slot="children">syn-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-button-group" slot="children">syn-button-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-card" slot="children">syn-card</syn-nav-item><syn-nav-item href="/knowledge/component/syn-checkbox" slot="children">syn-checkbox</syn-nav-item><syn-nav-item href="/knowledge/component/syn-combobox" slot="children">syn-combobox</syn-nav-item><syn-nav-item href="/knowledge/component/syn-details" slot="children">syn-details</syn-nav-item><syn-nav-item href="/knowledge/component/syn-dialog" slot="children">syn-dialog</syn-nav-item><syn-nav-item href="/knowledge/component/syn-divider" slot="children">syn-divider</syn-nav-item><syn-nav-item href="/knowledge/component/syn-drawer" slot="children">syn-drawer</syn-nav-item><syn-nav-item href="/knowledge/component/syn-dropdown" slot="children">syn-dropdown</syn-nav-item><syn-nav-item href="/knowledge/component/syn-file" slot="children">syn-file</syn-nav-item><syn-nav-item href="/knowledge/component/syn-header" slot="children">syn-header</syn-nav-item><syn-nav-item href="/knowledge/component/syn-icon" slot="children">syn-icon</syn-nav-item><syn-nav-item href="/knowledge/component/syn-icon-button" slot="children">syn-icon-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-input" slot="children">syn-input</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu" slot="children">syn-menu</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu-item" slot="children">syn-menu-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu-label" slot="children">syn-menu-label</syn-nav-item><syn-nav-item href="/knowledge/component/syn-nav-item" slot="children">syn-nav-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-optgroup" slot="children">syn-optgroup</syn-nav-item><syn-nav-item href="/knowledge/component/syn-option" slot="children">syn-option</syn-nav-item><syn-nav-item href="/knowledge/component/syn-pagination" slot="children">syn-pagination</syn-nav-item><syn-nav-item href="/knowledge/component/syn-popup" slot="children">syn-popup</syn-nav-item><syn-nav-item href="/knowledge/component/syn-prio-nav" slot="children">syn-prio-nav</syn-nav-item><syn-nav-item href="/knowledge/component/syn-progress-bar" slot="children">syn-progress-bar</syn-nav-item><syn-nav-item href="/knowledge/component/syn-progress-ring" slot="children">syn-progress-ring</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio" slot="children">syn-radio</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio-button" slot="children">syn-radio-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio-group" slot="children">syn-radio-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-range" slot="children">syn-range</syn-nav-item><syn-nav-item href="/knowledge/component/syn-range-tick" slot="children">syn-range-tick</syn-nav-item><syn-nav-item href="/knowledge/component/syn-select" slot="children">syn-select</syn-nav-item><syn-nav-item href="/knowledge/component/syn-side-nav" slot="children">syn-side-nav</syn-nav-item><syn-nav-item href="/knowledge/component/syn-spinner" slot="children">syn-spinner</syn-nav-item><syn-nav-item href="/knowledge/component/syn-switch" slot="children">syn-switch</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab" slot="children">syn-tab</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab-group" slot="children">syn-tab-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab-panel" slot="children">syn-tab-panel</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tag" slot="children">syn-tag</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tag-group" slot="children">syn-tag-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-textarea" slot="children">syn-textarea</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tooltip" slot="children">syn-tooltip</syn-nav-item><syn-nav-item href="/knowledge/component/syn-validate" slot="children">syn-validate</syn-nav-item></syn-nav-item><syn-nav-item open=""><syn-icon slot="prefix" name="pattern" library="sidenav"></syn-icon>Templates<syn-nav-item href="/knowledge/template/appshell" slot="children">Appshell</syn-nav-item><syn-nav-item href="/knowledge/template/breadcrumb" slot="children">Breadcrumb</syn-nav-item><syn-nav-item href="/knowledge/template/footer" slot="children">Footer</syn-nav-item><syn-nav-item current="" href="/knowledge/template/forms" slot="children">Forms</syn-nav-item><syn-nav-item href="/knowledge/template/loading-screen" slot="children">Loading Screen</syn-nav-item><syn-nav-item href="/knowledge/template/localization" slot="children">Localization</syn-nav-item><syn-nav-item href="/knowledge/template/table" slot="children">Table</syn-nav-item><syn-nav-item href="/knowledge/template/tag-group" slot="children">Tag Group</syn-nav-item><syn-nav-item href="/knowledge/template/tooltip" slot="children">Tooltip</syn-nav-item></syn-nav-item><syn-nav-item><syn-icon slot="prefix" name="css" library="sidenav"></syn-icon>Styles<syn-nav-item href="/knowledge/style/syn-body" slot="children">syn-body</syn-nav-item><syn-nav-item href="/knowledge/style/syn-heading" slot="children">syn-heading</syn-nav-item><syn-nav-item href="/knowledge/style/syn-link" slot="children">syn-link</syn-nav-item><syn-nav-item href="/knowledge/style/syn-link-list" slot="children">syn-link-list</syn-nav-item><syn-nav-item href="/knowledge/style/syn-table" slot="children">syn-table</syn-nav-item><syn-nav-item href="/knowledge/style/syn-table-cell" slot="children">syn-table-cell</syn-nav-item><syn-nav-item href="/knowledge/style/syn-weight" slot="children">syn-weight</syn-nav-item></syn-nav-item><syn-nav-item><syn-icon slot="prefix" name="receipt_long" library="sidenav"></syn-icon>Package Changelogs<syn-nav-item href="/knowledge/changelog/assets" slot="children">Assets</syn-nav-item><syn-nav-item href="/knowledge/changelog/components" slot="children">Components</syn-nav-item><syn-nav-item href="/knowledge/changelog/fonts" slot="children">Fonts</syn-nav-item><syn-nav-item href="/knowledge/changelog/mcp" slot="children">MCP</syn-nav-item><syn-nav-item href="/knowledge/changelog/metadata" slot="children">Metadata</syn-nav-item><syn-nav-item href="/knowledge/changelog/styles" slot="children">Styles</syn-nav-item><syn-nav-item href="/knowledge/changelog/tokens" slot="children">Tokens</syn-nav-item></syn-nav-item><syn-nav-item slot="footer"><syn-icon slot="prefix" name="tips_and_updates" library="sidenav"></syn-icon>Additional Information<syn-nav-item href="/knowledge/accessibility" slot="children">Accessibility</syn-nav-item><syn-nav-item href="/knowledge/brand-support" slot="children">Brand Support</syn-nav-item><syn-nav-item href="/knowledge/goals" slot="children">Goals and Guidelines</syn-nav-item><syn-nav-item href="/knowledge/misconceptions" slot="children">Misconceptions</syn-nav-item><syn-nav-item href="/knowledge/out-of-scope" slot="children">Out of Scope</syn-nav-item><syn-nav-item href="/knowledge/brand-support" slot="children">Brand Support</syn-nav-item></syn-nav-item></syn-side-nav> <main> <syn-card shadow="true"> <header class="content-header" slot="header" data-astro-cid-nzwy4yid> <h1 class="syn-heading--3x-large" data-astro-cid-nzwy4yid>Forms</h1> <div class="content-header-actions" data-astro-cid-nzwy4yid>  <nav> <syn-badge variant="success"> stable </syn-badge> <syn-tooltip content="Available since version 1.0.0."> <syn-badge variant="neutral"> 1.0.0 </syn-badge> </syn-tooltip> </nav>  </div> </header> <syn-divider slot="header" data-astro-cid-nzwy4yid="true"></syn-divider> <section> <h2 class="syn-heading--2x-large">Code Samples</h2> <syn-accordion contained="true"> <syn-details summary="Contact Form [html]"> <article> <p><strong>Source:</strong> layers/examples/template/template:forms.md</p> <pre><code>&lt;style&gt;
+  .synergy-form-demo {
+    background: var(--syn-color-neutral-0);
+    margin: 0 auto;
+    padding: var(--syn-spacing-x-large);
+    max-width: 750px;
+  }
+
+  h1 {
+    font-size: var(--syn-font-size-3x-large);
+    font-weight: var(--syn-font-weight-bold);
+    margin: 0 0 var(--syn-spacing-medium) 0;
+  }
+
+  .synergy-form-demo &gt; p {
+    margin: 0 0 var(--syn-spacing-2x-large) 0;
+  }
+
+  em {
+    font-size: var(--syn-font-size-x-small);
+    font-style: normal;
+  }
+
+  fieldset {
+    border: none;
+    margin: 0 0 var(--syn-spacing-2x-large) 0;
+    padding: 0;
+  }
+
+  fieldset legend {
+    font-size: var(--syn-font-size-large);
+    font-weight: var(--syn-font-weight-bold);
+    line-height: var(--syn-line-height-normal);
+    margin-bottom: var(--syn-spacing-medium);
+  }
+
+  fieldset legend + p {
+    font-size: var(--syn-font-size-medium);
+    margin: 0 0 var(--syn-font-size-large) 0;
+  }
+
+  .fields {
+    container-type: inline-size;
+    display: flex;
+    flex-flow: wrap;
+    margin-bottom: var(--syn-spacing-2x-large);
+    gap: var(--syn-spacing-large) var(--syn-spacing-large);
+
+    /* TODO: this two css properties can be removed, when this issue is fixed https://github.com/synergy-design-system/synergy-design-system/issues/612
+    * It is fixed for the newest chrome and firefox versions, but not for safari :(
+    */
+    position: relative;
+    z-index: 1;
+  }
+
+  .fields &gt; * {
+    flex-basis: 100%;
+  }
+
+  @container (min-width: 640px) {
+    .fields &gt; * {
+      flex-basis: calc(50% - var(--syn-spacing-medium));
+    }
+  }
+
+  /*
+   * The form control inputs are using a css grid to be displayed.
+   * We just let them flow automatically mobile and arrange them
+   * in two columns when space is wide enough
+   */
+  #topics-wrapper {
+    container-type: inline-size;
+  }
+
+  #topics {
+    gap: var(--syn-spacing-x-small);
+    display: grid;
+  }
+
+  @container (min-width: 640px) {
+    #topics {
+      grid-auto-flow: column;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .submit-actions {
+    display: flex;
+    justify-content: right;
+    margin-bottom: var(--syn-spacing-2x-large);
+  }
+&lt;/style&gt;
+&lt;div class=&quot;synergy-form-demo&quot;&gt;
+  &lt;h1&gt;Contact Form&lt;/h1&gt;
+  &lt;p&gt;
+    Please fill in your personal information and let us know how we can help
+    you.
+  &lt;/p&gt;
+
+  &lt;form method=&quot;post&quot; id=&quot;syn-form-demo&quot;&gt;
+    &lt;fieldset id=&quot;topics-wrapper&quot;&gt;
+      &lt;legend&gt;Topic&lt;/legend&gt;
+      &lt;div id=&quot;topics&quot;&gt;
+        &lt;syn-checkbox name=&quot;topic[0]&quot; value=&quot;Inquiry/offer&quot;&gt;
+          Inquiry/offer
+        &lt;/syn-checkbox&gt;
+
+        &lt;syn-checkbox name=&quot;topic[1]&quot; value=&quot;Orders/invoices&quot;&gt;
+          Orders/invoices
+        &lt;/syn-checkbox&gt;
+
+        &lt;syn-checkbox name=&quot;topic[2]&quot; value=&quot;Returns/complaint&quot;&gt;
+          Returns/complaint
+        &lt;/syn-checkbox&gt;
+
+        &lt;syn-checkbox name=&quot;topic[3]&quot; value=&quot;Documentation/CAD&quot;&gt;
+          Documentation/CAD
+        &lt;/syn-checkbox&gt;
+
+        &lt;syn-checkbox name=&quot;topic[4]&quot; value=&quot;Accessories selection&quot;&gt;
+          Accessories selection
+        &lt;/syn-checkbox&gt;
+
+        &lt;syn-checkbox name=&quot;topic[5]&quot; value=&quot;Application review&quot;&gt;
+          Application review
+        &lt;/syn-checkbox&gt;
+
+        &lt;syn-checkbox name=&quot;topic[6]&quot; value=&quot;Commissioning support&quot;&gt;
+          Commissioning support
+        &lt;/syn-checkbox&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+
+    &lt;fieldset&gt;
+      &lt;legend&gt;Question&lt;/legend&gt;
+      &lt;p&gt;
+        It is very helpful if the description is as precise as possible to
+        enable us to process your enquiry correctly. When describing
+        applications, please specify the material/dimensions/speed, if
+        applicable.
+      &lt;/p&gt;
+
+      &lt;syn-textarea name=&quot;message&quot; required=&quot;&quot; label=&quot;Message&quot;&gt;&lt;/syn-textarea&gt;
+    &lt;/fieldset&gt;
+
+    &lt;fieldset&gt;
+      &lt;legend&gt;Contact Details&lt;/legend&gt;
+      &lt;div class=&quot;fields&quot;&gt;
+        &lt;syn-input name=&quot;customerNr&quot; label=&quot;Customer Number&quot;&gt;&lt;/syn-input&gt;
+        &lt;syn-input
+          name=&quot;companyName&quot;
+          required=&quot;&quot;
+          label=&quot;Company name&quot;
+        &gt;&lt;/syn-input&gt;
+        &lt;syn-input name=&quot;address&quot; required=&quot;&quot; label=&quot;Address&quot;&gt;&lt;/syn-input&gt;
+        &lt;syn-input name=&quot;zip&quot; required=&quot;&quot; label=&quot;Postal Code&quot;&gt;&lt;/syn-input&gt;
+        &lt;syn-input name=&quot;city&quot; required=&quot;&quot; label=&quot;City&quot;&gt;&lt;/syn-input&gt;
+
+        &lt;syn-select name=&quot;country&quot; required=&quot;&quot; label=&quot;Country&quot;&gt;
+          &lt;syn-option value=&quot;0&quot;&gt;Deutschland&lt;/syn-option&gt;
+
+          &lt;syn-option value=&quot;1&quot;&gt;USA&lt;/syn-option&gt;
+
+          &lt;syn-option value=&quot;2&quot;&gt;China&lt;/syn-option&gt;
+        &lt;/syn-select&gt;
+
+        &lt;syn-combobox
+          name=&quot;salesPerson&quot;
+          required=&quot;&quot;
+          label=&quot;Your reference contact&quot;
+        &gt;
+          &lt;syn-option&gt;Max Mustermann&lt;/syn-option&gt;
+          &lt;syn-option&gt;John Doe&lt;/syn-option&gt;
+          &lt;syn-option&gt;Jane Row&lt;/syn-option&gt;
+          &lt;syn-option&gt;Average Joe&lt;/syn-option&gt;
+        &lt;/syn-combobox&gt;
+        &lt;syn-input type=&quot;tel&quot; name=&quot;phone&quot; label=&quot;Phone number&quot;&gt;&lt;/syn-input&gt;
+        &lt;syn-input type=&quot;tel&quot; name=&quot;fax&quot; label=&quot;Fax number&quot;&gt;&lt;/syn-input&gt;
+        &lt;syn-input
+          type=&quot;email&quot;
+          name=&quot;mail&quot;
+          required=&quot;&quot;
+          label=&quot;E-Mail address&quot;
+        &gt;&lt;/syn-input&gt;
+      &lt;/div&gt;
+      &lt;syn-checkbox name=&quot;subscribeNewsletter&quot;&gt;
+        Yes, I would like to receive up-to-date and interesting information on
+        solutions with products, systems and services from SICK by email on a
+        regular basis. I can withdraw my consent at any time. To withdraw my
+        consent, I can use the unsubscribe link in every newsletter / email at
+        any time.
+      &lt;/syn-checkbox&gt;
+    &lt;/fieldset&gt;
+
+    &lt;div class=&quot;submit-actions&quot;&gt;
+      &lt;syn-button type=&quot;submit&quot; variant=&quot;filled&quot;&gt;Send&lt;/syn-button&gt;
+    &lt;/div&gt;
+
+    &lt;em&gt;
+      Fields marked * are required. Your data will be treated accordingly to
+      &lt;a href=&quot;#&quot;&gt;Data protection&lt;/a&gt;
+      law.
+    &lt;/em&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+  const firstTopic = document.querySelector(&quot;syn-checkbox:first-child&quot;);
+  const firstTopicError = &quot;Please select at least one topic&quot;;
+
+  customElements.whenDefined(&quot;syn-select&quot;).then(() =&gt; {
+    firstTopic.setCustomValidity(firstTopicError);
+  });
+
+  const setValidationForTopics = () =&gt; {
+    const hasCheckedElements =
+      document.querySelectorAll(&quot;#topics syn-checkbox[checked]&quot;).length &gt; 0;
+    const validationMessage = hasCheckedElements ? &quot;&quot; : firstTopicError;
+    firstTopic.setCustomValidity(validationMessage);
+  };
+
+  document
+    .querySelector(&quot;form&quot;)
+    .addEventListener(&quot;input&quot;, setValidationForTopics);
+
+  document.querySelector(&quot;form&quot;).addEventListener(&quot;submit&quot;, (e) =&gt; {
+    e.preventDefault();
+
+    const fd = new FormData(e.target);
+
+    const hasOneTopicChecked = Array.from(fd).some(
+      ([key, value]) =&gt; key.startsWith(&quot;topic[&quot;) &amp;&amp; value,
+    );
+
+    // Set validation message for topics dependent if a topic was checked or not
+    const topicValidity = hasOneTopicChecked ? &quot;&quot; : firstTopicError;
+    firstTopic.setCustomValidity(topicValidity);
+
+    if (e.target.reportValidity()) {
+      console.log(...fd, hasOneTopicChecked);
+    }
+  });
+&lt;/script&gt;</code></pre> </article> </syn-details><syn-details summary="Multiple Files Upload Form (2) [html]"> <article> <p><strong>Source:</strong> layers/examples/template/template:forms.md</p> <pre><code>&lt;div class=&quot;synergy-upload-form-demo&quot;&gt;
+  &lt;h1&gt;Multiple files upload&lt;/h1&gt;
+  &lt;form
+    enctype=&quot;multipart/form-data&quot;
+    method=&quot;post&quot;
+    id=&quot;upload-multiple-form-docs&quot;
+  &gt;
+    &lt;syn-file
+      droparea=&quot;&quot;
+      name=&quot;files&quot;
+      multiple=&quot;&quot;
+      label=&quot;Select Files&quot;
+      help-text=&quot;Max file size is 500kb. Supported file types are .jgp, .png and .pdf&quot;
+    &gt;&lt;/syn-file&gt;
+
+    &lt;!-- File list: hidden until files are selected --&gt;
+    &lt;ul class=&quot;uploaded-files&quot; hidden=&quot;&quot;&gt;&lt;/ul&gt;
+
+    &lt;div class=&quot;submit-actions&quot;&gt;
+      &lt;syn-button type=&quot;submit&quot; variant=&quot;filled&quot; disabled=&quot;&quot;&gt;Upload&lt;/syn-button&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+  .synergy-upload-form-demo {
+    background: var(--syn-color-neutral-0);
+    margin: 0 auto;
+    padding: var(--syn-spacing-x-large);
+    max-width: 750px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--syn-spacing-medium);
+    }
+  }
+
+  h1 {
+    font-size: var(--syn-font-size-3x-large);
+    font-weight: var(--syn-font-weight-bold);
+    margin: 0 0 var(--syn-spacing-medium) 0;
+  }
+
+  .uploaded-files {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+
+    li {
+      --indicator-color: var(--syn-input-icon-icon-clearable-color);
+
+      align-items: center;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: var(--syn-spacing-small) 0;
+      font: var(--syn-body-medium-regular);
+      gap: var(--syn-spacing-small);
+      min-height: 50px;
+      position: relative;
+
+      &amp;.entry-success {
+        --indicator-color: var(--syn-namur-success-color);
+
+        pointer-events: none;
+      }
+
+      em {
+        font: var(--syn-body-medium-regular);
+        font-style: normal;
+        flex: 1;
+      }
+
+      .uploaded-files--status {
+        color: var(--indicator-color);
+        text-align: end;
+        width: var(--syn-spacing-large);
+        font-size: var(--syn-font-size-large);
+        position: absolute;
+        right: 0;
+        top: var(--syn-spacing-small);
+
+        syn-icon-button {
+          &amp;::part(base) {
+            font-size: var(--syn-spacing-large);
+            padding: 0;
+          }
+        }
+      }
+
+      .uploaded-files--help-text {
+        color: var(--syn-input-border-color-focus-error);
+        display: block;
+        font: var(--syn-body-small-regular);
+        margin: var(--syn-spacing-x-small) 0;
+      }
+
+      /* Spinner surface is slightly larger as buttons have some padding applied */
+      .uploaded-files--status:has(syn-spinner) {
+        right: 2px;
+      }
+
+      syn-divider {
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
+  .submit-actions {
+    display: flex;
+    justify-content: right;
+    margin-top: var(--syn-spacing-2x-large);
+  }
+&lt;/style&gt;
+
+&lt;script type=&quot;module&quot;&gt;
+  let entries = [
+    {
+      error: null,
+      filename: &quot;image.png&quot;,
+      id: 1,
+      state: &quot;uploading&quot;,
+    },
+    {
+      error: null,
+      filename: &quot;file-name&quot;,
+      id: 2,
+      state: &quot;success&quot;,
+    },
+    {
+      error: null,
+      filename: &quot;file-name&quot;,
+      id: 3,
+      state: &quot;queued&quot;,
+    },
+    {
+      error: &quot;File exceeds size limit.&quot;,
+      filename: &quot;file-name-large&quot;,
+      id: 4,
+      state: &quot;queued&quot;,
+    },
+  ];
+  let entryId = entries.at(-1).id + 1;
+
+  const formId = &quot;#upload-multiple-form-&quot; + &quot;docs&quot;;
+  const form = document.querySelector(formId);
+  const fileInput = form.querySelector(&quot;syn-file&quot;);
+  const fileList = form.querySelector(&quot;.uploaded-files&quot;);
+  const submitButton = form.querySelector(&#39;syn-button[type=&quot;submit&quot;]&#39;);
+
+  const render = () =&gt; {
+    fileList.innerHTML = &quot;&quot;;
+    if (entries.length === 0) {
+      submitButton.setAttribute(&quot;disabled&quot;, &quot;&quot;);
+      fileList.hidden = true;
+      return;
+    }
+    fileList.hidden = false;
+    submitButton.removeAttribute(&quot;disabled&quot;);
+
+    // If everything was uploaded, disable the upload button again to prevent confusion, as there are no more files to upload
+    const allUploaded = entries.every((entry) =&gt; entry.state === &quot;success&quot;);
+    if (allUploaded) {
+      submitButton.setAttribute(&quot;disabled&quot;, &quot;&quot;);
+    }
+
+    entries.forEach((entry) =&gt; {
+      const li = document.createElement(&quot;li&quot;);
+      li.className = &quot;entry-&quot; + entry.state;
+
+      const em = document.createElement(&quot;em&quot;);
+      em.textContent = entry.filename;
+
+      const divider = document.createElement(&quot;syn-divider&quot;);
+
+      if (entry.error) {
+        const helpSpan = document.createElement(&quot;span&quot;);
+        helpSpan.className = &quot;uploaded-files--help-text&quot;;
+        helpSpan.textContent = entry.error;
+        em.appendChild(helpSpan);
+      }
+
+      const statusSpan = document.createElement(&quot;span&quot;);
+      statusSpan.className = &quot;uploaded-files--status&quot;;
+
+      if (entry.state === &quot;uploading&quot;) {
+        const spinner = document.createElement(&quot;syn-spinner&quot;);
+        statusSpan.appendChild(spinner);
+      } else {
+        const btn = document.createElement(&quot;syn-icon-button&quot;);
+        btn.setAttribute(&quot;library&quot;, &quot;system&quot;);
+        btn.setAttribute(&quot;size&quot;, &quot;medium&quot;);
+
+        if (entry.state === &quot;success&quot;) {
+          btn.setAttribute(&quot;name&quot;, &quot;status-success&quot;);
+          btn.setAttribute(&quot;label&quot;, &quot;Upload successful&quot;);
+          btn.setAttribute(&quot;tabindex&quot;, &quot;-1&quot;);
+          statusSpan.appendChild(btn);
+        } else {
+          // queued or error: show cancel / remove button
+          btn.setAttribute(&quot;name&quot;, &quot;x-lg&quot;);
+          btn.setAttribute(
+            &quot;label&quot;,
+            entry.state === &quot;error&quot; ? &quot;Remove&quot; : &quot;Cancel upload&quot;,
+          );
+          btn.addEventListener(&quot;click&quot;, () =&gt; {
+            entries = entries.filter((e) =&gt; e.id !== entry.id);
+            console.log(entries);
+            render();
+          });
+        }
+
+        statusSpan.appendChild(btn);
+      }
+
+      li.appendChild(em);
+      li.appendChild(statusSpan);
+      li.appendChild(divider);
+      fileList.appendChild(li);
+    });
+  };
+
+  // Render first time
+  render();
+
+  // Populate list as &quot;queued&quot; whenever the user selects / drops files
+  fileInput.addEventListener(&quot;syn-change&quot;, () =&gt; {
+    const files = fileInput.files ? Array.from(fileInput.files) : [];
+    entries = files.map((file) =&gt; ({
+      error: null,
+      filename: file.name,
+      id: String(++entryId),
+      state: &quot;queued&quot;,
+    }));
+    render();
+  });
+
+  // Upload button: start fake uploads for all queued entries
+  form.addEventListener(&quot;submit&quot;, (e) =&gt; {
+    e.preventDefault();
+
+    const queued = entries.filter(
+      (entry) =&gt; entry.state !== &quot;success&quot; &amp;&amp; entry.state !== &quot;error&quot;,
+    );
+    if (queued.length === 0) return;
+
+    // Immediately switch all queued entries to uploading
+    queued.forEach((entry) =&gt; {
+      entry.state = &quot;uploading&quot;;
+    });
+    render();
+
+    // Schedule outcomes:
+    // - All but the last file succeed, staggered by 1.5s each
+    // - The last file always fails after 3s (simulates a connection loss)
+    queued.forEach((entry, i) =&gt; {
+      const isLast = i === queued.length - 1;
+      const delay = isLast ? 3000 : (i + 1) * 1500;
+
+      setTimeout(() =&gt; {
+        const target = entries.find((e) =&gt; e.id === entry.id);
+        // Skip if the entry was removed (canceled) while uploading
+        if (!target || target.state !== &quot;uploading&quot;) return;
+
+        if (isLast) {
+          target.state = &quot;queued&quot;;
+          target.error = &quot;Connection lost. Please try again.&quot;;
+        } else {
+          target.state = &quot;success&quot;;
+        }
+        render();
+      }, delay);
+    });
+  });
+&lt;/script&gt;</code></pre> </article> </syn-details> </syn-accordion> </section> <footer slot="footer"> <syn-divider></syn-divider>
+Data created at 21.05.2026, 10:50 Generated from the canonical metadata for forms.  </footer> </syn-card> </main> </div> </body></html>

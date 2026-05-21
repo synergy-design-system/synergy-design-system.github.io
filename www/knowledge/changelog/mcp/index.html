@@ -1,0 +1,1061 @@
+<!DOCTYPE html><script type="module" src="/knowledge/_astro/Layout.astro_astro_type_script_index_0_lang.BKMGe-wZ.js"></script> <html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/knowledge/favicon.svg"><meta name="generator" content="Astro v6.2.2"><link rel="ai-policy" href="/knowledge/llms.txt"><title>Synergy Design System - Design System Specification</title><link rel="stylesheet" href="/knowledge/_astro/ContentHeader.Efz5bW9_.css">
+<style>.changelog-content[data-astro-cid-fds66exa] h1{display:none}.changelog-content[data-astro-cid-fds66exa] h2{font:var(--syn-font-weight-semibold) var(--syn-font-size-x-large) / var(--syn-line-height-normal) var(--syn-font-sans);margin:var(--syn-spacing-2x-large) 0 var(--syn-spacing-small)}.changelog-content[data-astro-cid-fds66exa] h3{font:var(--syn-font-weight-semibold) var(--syn-font-size-large) / var(--syn-line-height-normal) var(--syn-font-sans);color:var(--syn-color-neutral-600);margin:var(--syn-spacing-large) 0 var(--syn-spacing-x-small)}.changelog-content[data-astro-cid-fds66exa] a{color:var(--syn-color-primary-600);text-decoration:none}.changelog-content[data-astro-cid-fds66exa] a:hover{text-decoration:underline}
+</style></head> <body> <syn-header> <a href="/knowledge/" slot="logo" tabindex="0" class="header-logo"> <syn-icon name="logo-color" library="system" label="Custom Logo with link"></syn-icon> </a> <span slot="label">Synergy Design System - Design System Specification</span> <nav slot="meta-navigation"> <syn-tooltip content="Visit Synergies Storybook Developer Documentation"> <syn-icon-button href="https://synergy-design-system.github.io/?path=/docs/welcome--docs" target="_blank" name="storybook" label="Synergy on Storybook" library="logos"></syn-icon-button> </syn-tooltip> <syn-tooltip content="Visit Synergy on Figma"> <syn-icon-button href="https://www.figma.com/design/bZFqk9urD3NlghGUKrkKCR/Synergy-Digital-Design-System?t=aUVrRtmSe1QgX5Iq-0" target="_blank" name="figma" label="Synergy on Figma" library="logos"></syn-icon-button> </syn-tooltip> <syn-tooltip content="Visit Synergy on Github"> <syn-icon-button href="https://github.com/synergy-design-system/synergy-design-system" target="_blank" name="github" label="Synergy on Github" library="logos"></syn-icon-button> </syn-tooltip> <syn-tooltip> <div slot="content">
+Synergy made with love by Synergy Design System Team.
+			This documentation is built using Synergy Design System components and is currently running:
+<ul> <li>Components version 3.14.0</li> <li>Metadata version 3.8.0</li> </ul> </div> <syn-icon-button name="heart" label="Synergy made with Love" library="logos"></syn-icon-button> </syn-tooltip> </nav> </syn-header> <div class="content"> <syn-side-nav variant="sticky" open=""><syn-nav-item><syn-icon slot="prefix" name="brick" library="sidenav"></syn-icon>Components<syn-nav-item href="/knowledge/component/syn-accordion" slot="children">syn-accordion</syn-nav-item><syn-nav-item href="/knowledge/component/syn-alert" slot="children">syn-alert</syn-nav-item><syn-nav-item href="/knowledge/component/syn-badge" slot="children">syn-badge</syn-nav-item><syn-nav-item href="/knowledge/component/syn-breadcrumb" slot="children">syn-breadcrumb</syn-nav-item><syn-nav-item href="/knowledge/component/syn-breadcrumb-item" slot="children">syn-breadcrumb-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-button" slot="children">syn-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-button-group" slot="children">syn-button-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-card" slot="children">syn-card</syn-nav-item><syn-nav-item href="/knowledge/component/syn-checkbox" slot="children">syn-checkbox</syn-nav-item><syn-nav-item href="/knowledge/component/syn-combobox" slot="children">syn-combobox</syn-nav-item><syn-nav-item href="/knowledge/component/syn-details" slot="children">syn-details</syn-nav-item><syn-nav-item href="/knowledge/component/syn-dialog" slot="children">syn-dialog</syn-nav-item><syn-nav-item href="/knowledge/component/syn-divider" slot="children">syn-divider</syn-nav-item><syn-nav-item href="/knowledge/component/syn-drawer" slot="children">syn-drawer</syn-nav-item><syn-nav-item href="/knowledge/component/syn-dropdown" slot="children">syn-dropdown</syn-nav-item><syn-nav-item href="/knowledge/component/syn-file" slot="children">syn-file</syn-nav-item><syn-nav-item href="/knowledge/component/syn-header" slot="children">syn-header</syn-nav-item><syn-nav-item href="/knowledge/component/syn-icon" slot="children">syn-icon</syn-nav-item><syn-nav-item href="/knowledge/component/syn-icon-button" slot="children">syn-icon-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-input" slot="children">syn-input</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu" slot="children">syn-menu</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu-item" slot="children">syn-menu-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu-label" slot="children">syn-menu-label</syn-nav-item><syn-nav-item href="/knowledge/component/syn-nav-item" slot="children">syn-nav-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-optgroup" slot="children">syn-optgroup</syn-nav-item><syn-nav-item href="/knowledge/component/syn-option" slot="children">syn-option</syn-nav-item><syn-nav-item href="/knowledge/component/syn-pagination" slot="children">syn-pagination</syn-nav-item><syn-nav-item href="/knowledge/component/syn-popup" slot="children">syn-popup</syn-nav-item><syn-nav-item href="/knowledge/component/syn-prio-nav" slot="children">syn-prio-nav</syn-nav-item><syn-nav-item href="/knowledge/component/syn-progress-bar" slot="children">syn-progress-bar</syn-nav-item><syn-nav-item href="/knowledge/component/syn-progress-ring" slot="children">syn-progress-ring</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio" slot="children">syn-radio</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio-button" slot="children">syn-radio-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio-group" slot="children">syn-radio-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-range" slot="children">syn-range</syn-nav-item><syn-nav-item href="/knowledge/component/syn-range-tick" slot="children">syn-range-tick</syn-nav-item><syn-nav-item href="/knowledge/component/syn-select" slot="children">syn-select</syn-nav-item><syn-nav-item href="/knowledge/component/syn-side-nav" slot="children">syn-side-nav</syn-nav-item><syn-nav-item href="/knowledge/component/syn-spinner" slot="children">syn-spinner</syn-nav-item><syn-nav-item href="/knowledge/component/syn-switch" slot="children">syn-switch</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab" slot="children">syn-tab</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab-group" slot="children">syn-tab-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab-panel" slot="children">syn-tab-panel</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tag" slot="children">syn-tag</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tag-group" slot="children">syn-tag-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-textarea" slot="children">syn-textarea</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tooltip" slot="children">syn-tooltip</syn-nav-item><syn-nav-item href="/knowledge/component/syn-validate" slot="children">syn-validate</syn-nav-item></syn-nav-item><syn-nav-item><syn-icon slot="prefix" name="pattern" library="sidenav"></syn-icon>Templates<syn-nav-item href="/knowledge/template/appshell" slot="children">Appshell</syn-nav-item><syn-nav-item href="/knowledge/template/breadcrumb" slot="children">Breadcrumb</syn-nav-item><syn-nav-item href="/knowledge/template/footer" slot="children">Footer</syn-nav-item><syn-nav-item href="/knowledge/template/forms" slot="children">Forms</syn-nav-item><syn-nav-item href="/knowledge/template/loading-screen" slot="children">Loading Screen</syn-nav-item><syn-nav-item href="/knowledge/template/localization" slot="children">Localization</syn-nav-item><syn-nav-item href="/knowledge/template/table" slot="children">Table</syn-nav-item><syn-nav-item href="/knowledge/template/tag-group" slot="children">Tag Group</syn-nav-item><syn-nav-item href="/knowledge/template/tooltip" slot="children">Tooltip</syn-nav-item></syn-nav-item><syn-nav-item><syn-icon slot="prefix" name="css" library="sidenav"></syn-icon>Styles<syn-nav-item href="/knowledge/style/syn-body" slot="children">syn-body</syn-nav-item><syn-nav-item href="/knowledge/style/syn-heading" slot="children">syn-heading</syn-nav-item><syn-nav-item href="/knowledge/style/syn-link" slot="children">syn-link</syn-nav-item><syn-nav-item href="/knowledge/style/syn-link-list" slot="children">syn-link-list</syn-nav-item><syn-nav-item href="/knowledge/style/syn-table" slot="children">syn-table</syn-nav-item><syn-nav-item href="/knowledge/style/syn-table-cell" slot="children">syn-table-cell</syn-nav-item><syn-nav-item href="/knowledge/style/syn-weight" slot="children">syn-weight</syn-nav-item></syn-nav-item><syn-nav-item open=""><syn-icon slot="prefix" name="receipt_long" library="sidenav"></syn-icon>Package Changelogs<syn-nav-item href="/knowledge/changelog/assets" slot="children">Assets</syn-nav-item><syn-nav-item href="/knowledge/changelog/components" slot="children">Components</syn-nav-item><syn-nav-item href="/knowledge/changelog/fonts" slot="children">Fonts</syn-nav-item><syn-nav-item current="" href="/knowledge/changelog/mcp" slot="children">MCP</syn-nav-item><syn-nav-item href="/knowledge/changelog/metadata" slot="children">Metadata</syn-nav-item><syn-nav-item href="/knowledge/changelog/styles" slot="children">Styles</syn-nav-item><syn-nav-item href="/knowledge/changelog/tokens" slot="children">Tokens</syn-nav-item></syn-nav-item><syn-nav-item slot="footer"><syn-icon slot="prefix" name="tips_and_updates" library="sidenav"></syn-icon>Additional Information<syn-nav-item href="/knowledge/accessibility" slot="children">Accessibility</syn-nav-item><syn-nav-item href="/knowledge/brand-support" slot="children">Brand Support</syn-nav-item><syn-nav-item href="/knowledge/goals" slot="children">Goals and Guidelines</syn-nav-item><syn-nav-item href="/knowledge/misconceptions" slot="children">Misconceptions</syn-nav-item><syn-nav-item href="/knowledge/out-of-scope" slot="children">Out of Scope</syn-nav-item><syn-nav-item href="/knowledge/brand-support" slot="children">Brand Support</syn-nav-item></syn-nav-item></syn-side-nav> <main> <syn-card class="changelog-view" shadow="true" data-astro-cid-fds66exa="true"> <header class="content-header" slot="header" data-astro-cid-nzwy4yid> <h1 class="syn-heading--3x-large" data-astro-cid-nzwy4yid>@synergy-design-system/mcp</h1> <div class="content-header-actions" data-astro-cid-nzwy4yid>  </div> </header> <syn-divider slot="header" data-astro-cid-nzwy4yid="true"></syn-divider> <div class="changelog-content" data-astro-cid-fds66exa> <h1 id="changelog">Changelog</h1>
+<h2 id="380">3.8.0</h2>
+<h3 id="minor-changes">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1276">#1276</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/a6b68f2126ee0c63f2e9f5a91d96e97c2486e3c9"><code>a6b68f2</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-05-21</p>
+<p>feat: ✨ component context guidelines (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1187">#1187</a>)</p>
+<ul>
+<li>Correct <code>@since</code> flags for all components</li>
+<li>Updated component usage rules (beta)</li>
+<li>Add missing rules files</li>
+<li>Create overviews for all components</li>
+</ul>
+</li>
+</ul>
+<h3 id="patch-changes">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/a6b68f2126ee0c63f2e9f5a91d96e97c2486e3c9"><code>a6b68f2</code></a>]:
+<ul>
+<li>@synergy-design-system/metadata@3.8.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="370">3.7.0</h2>
+<h3 id="minor-changes-1">Minor Changes</h3>
+<ul>
+<li>
+<p>Released on: 2026-05-11</p>
+<p>chore: ✨ Update Metadata and MCP with latest metadata</p>
+</li>
+</ul>
+<h3 id="patch-changes-1">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/9cf37bcd8c2579946e5c314a246a80a443ec8357"><code>9cf37bc</code></a>]:
+<ul>
+<li>@synergy-design-system/metadata@3.7.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="360">3.6.0</h2>
+<h3 id="minor-changes-2">Minor Changes</h3>
+<ul>
+<li>
+<p>Released on: 2026-05-06</p>
+<p>chore: ✨ Update Metadata and MCP with latest metadata</p>
+</li>
+</ul>
+<h3 id="patch-changes-2">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/a4b0e1139dfc644d5607b7bfd08fd20158ace570"><code>a4b0e11</code></a>]:
+<ul>
+<li>@synergy-design-system/metadata@3.6.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="350">3.5.0</h2>
+<h3 id="minor-changes-3">Minor Changes</h3>
+<ul>
+<li>
+<p>Released on: 2026-05-06</p>
+<p>chore: ✨ Update Metadata and MCP with latest metadata</p>
+</li>
+</ul>
+<h3 id="patch-changes-3">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/de1f21e46ac3092e8bd3a1911e1284936b3354cf"><code>de1f21e</code></a>]:
+<ul>
+<li>@synergy-design-system/metadata@3.5.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="340">3.4.0</h2>
+<h3 id="minor-changes-4">Minor Changes</h3>
+<ul>
+<li>
+<p>Released on: 2026-05-05</p>
+<p>chore: ✨ Update Metadata and MCP with latest metadata</p>
+</li>
+</ul>
+<h3 id="patch-changes-4">Patch Changes</h3>
+<ul>
+<li>Updated dependencies []:
+<ul>
+<li>@synergy-design-system/metadata@3.4.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="330">3.3.0</h2>
+<h3 id="minor-changes-5">Minor Changes</h3>
+<ul>
+<li>
+<p>Released on: 2026-05-04</p>
+<p>chore: ✨ Update Metadata and MCP with latest metadata</p>
+</li>
+</ul>
+<h3 id="patch-changes-5">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/e84b97ae70affae71afcc85725e56b3f690a445e"><code>e84b97a</code></a>]:
+<ul>
+<li>@synergy-design-system/metadata@3.3.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="320">3.2.0</h2>
+<h3 id="minor-changes-6">Minor Changes</h3>
+<ul>
+<li>
+<p>Released on: 2026-04-29</p>
+<p>chore: ✨ Update Metadata and MCP with latest metadata</p>
+</li>
+</ul>
+<h3 id="patch-changes-6">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/2444517aaedc22b115d9572dd14d47c43189ec5d"><code>2444517</code></a>]:
+<ul>
+<li>@synergy-design-system/metadata@3.2.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="310">3.1.0</h2>
+<h3 id="minor-changes-7">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1273">#1273</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/930328af3af87ba91738b89984ad7b11edd78ec5"><code>930328a</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-04-29</p>
+<p>feat: ✨ add new headline styles (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1268">#1268</a>)</p>
+<p>This Release adds missing typographic classes:</p>
+<ul>
+<li><code>.syn-heading--medium</code></li>
+<li><code>.syn-heading--4x-large</code></li>
+<li><code>.syn-body--2x-small</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="patch-changes-7">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/930328af3af87ba91738b89984ad7b11edd78ec5"><code>930328a</code></a>]:
+<ul>
+<li>@synergy-design-system/metadata@3.1.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="301">3.0.1</h2>
+<h3 id="patch-changes-8">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1263">#1263</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/f422a1f5e7c8d8970b086d914dbba3a5b3bb8d0b"><code>f422a1f</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-04-28</p>
+<p>fix: 🐛 dependency updates (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/258">#258</a>)</p>
+</li>
+<li>
+<p>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/f422a1f5e7c8d8970b086d914dbba3a5b3bb8d0b"><code>f422a1f</code></a>]:</p>
+<ul>
+<li>@synergy-design-system/metadata@3.0.1</li>
+</ul>
+</li>
+</ul>
+<h2 id="300">3.0.0</h2>
+<h3 id="major-changes">Major Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1255">#1255</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/6160660f497e0a791ea6794cd3ffeb657418b46c"><code>6160660</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-04-27</p>
+<p>major: 💥 metadata package (#1241)</p>
+</li>
+</ul>
+<h3 id="patch-changes-9">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/6160660f497e0a791ea6794cd3ffeb657418b46c"><code>6160660</code></a>]:
+<ul>
+<li>@synergy-design-system/metadata@3.0.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="2150">2.15.0</h2>
+<h3 id="minor-changes-8">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1240">#1240</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/06c29d4be7b9297d34919646cfd71394abdc6f88"><code>06c29d4</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-04-22</p>
+<p>feat: ✨ Add new component <code>&#x3C;syn-pagination></code> (#684)</p>
+<p>Adds a new component <code>&#x3C;syn-pagination></code> that may be used to paginate large datasets.</p>
+</li>
+</ul>
+<h3 id="patch-changes-10">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/06c29d4be7b9297d34919646cfd71394abdc6f88"><code>06c29d4</code></a>]:
+<ul>
+<li>@synergy-design-system/assets@2.1.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="2141">2.14.1</h2>
+<h3 id="patch-changes-11">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1252">#1252</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/9d36167d35ebbdd43820d520140d6823e1331ea1"><code>9d36167</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-04-20</p>
+<p>fix: 🐛 syn-dialog has broken scrolling when slotting scrollable children (#1249)</p>
+</li>
+</ul>
+<h2 id="2140">2.14.0</h2>
+<h3 id="minor-changes-9">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1247">#1247</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/b3ab50132ec4ab770b79fa32b1334a1054c60746"><code>b3ab501</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-04-15</p>
+<p>feat: ✨ Updates to the Synergy translation System (#452, #1242, #1248)</p>
+<p>This release adds translations for all officially supported languages, as well as documentation about how to use Synergies translation system.
+It also removes unneeded dependencies from the components package:</p>
+<ul>
+<li><code>@shoelace-style/translate</code> has reached end of live. We forked the original code to make sure it receives updates in Synergy if needed.</li>
+<li><code>@shoelace-style/animation</code> was never used internally.</li>
+</ul>
+</li>
+</ul>
+<h2 id="2134">2.13.4</h2>
+<h3 id="patch-changes-12">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1246">#1246</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/5f0eb58996be36571edf1764a7314f78bac96dd9"><code>5f0eb58</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-27</p>
+<p>fix: 🐛 dependency updates (#258)</p>
+</li>
+<li>
+<p>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/5f0eb58996be36571edf1764a7314f78bac96dd9"><code>5f0eb58</code></a>]:</p>
+<ul>
+<li>@synergy-design-system/assets@2.0.3</li>
+</ul>
+</li>
+</ul>
+<h2 id="2133">2.13.3</h2>
+<h3 id="patch-changes-13">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1228">#1228</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/0c5d1761ca6ef9d60714ec4010cd47665c2f7731"><code>0c5d176</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-20</p>
+<p>fix: 🐛 <code>&#x3C;syn-option></code> corner radius may look blurry or too sharp on low resolution screens (#1200)</p>
+<p>This release fixes an issue with <code>&#x3C;syn-option></code> in combination with the SICK2025 theme.
+When using this combination, the <code>border-radius</code> looked either blurry or too sharp on low resolution screens.</p>
+</li>
+</ul>
+<h2 id="2132">2.13.2</h2>
+<h3 id="patch-changes-14">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1227">#1227</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/c82738594731dc3c2a5041695741f099393068de"><code>c827385</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-10</p>
+<p>fix: 🐛 <code>&#x3C;syn-select></code> may throw an error when configured to be <code>readonly</code> and <code>multiple</code> (#1225)</p>
+</li>
+</ul>
+<h2 id="2131">2.13.1</h2>
+<h3 id="patch-changes-15">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1224">#1224</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/7defd0349dc50d4f9549eda59c4b6bcc96c4612c"><code>7defd03</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-09</p>
+<p>fix: 🐛 <code>&#x3C;syn-range></code> content may bleed into the label when rendering a prefix or suffix slot and using ticks (#1143)</p>
+<p>This release fixes an issue with <code>&#x3C;syn-range></code> that caused a layout miscalculation when using prefix and suffix slots in combination with slots.</p>
+</li>
+</ul>
+<h2 id="2130">2.13.0</h2>
+<h3 id="minor-changes-10">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1207">#1207</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/806c0c791c0a25f8e22b849cefc10d0d08ede2fa"><code>806c0c7</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-09</p>
+<p>feat: ✨ enforce browser policy (#1190)</p>
+</li>
+</ul>
+<h2 id="2121">2.12.1</h2>
+<h3 id="patch-changes-16">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1223">#1223</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/60b2845fc089c2508f7e4a2b068b359fad166288"><code>60b2845</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-09</p>
+<p>fix: 🐛 dependency updates (#258)</p>
+</li>
+<li>
+<p>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/60b2845fc089c2508f7e4a2b068b359fad166288"><code>60b2845</code></a>]:</p>
+<ul>
+<li>@synergy-design-system/assets@2.0.2</li>
+</ul>
+</li>
+</ul>
+<h2 id="2120">2.12.0</h2>
+<h3 id="minor-changes-11">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1209">#1209</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/5704a96fbe2d0481822a30ce171a01df960c82f1"><code>5704a96</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-09</p>
+<p>feat: ✨ Allow <code>&#x3C;syn-divider></code> as a separator in meta-navigation of <code>&#x3C;syn-header></code> (#1130)</p>
+<p>This release adds the possiblity to use <code>&#x3C;syn-divider></code> as a separator between items in the <code>&#x3C;syn-header></code> metanavigation.
+It will automatically set the correct <code>height</code> on vertically aligned <code>&#x3C;syn-dividers></code>.</p>
+<p>You may use it via:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">syn-header</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"App Name"</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">nav</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"meta-navigation"</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">syn-icon-button</span></span>
+<span class="line"><span style="color:#B392F0">      name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"settings_outline"</span></span>
+<span class="line"><span style="color:#B392F0">      label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Settings"</span></span>
+<span class="line"><span style="color:#E1E4E8">    >&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">syn-icon-button</span></span>
+<span class="line"><span style="color:#B392F0">      name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"insert_chart_outlined"</span></span>
+<span class="line"><span style="color:#B392F0">      label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Analytics"</span></span>
+<span class="line"><span style="color:#E1E4E8">    >&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">syn-divider</span><span style="color:#B392F0"> vertical</span><span style="color:#E1E4E8">>&#x3C;/</span><span style="color:#85E89D">syn-divider</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#B392F0"> name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"dark_mode"</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Dark Mode"</span><span style="color:#E1E4E8">>&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">syn-divider</span><span style="color:#B392F0"> vertical</span><span style="color:#E1E4E8">>&#x3C;/</span><span style="color:#85E89D">syn-divider</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#B392F0"> name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"language"</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Language"</span><span style="color:#E1E4E8">>&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">    &#x3C;</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#B392F0"> name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"login"</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Login"</span><span style="color:#E1E4E8">>&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;/</span><span style="color:#85E89D">nav</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/</span><span style="color:#85E89D">syn-header</span><span style="color:#E1E4E8">></span></span></code></pre>
+<p>or via directly slotting the <code>&#x3C;syn-divider></code> via</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="html"><code><span class="line"><span style="color:#E1E4E8">&#x3C;</span><span style="color:#85E89D">syn-header</span><span style="color:#B392F0"> label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"App Name"</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">syn-icon-button</span></span>
+<span class="line"><span style="color:#B392F0">    slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"meta-navigation"</span></span>
+<span class="line"><span style="color:#B392F0">    name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"settings_outline"</span></span>
+<span class="line"><span style="color:#B392F0">    label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Settings"</span></span>
+<span class="line"><span style="color:#E1E4E8">  >&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">syn-icon-button</span></span>
+<span class="line"><span style="color:#B392F0">    slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"meta-navigation"</span></span>
+<span class="line"><span style="color:#B392F0">    name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"insert_chart_outlined"</span></span>
+<span class="line"><span style="color:#B392F0">    label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Analytics"</span></span>
+<span class="line"><span style="color:#E1E4E8">  >&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">syn-divider</span><span style="color:#B392F0"> vertical</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"meta-navigation"</span><span style="color:#E1E4E8">>&#x3C;/</span><span style="color:#85E89D">syn-divider</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">syn-icon-button</span></span>
+<span class="line"><span style="color:#B392F0">    slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"meta-navigation"</span></span>
+<span class="line"><span style="color:#B392F0">    name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"dark_mode"</span></span>
+<span class="line"><span style="color:#B392F0">    label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Dark Mode"</span></span>
+<span class="line"><span style="color:#E1E4E8">  >&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">syn-divider</span><span style="color:#B392F0"> vertical</span><span style="color:#B392F0"> slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"meta-navigation"</span><span style="color:#E1E4E8">>&#x3C;/</span><span style="color:#85E89D">syn-divider</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">syn-icon-button</span></span>
+<span class="line"><span style="color:#B392F0">    slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"meta-navigation"</span></span>
+<span class="line"><span style="color:#B392F0">    name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"language"</span></span>
+<span class="line"><span style="color:#B392F0">    label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Language"</span></span>
+<span class="line"><span style="color:#E1E4E8">  >&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">  &#x3C;</span><span style="color:#85E89D">syn-icon-button</span></span>
+<span class="line"><span style="color:#B392F0">    slot</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"meta-navigation"</span></span>
+<span class="line"><span style="color:#B392F0">    name</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"login"</span></span>
+<span class="line"><span style="color:#B392F0">    label</span><span style="color:#E1E4E8">=</span><span style="color:#9ECBFF">"Login"</span></span>
+<span class="line"><span style="color:#E1E4E8">  >&#x3C;/</span><span style="color:#85E89D">syn-icon-button</span><span style="color:#E1E4E8">></span></span>
+<span class="line"><span style="color:#E1E4E8">&#x3C;/</span><span style="color:#85E89D">syn-header</span><span style="color:#E1E4E8">></span></span></code></pre>
+<p><code>&#x3C;syn-header></code> now also exposes a new <code>cssproperty</code> <code>--metanavigation-item-size</code> that can be used to define the size of rendered <code>&#x3C;syn-icon-buttons></code>, as well as the height of <code>&#x3C;syn-divider></code></p>
+</li>
+</ul>
+<h2 id="2110">2.11.0</h2>
+<h3 id="minor-changes-12">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1211">#1211</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/8d3e2a712619cb94938083620168caafc091323f"><code>8d3e2a7</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-09</p>
+<p>feat: ✨ tokens: export muted color palette (#1210)</p>
+<p>This release adds the muted color palette, as well as 3 new data color palettes from Figma to the <code>@synergy-design-system/tokens</code> package.</p>
+</li>
+</ul>
+<h2 id="2100">2.10.0</h2>
+<h3 id="minor-changes-13">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1216">#1216</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/fa7ebf8ca9aef4e246f75688711c7dbb24cb25cb"><code>fa7ebf8</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-06</p>
+<p>feat: ✨ <code>&#x3C;syn-combobox></code> should support <code>maxlength</code> attribute (#1184)</p>
+<p>This release adds the ability to set a maximal input length for <code>&#x3C;syn-combobox></code> via <code>&#x3C;syn-combobox maxlength="5"></code>.
+This provides the ability to set the maximal amount of free text input for the comboboxes input field.
+It still allows to use options from the list of available options and works as a restriction for free text only.</p>
+</li>
+</ul>
+<h2 id="290">2.9.0</h2>
+<h3 id="minor-changes-14">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1193">#1193</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/c7f6a8bc8ed2eb76c5f9510c1d499f6feca5d302"><code>c7f6a8b</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-06</p>
+<p>feat: ✨ Add new component <code>&#x3C;syn-tag-group></code> (#1152)</p>
+<p>Adds a new component <code>&#x3C;syn-tag-group></code>, including templates how to use this component.</p>
+</li>
+</ul>
+<h2 id="282">2.8.2</h2>
+<h3 id="patch-changes-17">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1214">#1214</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/01c5e9cc231c6bcc260cedc2f5d5713cf71ea254"><code>01c5e9c</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-06</p>
+<p>fix: 🐛 Angular: <code>&#x3C;syn-validate></code> does not work when dynamically added to the DOM (#851)</p>
+<p>This release fixes an issue that made <code>&#x3C;syn-validate></code> ignore its set <code>customValidationMessage</code> when the component gets dynamically added to the DOM in Angular. It does so by preferring the provided <code>customValidationMessage</code> over of the internally available <code>validationMessage</code>, which could be empty under certain conditions.</p>
+</li>
+</ul>
+<h2 id="281">2.8.1</h2>
+<h3 id="patch-changes-18">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1208">#1208</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/49c9d1c30d777384024134ec983d183aed109421"><code>49c9d1c</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-03</p>
+<p>fix: 🐛 <code>&#x3C;syn-menu-item></code>: Slotted <code>&#x3C;syn-icon></code> elements not visible on hover (#1194)</p>
+<p>This release fixes a bug that accidentally set the color of slotted elements in <code>&#x3C;syn-menu-item></code> to white which lead to the icons appear to be invisible.</p>
+</li>
+</ul>
+<h2 id="280">2.8.0</h2>
+<h3 id="minor-changes-15">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1192">#1192</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/31c54c04a651a14e20bc5f4b2aff1bd92ad26bc0"><code>31c54c0</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-02</p>
+<p>feat: ✨ New variant <code>tooltip</code> for <code>&#x3C;syn-validate></code> (#664)</p>
+<p><code>&#x3C;syn-validate></code> received the option to show validation errors using <code>&#x3C;syn-tooltip></code>.
+To use this feature, set the <code>variant</code> property to <code>tooltip</code>.</p>
+</li>
+</ul>
+<h2 id="270">2.7.0</h2>
+<h3 id="minor-changes-16">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1189">#1189</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/a4f49ac79a660ef5b8d1b380fe9fcd2159dc9b78"><code>a4f49ac</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-02-26</p>
+<p>feat: ✨ Added readonly for various form fields (#1171, #1172, #1173, #1174, #1175, #1176, #1177, #1178)</p>
+<p>Applies to:</p>
+<ul>
+<li><code>&#x3C;syn-checkbox></code></li>
+<li><code>&#x3C;syn-combobox></code></li>
+<li><code>&#x3C;syn-file></code></li>
+<li><code>&#x3C;syn-radio></code></li>
+<li><code>&#x3C;syn-radio-group></code></li>
+<li><code>&#x3C;syn-range></code></li>
+<li><code>&#x3C;syn-select></code></li>
+<li><code>&#x3C;syn-switch></code></li>
+</ul>
+<p>Form elements now support being displayed as <code>readonly</code> fields.</p>
+<p>Field marked <code>readonly</code> may receive focus, but their value cannot be changed by customer inputs.</p>
+</li>
+</ul>
+<h2 id="261">2.6.1</h2>
+<h3 id="patch-changes-19">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1196">#1196</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/6a9b9349f6404a638fadd842e3f2fd8216fd81cd"><code>6a9b934</code></a> Thanks <a href="https://github.com/kirchsuSICKAG">@kirchsuSICKAG</a>! - Released on: 2026-02-25</p>
+<p>fix: 🐛 prio nav with only one item (#1195)</p>
+</li>
+</ul>
+<h2 id="260">2.6.0</h2>
+<h3 id="minor-changes-17">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1188">#1188</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/c60deb9da1175404ddaa25b2c19ce9e182205cd2"><code>c60deb9</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-02-19</p>
+<p>feat: ✨ <code>&#x3C;syn-header></code> sticky behavior (#529)</p>
+<p><code>&#x3C;syn-header></code> now has a new <code>sticky</code> boolean property that can be used when a sticky header is needed, e.g. <code>&#x3C;syn-header sticky>&#x3C;/syn-header></code>.
+This adds <code>position: sticky</code>, as well as a small shadow that indicates that the header is stuck.
+You can configure the <code>top</code> position via the new <code>--sticky-position</code> css property (defaults to <code>0</code> to make it stick to the top).</p>
+</li>
+</ul>
+<h2 id="250">2.5.0</h2>
+<h3 id="minor-changes-18">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1191">#1191</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/30f3b74891cf693735a792a901c5b23b016c71b8"><code>30f3b74</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-02-19</p>
+<p>feat: ✨ Add new size <code>small</code> to <code>&#x3C;syn-details></code> and <code>&#x3C;syn-accordion></code> (#1154)</p>
+<p>The <code>&#x3C;syn-details></code> element was the only element with a <code>size</code> property that had no <code>small</code> variant.
+This was now added for consistency with other elements that have a <code>size</code> property.</p>
+<p>This can be used via <code>&#x3C;syn-details size="small">&#x3C;/syn-details></code> or <code>&#x3C;syn-accordion size="small">&#x3C;/syn-accordion></code>.</p>
+</li>
+</ul>
+<h2 id="241">2.4.1</h2>
+<h3 id="patch-changes-20">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1182">#1182</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/460f8c22dfdc305d3990ba0af4b4aefc451fa8ea"><code>460f8c2</code></a> Thanks <a href="https://github.com/kirchsuSICKAG">@kirchsuSICKAG</a>! - Released on: 2026-02-19</p>
+<p>fix: 🐛 Dependency updates (#258)</p>
+</li>
+<li>
+<p>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/460f8c22dfdc305d3990ba0af4b4aefc451fa8ea"><code>460f8c2</code></a>]:</p>
+<ul>
+<li>@synergy-design-system/assets@2.0.1</li>
+</ul>
+</li>
+</ul>
+<h2 id="240">2.4.0</h2>
+<h3 id="minor-changes-19">Minor Changes</h3>
+<ul>
+<li>
+<p>Released on: 2026-02-17</p>
+<p>chore: ✨ Update MCP with latest metadata</p>
+</li>
+</ul>
+<h2 id="230">2.3.0</h2>
+<h3 id="minor-changes-20">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1164">#1164</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/c9fb4405c0a1eb3499e4753447ac643ae632ff56"><code>c9fb440</code></a> Thanks <a href="https://github.com/kirchsuSICKAG">@kirchsuSICKAG</a>! - Released on: 2026-02-05</p>
+<p>feat: ✨ syn-combobox multiple (#627)</p>
+<p>Adds multiple selection functionality to the <code>syn-combobox</code> component, enabling users to select multiple options simultaneously.</p>
+<p><strong>Properties Added:</strong></p>
+<ul>
+<li><code>multiple</code>: Enables multiple selection mode</li>
+<li><code>delimiter</code>: Customizable value separator (default: <code> </code> (space))</li>
+<li><code>max-options-visible</code>: Controls visible tag limit with overflow handling</li>
+<li><code>getTag</code>: Custom tag rendering function</li>
+</ul>
+</li>
+</ul>
+<h2 id="220">2.2.0</h2>
+<h3 id="minor-changes-21">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1169">#1169</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/aefb7a8c4c9860f6222d7054a6f044b2ed0c49a6"><code>aefb7a8</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-02-02</p>
+<p>chore: 🔧 remove vendorism from components package (#1168)</p>
+<p>The custom vendoring process is not needed anymore. Because of this, it was removed and all comments and builds now only rely on <code>pnpm build</code></p>
+</li>
+</ul>
+<h2 id="210">2.1.0</h2>
+<h3 id="minor-changes-22">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1141">#1141</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/96dff2ebb47cee901f72773664ee864db5653219"><code>96dff2e</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-02-02</p>
+<p>feat: ✨ <code>&#x3C;syn-button-group></code> (#392)</p>
+<p>We added a new component <code>&#x3C;syn-button-group></code> that you can use to group a list of buttons.</p>
+<p>It will automatically apply its <code>size</code> and <code>variant</code> properties to all nested buttons.</p>
+</li>
+</ul>
+<h2 id="200">2.0.0</h2>
+<h3 id="major-changes-1">Major Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1160">#1160</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/669cbcb9cccce72134beac99ac12a2591f3e3c74"><code>669cbcb</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-02-02</p>
+<p>feat: 💥 Enhanced migration support and SICK 2025 defaults</p>
+<p>This release enhances the MCP server with improved migration guidance and updates default iconset to SICK 2025.</p>
+<p><strong>Key Changes:</strong></p>
+<ul>
+<li><strong>Breaking:</strong> Migration endpoint now requires package specification - the migration endpoint has been updated to accept a package parameter (e.g., components, styles, assets, tokens) to provide package-specific breaking changes documentation</li>
+<li><strong>Breaking:</strong> Default iconset changed to SICK 2025 - asset info endpoint now returns SICK 2025 iconset information by default instead of SICK 2018</li>
+</ul>
+<p><strong>Migration Steps:</strong></p>
+<ul>
+<li>Update any calls to the migration endpoint to specify the target package</li>
+<li>Review asset integrations as the default iconset has changed to SICK 2025</li>
+</ul>
+<p>**New tool <code>migration-list</code></p>
+<ul>
+<li>Provides a new tool that gives information about available migrations for packages (e.g. for components how to migrate from v2 sick2018 to v3 sick2025)</li>
+</ul>
+</li>
+</ul>
+<h3 id="patch-changes-21">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/669cbcb9cccce72134beac99ac12a2591f3e3c74"><code>669cbcb</code></a>]:
+<ul>
+<li>@synergy-design-system/assets@2.0.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="1412">1.41.2</h2>
+<h3 id="patch-changes-22">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1148">#1148</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/73b70118ae21bc58c83cbfeb9e2e8447873803a6"><code>73b7011</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-01-08</p>
+<p>fix: 🐛 Minor dependency updates (#258)</p>
+</li>
+<li>
+<p>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/73b70118ae21bc58c83cbfeb9e2e8447873803a6"><code>73b7011</code></a>]:</p>
+<ul>
+<li>@synergy-design-system/assets@1.25.1</li>
+</ul>
+</li>
+</ul>
+<h2 id="1411">1.41.1</h2>
+<h3 id="patch-changes-23">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1147">#1147</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/8e3230cc351c62e2e9485c5234675d40ac7ac175"><code>8e3230c</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-01-07</p>
+<p>fix: 🐛 adjust syn button tokens (#1145)</p>
+<p>The original tokens used <code>inherit</code> as a fallback value, which did not have any effect but to fall back to the original value.
+This is now made explicit to allow the use of button variables in code directly.</p>
+</li>
+</ul>
+<h2 id="1410">1.41.0</h2>
+<h3 id="minor-changes-23">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1132">#1132</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/13f6b259af388a0fbafc7c963443d08e61c4e99f"><code>13f6b25</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-18</p>
+<p>feat: ✨ support angular 21 (#1094)</p>
+<p>Enables the possibility to use <code>angular@21</code>.</p>
+</li>
+</ul>
+<h2 id="1400">1.40.0</h2>
+<h3 id="minor-changes-24">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1138">#1138</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/dc56e6f0ebc08e44b23bdbdaa6fffa03abc26e9e"><code>dc56e6f</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-18</p>
+<p>feat: ✨ form element active states (#433)</p>
+<p>This release adds adjustments for <code>:active</code> states for various form elements.</p>
+<ul>
+<li><code>&#x3C;syn-checkbox></code> now has new active states, dependent on if it is checked and unchecked.</li>
+<li><code>&#x3C;syn-nav-item></code> now has a new active state</li>
+<li><code>&#x3C;syn-radio></code> will show its active indicator when pressing the associated label, too.</li>
+<li><code>&#x3C;syn-switch></code> now has new active states, dependent on if it is checked and unchecked.</li>
+</ul>
+</li>
+</ul>
+<h2 id="1390">1.39.0</h2>
+<h3 id="minor-changes-25">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1109">#1109</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/6b4b7e2940b5c87e44d5da6030354ec0e21f2f38"><code>6b4b7e2</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-16</p>
+<p>feat: ✨ Brand updates for <code>&#x3C;syn-button></code> (#871)
+feat: ✨ Brand updates for <code>&#x3C;syn-dropdown></code> (#949)</p>
+</li>
+</ul>
+<h2 id="1385">1.38.5</h2>
+<h3 id="patch-changes-24">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1134">#1134</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/53bd655f465b76c2aa7d57449750b99e8fcfb500"><code>53bd655</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-16</p>
+<p>fix: 🐛 Adjust <code>&#x3C;syn-option></code> and <code>&#x3C;syn-menu-item></code> interactive background (#1127)</p>
+<p>Minor adjustments for <code>&#x3C;syn-option></code> and <code>&#x3C;syn-menu-item></code> hover and focus states to better mimic the effects as detailed in Figma for the SICK 2025 themes.
+Both components now use a combination of <code>background</code> and <code>border-radius</code> to show the <code>&#x3C;syn-option></code> with an inset highlight color, allowing to better match the wanted spacings.</p>
+</li>
+</ul>
+<h2 id="1384">1.38.4</h2>
+<h3 id="patch-changes-25">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1139">#1139</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/6cc737681f2b137702f3e95b0a666ae6f28b5039"><code>6cc7376</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-16</p>
+<p>fix: 🐛 Incorrect offset of submenu items when submenu opens to the left (#1009)</p>
+<p>Fixes an issue that leads to incorrect offsets when a nested <code>&#x3C;syn-menu></code> is opened to the left instead of to the right.</p>
+</li>
+</ul>
+<h2 id="1383">1.38.3</h2>
+<h3 id="patch-changes-26">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1137">#1137</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/f7c0662d80dacd3aae6f4bd8559aadc399025858"><code>f7c0662</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-16</p>
+<p>fix: 🐛 SICK Intl Semibold does not display correctly on Windows (#1124)</p>
+<p>This release fixes an issue that only appears when using Windows 10 and 11.
+The exported font used cleartype annotations which lead to broken renderings on certain font sizes.</p>
+<blockquote>
+<p>We are still in the process of optimizing <code>SICK Intl</code> and are actively working on a solution for current problems like blurry rendering.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="1382">1.38.2</h2>
+<h3 id="patch-changes-27">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1136">#1136</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/212b5bd29087b10d1fe0e6bbb94c97090b7b4f74"><code>212b5bd</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-16</p>
+<p>fix: 🐛 <code>&#x3C;syn-alert></code> close icon should be aligned to top (#1135)</p>
+<p>Fixes an issue that was introduces in version <code>2.74.0</code>.
+The close icons is now always aligned to the top of the <code>&#x3C;syn-alert></code> again.</p>
+</li>
+</ul>
+<h2 id="1381">1.38.1</h2>
+<h3 id="patch-changes-28">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1133">#1133</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/82ea066fa18e35831d94f22c7ac620135bc8c334"><code>82ea066</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-15</p>
+<p>fix: 🐛 syn menu submenu rounding (#1131)</p>
+<p>Fixes an issue with <code>&#x3C;syn-menu-item></code> when rendering submenus.
+Submenus did not take the changed <code>border-radius</code> of <code>&#x3C;syn-menu></code> into account, leading to squared borders in the <code>SICK 2025</code> themes.</p>
+</li>
+</ul>
+<h2 id="1380">1.38.0</h2>
+<h3 id="minor-changes-26">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1129">#1129</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/102e6503af3a72d0d2529ed216ce6053a07b9607"><code>102e650</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-12</p>
+<p>feat: ✨ syn alert add sizes (#1119)</p>
+<p>We have added a new property <code>size</code> to <code>&#x3C;syn-alert></code> that can be set to <code>small</code>, <code>medium</code> (the default) and <code>large</code>.
+The property can also be used with Synergy <code>defaultSettings</code>.</p>
+<p>We also adjusted <code>&#x3C;syn-validate></code> to draw the <code>size</code> attribute of its <code>slotted</code> <code>HTMLInputElement</code>. If a <code>size</code> property is found on the rendered input, it will be forwarded to the rendered <code>&#x3C;syn-alert></code> if you use <code>variant="inline"</code>.</p>
+</li>
+</ul>
+<h2 id="1370">1.37.0</h2>
+<h3 id="minor-changes-27">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1122">#1122</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/740816b1a86768e7f2fed5516241bdb3a9df4ef7"><code>740816b</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-11</p>
+<p>feat: ✨ adjust sizes of form elements (#1083)</p>
+<ul>
+<li><code>&#x3C;syn-checkbox></code> Bigger checkbox in small and medium</li>
+<li><code>&#x3C;syn-radio></code> Bigger radio control in small and medium</li>
+<li><code>&#x3C;syn-switch></code> Larger label and bigger switch control in all sizes</li>
+</ul>
+</li>
+</ul>
+<h2 id="1360">1.36.0</h2>
+<h3 id="minor-changes-28">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1128">#1128</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/7de244110cf55bb3788e26f65704194bfc861412"><code>7de2441</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-09</p>
+<p>feat: ✨ Add a new <code>shadow</code> propertry to <code>&#x3C;syn-card></code> (#1107)</p>
+<p>Using <code>&#x3C;syn-card shadow>&#x3C;/syn-card></code> will draw the card with a shadow. This can be used when the card has to stand out visually, for example in dashboards.</p>
+</li>
+</ul>
+<h2 id="1350">1.35.0</h2>
+<h3 id="minor-changes-29">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1126">#1126</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/ab15da3bf8956f1d523ca3115a466205474e071f"><code>ab15da3</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-09</p>
+<p>feat: ✨ remove background blur from drawer (#1120)</p>
+<p>After gathering community feedback, we chose to remove the background blur introduced in version <code>2.48.0</code> from <code>&#x3C;syn-drawer></code>.
+This was done because users might loose context when for example using the <code>&#x3C;syn-side-nav></code>.
+The blur effect is still used in <code>&#x3C;syn-dialog></code>. It may be removed entirely via setting <code>--syn-overlay-background-blur: 0;</code> if needed.</p>
+</li>
+</ul>
+<h2 id="1340">1.34.0</h2>
+<h3 id="minor-changes-30">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1125">#1125</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/d414abe26eaee05928a8f1914748de1866837804"><code>d414abe</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-09</p>
+<p>feat: ✨ adjust badge font size (#1108)</p>
+<p>The font size of <code>&#x3C;syn-badge></code> was perceived as too large. Therefore, it was changed from medium to small.</p>
+</li>
+</ul>
+<h2 id="1330">1.33.0</h2>
+<h3 id="minor-changes-31">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1095">#1095</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/f9f544feb2adb3edef95bd1b50a303440e0c8385"><code>f9f544f</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-04</p>
+<p>feat: ✨ Brand updates for <code>&#x3C;syn-select></code>, <code>&#x3C;syn-option></code> and <code>&#x3C;syn-optgroup></code> (#988)
+feat: ✨ Brand updates for <code>&#x3C;syn-combobox></code> (#944)</p>
+</li>
+</ul>
+<h2 id="1320">1.32.0</h2>
+<h3 id="minor-changes-32">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1099">#1099</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/fc1e550fb4aa28eabf0bef6b089993a1dd939ff2"><code>fc1e550</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-04</p>
+<p>feat: ✨ add sick intl to fonts (#1085)</p>
+<p>Add an optimized variant of the <code>SICK Intl</code> font as a shared asset to the new <code>@synergy-design-system/fonts</code> package.
+It also adds the fonts package to the Synergy MCP server.</p>
+</li>
+</ul>
+<h2 id="1310">1.31.0</h2>
+<h3 id="minor-changes-33">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1116">#1116</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/7c97c2eed665902484eb07d7dc23534bf2064f08"><code>7c97c2e</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-03</p>
+<p>feat: ✨ <code>&#x3C;syn-details></code> summary is now always shown in bold. (#1114)</p>
+</li>
+</ul>
+<h2 id="1300">1.30.0</h2>
+<h3 id="minor-changes-34">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1092">#1092</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/b82f1d961aa4c2898f41b7c55eb3b7d43220878c"><code>b82f1d9</code></a> Thanks <a href="https://github.com/kirchsuSICKAG">@kirchsuSICKAG</a>! - Released on: 2025-11-28</p>
+<p>feat: ✨ Brand update for <code>syn-file</code> (#953)</p>
+</li>
+</ul>
+<h2 id="1290">1.29.0</h2>
+<h3 id="minor-changes-35">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1105">#1105</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/27adaaeab60487ca4c92be8fd15b09eb4f09fdc6"><code>27adaae</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-28</p>
+<p>feat: ✨ add new error icon (#1101)</p>
+</li>
+</ul>
+<h3 id="patch-changes-29">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/27adaaeab60487ca4c92be8fd15b09eb4f09fdc6"><code>27adaae</code></a>]:
+<ul>
+<li>@synergy-design-system/assets@1.25.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="1280">1.28.0</h2>
+<h3 id="minor-changes-36">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1082">#1082</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/e27f95ba3e5bd1f494db80ad51d0c1957b8d2204"><code>e27f95b</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-27</p>
+<p>feat: ✨ Brand updates for <code>&#x3C;syn-tab-group></code>, <code>&#x3C;syn-tab-panel></code> and <code>&#x3C;syn-tab></code> (#969)</p>
+</li>
+</ul>
+<h3 id="patch-changes-30">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/e27f95ba3e5bd1f494db80ad51d0c1957b8d2204"><code>e27f95b</code></a>]:
+<ul>
+<li>@synergy-design-system/assets@1.24.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="1270">1.27.0</h2>
+<h3 id="minor-changes-37">Minor Changes</h3>
+<ul>
+<li>
+<p>Released on: 2025-11-27</p>
+<p>chore: ✨ Update MCP with latest metadata</p>
+</li>
+</ul>
+<h2 id="1260">1.26.0</h2>
+<h3 id="minor-changes-38">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1074">#1074</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/ac24e6379862c7e60b5d5293614f0d804eeb7388"><code>ac24e63</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-27</p>
+<p>feat: ✨ Brand updates for <code>&#x3C;syn-menu></code>, <code>&#x3C;syn-menu-item></code> and <code>&#x3C;syn-menu-label></code> (#958)</p>
+</li>
+</ul>
+<h2 id="1250">1.25.0</h2>
+<h3 id="minor-changes-39">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1079">#1079</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/3f893f9d9d04cbfa3ae530bf8e3ecbcfe7be022f"><code>3f893f9</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-25</p>
+<p>feat: ✨ create migration iconset (#1078)</p>
+<p>Added new utilities that help with migrating from 2018 to the new 2025 theme:</p>
+<p><code>migrationLibrary</code>:</p>
+<p>A small migration library, aimed to be a drop in replacement for the default system icon library.
+Please have a look at <a href="https://synergy-design-system.github.io/?path=/docs/migration-to-synergy-3-0--docs">Synergies 2025 migration guide</a> about how to use this.</p>
+<p><code>migrateIconName</code> and <code>migrateIconNameFilled</code>:</p>
+<p>New low level utilities that helps mapping 2018 icons to the new 2025 icon library.
+This may be used if a custom icon library is in place.
+You should use <code>migrateIconName</code> in most cases as the default for Synergy are outlined icons.
+In cases where needed, you may also use <code>migrateIconNameFilled</code>, which will use the filled variant of Material Icons.</p>
+<p><code>setupIcons</code>:</p>
+<p>High level feature that allows to toggle the default icon library, as well as the system icons via one command. You may use <code>setupIcons('sick2025');</code> to switch to the new icon set.</p>
+<blockquote>
+<p>Note this only works if you have your icons setup according to the Synergy defaults.</p>
+</blockquote>
+<p>docs: 📚 Make sure to use correct icons on both 2018 and 2025 stories (#1024)</p>
+<p>Documentation now correctly toggles the icon sets, using the new <code>migrateIconName</code> underneath.</p>
+</li>
+</ul>
+<h3 id="patch-changes-31">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/3f893f9d9d04cbfa3ae530bf8e3ecbcfe7be022f"><code>3f893f9</code></a>]:
+<ul>
+<li>@synergy-design-system/assets@1.23.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="1240">1.24.0</h2>
+<h3 id="minor-changes-40">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1086">#1086</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/515226c44f8bba7b2b4b80cdd0f21f3237f0670d"><code>515226c</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-19</p>
+<p>feat: ✨ Brand updates for <code>&#x3C;syn validate></code> (#973)</p>
+</li>
+</ul>
+<h3 id="patch-changes-32">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/515226c44f8bba7b2b4b80cdd0f21f3237f0670d"><code>515226c</code></a>]:
+<ul>
+<li>@synergy-design-system/assets@1.22.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="1230">1.23.0</h2>
+<h3 id="minor-changes-41">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1076">#1076</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/1392ed23aba2b628344356adba0a78e1e8beff84"><code>1392ed2</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-18</p>
+<p>feat: ✨ Brand updates for <code>&#x3C;syn-side-nav></code>, <code>&#x3C;syn-prio-nav></code> and <code>&#x3C;syn-nav-item></code> (#967, #960)</p>
+</li>
+</ul>
+<h2 id="1220">1.22.0</h2>
+<h3 id="minor-changes-42">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1063">#1063</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/6e616f51007ebde567eeb33190518159becc7c32"><code>6e616f5</code></a> Thanks <a href="https://github.com/kirchsuSICKAG">@kirchsuSICKAG</a>! - Released on: 2025-11-17</p>
+<p>feat: ✨ Brand update for syn-range and syn-range-tick (#966)</p>
+</li>
+</ul>
+<h2 id="1211">1.21.1</h2>
+<h3 id="patch-changes-33">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1080">#1080</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/aab4c0e23b075e4b3c98d5d14d754c718fd74546"><code>aab4c0e</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-10</p>
+<p>fix: 🐛 MCP: Exclude flaky stories from output (#1077)</p>
+</li>
+</ul>
+<h2 id="1210">1.21.0</h2>
+<h3 id="minor-changes-43">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1072">#1072</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/81dae1e912bcbdefb4346b4a3bbc245f7fac9f12"><code>81dae1e</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-07</p>
+<p>feat: ✨ Brand updates for <code>&#x3C;syn-card></code> (#942)</p>
+</li>
+</ul>
+<h2 id="1200">1.20.0</h2>
+<h3 id="minor-changes-44">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1073">#1073</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/0ae632c5331f0583ba652add18755df01766cbf5"><code>0ae632c</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-07</p>
+<p>feat: ✨ Brand updates for <code>&#x3C;syn-dialog></code> (#946)</p>
+<p>Also made sure to have smaller <code>blur</code> settings as the token has double the size in Figma.</p>
+</li>
+</ul>
+<h2 id="1190">1.19.0</h2>
+<h3 id="minor-changes-45">Minor Changes</h3>
+<ul>
+<li>
+<p>Released on: 2025-11-04</p>
+<p>chore: ✨ Update MCP with latest metadata</p>
+</li>
+</ul>
+<h2 id="1180">1.18.0</h2>
+<h3 id="minor-changes-46">Minor Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1039">#1039</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/bc0bc639a996fc75c57194244596d5733097389d"><code>bc0bc63</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-04</p>
+<p>feat: ✨ changesets migration (#928)</p>
+<p>This PR migrates Synergies ci/cd system from <code>semantic-release</code> to <code>changesets</code>.</p>
+</li>
+</ul>
+<h3 id="patch-changes-34">Patch Changes</h3>
+<ul>
+<li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/bc0bc639a996fc75c57194244596d5733097389d"><code>bc0bc63</code></a>]:
+<ul>
+<li>@synergy-design-system/assets@1.21.0</li>
+</ul>
+</li>
+</ul>
+<h2 id="1172">1.17.2</h2>
+<p>(Released on: 2025-11-03)</p>
+<h3 id="patch-changes-35">Patch Changes</h3>
+<ul>
+<li>🐛 Async delimiter change for pre-selected value in syn-select not displayed (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1061">#1061</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/5f6d36102b669cc34aa44cded47ef49559e74529">5f6d361</a>)</li>
+</ul>
+<h2 id="1171">1.17.1</h2>
+<p>(Released on: 2025-11-03)</p>
+<h3 id="patch-changes-36">Patch Changes</h3>
+<ul>
+<li>🐛 Show scrollbars for closed sticky variant of side-nav (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1062">#1062</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/926905bd15c87948700e5f32382547b2a1c43821">926905b</a>)</li>
+</ul>
+<h2 id="1170">1.17.0</h2>
+<p>(Released on: 2025-11-03)</p>
+<h3 id="minor-changes-47">Minor Changes</h3>
+<ul>
+<li>✨CD update for syn-alert (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1064">#1064</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/f9c0656a268a71ea676ed0b937d8ca77cca2c924">f9c0656</a>)</li>
+</ul>
+<h2 id="1160">1.16.0</h2>
+<p>(Released on: 2025-10-29)</p>
+<h3 id="minor-changes-48">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-switch (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1046">#1046</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/088ce44da4e948099f10c66d29ca48dc6da3b5bb">088ce44</a>)</li>
+</ul>
+<h2 id="1150">1.15.0</h2>
+<p>(Released on: 2025-10-28)</p>
+<h3 id="minor-changes-49">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-radio (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1051">#1051</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/b245f1f90836a68594ecc8fdc026ecb8b3d284a9">b245f1f</a>)</li>
+</ul>
+<h2 id="1140">1.14.0</h2>
+<p>(Released on: 2025-10-27)</p>
+<h3 id="minor-changes-50">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-badge (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1049">#1049</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/894e5416653a66f5ef81acaaee8b74a1adf7f3ab">894e541</a>)</li>
+</ul>
+<h2 id="1130">1.13.0</h2>
+<p>(Released on: 2025-10-23)</p>
+<h3 id="minor-changes-51">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-checkbox (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1050">#1050</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/1054c71415f36233ba1e242433806aac21d4d19b">1054c71</a>)</li>
+</ul>
+<h2 id="1120">1.12.0</h2>
+<p>(Released on: 2025-10-23)</p>
+<h3 id="minor-changes-52">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-icon-button (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1048">#1048</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/d740a5495abd1b36bbe1c1c47fc69ca6a6480549">d740a54</a>)</li>
+</ul>
+<h2 id="1110">1.11.0</h2>
+<p>(Released on: 2025-10-23)</p>
+<h3 id="minor-changes-53">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-breadcrumb (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1045">#1045</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/46383b2557d284328cfb49d476a052986cb47d75">46383b2</a>)</li>
+</ul>
+<h2 id="1100">1.10.0</h2>
+<p>(Released on: 2025-10-22)</p>
+<h3 id="minor-changes-54">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-header (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1047">#1047</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/684114811f939b91a13302cc85300fd1b9b1670e">6841148</a>)</li>
+</ul>
+<h2 id="190">1.9.0</h2>
+<p>(Released on: 2025-10-20)</p>
+<h3 id="minor-changes-55">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-drawer (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1043">#1043</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/214b367e8e603e264ec2718772087601f463439e">214b367</a>)</li>
+</ul>
+<h2 id="182">1.8.2</h2>
+<p>(Released on: 2025-10-15)</p>
+<h3 id="patch-changes-37">Patch Changes</h3>
+<ul>
+<li>🐛 Upgrade packages to latest versions - 10/25 (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1035">#1035</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/2fb5693e536df706ea2c99a8ffc6e4d853442bbf">2fb5693</a>)</li>
+</ul>
+<h2 id="181">1.8.1</h2>
+<p>(Released on: 2025-10-13)</p>
+<h3 id="patch-changes-38">Patch Changes</h3>
+<ul>
+<li>🐛 Testing syn-popup in angular results in console errors (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1042">#1042</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/544e01a1227e4760c76d7a74238a224c7ca31a18">544e01a</a>)</li>
+</ul>
+<h2 id="180">1.8.0</h2>
+<p>(Released on: 2025-10-13)</p>
+<h3 id="minor-changes-56">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-progress-ring (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1033">#1033</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/ba51374977ad486c2a8020586718740e60da7f51">ba51374</a>)</li>
+</ul>
+<h2 id="171">1.7.1</h2>
+<p>(Released on: 2025-10-08)</p>
+<h3 id="patch-changes-39">Patch Changes</h3>
+<ul>
+<li>🐛 Subsequently changed delimiter not taking into account for option value (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1040">#1040</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/fb45b32c36d39046da754a294bff79d1a0ffeb42">fb45b32</a>)</li>
+</ul>
+<h2 id="170">1.7.0</h2>
+<p>(Released on: 2025-10-02)</p>
+<h3 id="minor-changes-57">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-divider, syn-tag, syn-accordion, syn-details (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1028">#1028</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/b43a81ab651da6b41668e481981ccbdcc1f07254">b43a81a</a>)</li>
+</ul>
+<h2 id="162">1.6.2</h2>
+<p>(Released on: 2025-10-02)</p>
+<h3 id="patch-changes-40">Patch Changes</h3>
+<ul>
+<li>🐛 Synergy does not work with Typescript 5.9.x (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1027">#1027</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/7f6921cccb536a9a91e7d61b487fef2ad62dc831">7f6921c</a>)</li>
+</ul>
+<h2 id="161">1.6.1</h2>
+<p>(Released on: 2025-09-30)</p>
+<h3 id="patch-changes-41">Patch Changes</h3>
+<ul>
+<li>🐛 Synergy element which use syn-popup may break if used in a stacking context (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1034">#1034</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/8d23dc737e36065a0208bc01a98981541540d0ef">8d23dc7</a>)</li>
+</ul>
+<h2 id="160">1.6.0</h2>
+<p>(Released on: 2025-09-24)</p>
+<h3 id="minor-changes-58">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-tooltip (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1025">#1025</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/b02ec3d7d720a869975dcd19dd29f096b8fd2035">b02ec3d</a>)</li>
+</ul>
+<h2 id="150">1.5.0</h2>
+<p>(Released on: 2025-09-24)</p>
+<h3 id="minor-changes-59">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-progress-bar (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1026">#1026</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/7bb3a49dfec36d4b78180e1a6413bd0f68d80724">7bb3a49</a>)</li>
+</ul>
+<h2 id="140">1.4.0</h2>
+<p>(Released on: 2025-09-23)</p>
+<h3 id="minor-changes-60">Minor Changes</h3>
+<ul>
+<li>✨ CD update for syn-spinner, syn-textarea, syn-link, syn-table (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1010">#1010</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/c472bab888e5fb9efd368456e1b8f60953970b63">c472bab</a>)</li>
+</ul>
+<h2 id="131">1.3.1</h2>
+<p>(Released on: 2025-08-28)</p>
+<h3 id="patch-changes-42">Patch Changes</h3>
+<ul>
+<li>🐛 Add old token as fallback token for new SICK 2025 tokens (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1006">#1006</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/e5fff3060b340ceae2707eefdd06b2f2b32b9224">e5fff30</a>)</li>
+</ul>
+<h2 id="130">1.3.0</h2>
+<p>(Released on: 2025-08-28)</p>
+<h3 id="minor-changes-61">Minor Changes</h3>
+<ul>
+<li>✨CD update for syn-input (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1001">#1001</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/52f42f8d1f494c54492e54b6ddafc6693dcdb0bb">52f42f8</a>)</li>
+</ul>
+<h2 id="121">1.2.1</h2>
+<p>(Released on: 2025-08-21)</p>
+<h3 id="patch-changes-43">Patch Changes</h3>
+<ul>
+<li>🐛 Placeholder is clipped for syn-select multiple (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/992">#992</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/973933e477a2cba1611c2f73f77e4e79d755c8a1">973933e</a>)</li>
+</ul>
+<h1 id="changelog-1">Changelog</h1>
+<h2 id="121-1">1.2.1</h2>
+<p>(Released on: 2025-08-21)</p>
+<h3 id="patch-changes-44">Patch Changes</h3>
+<ul>
+<li>🐛 Placeholder is clipped for syn-select multiple (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/992">#992</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/973933e477a2cba1611c2f73f77e4e79d755c8a1">973933e</a>)</li>
+</ul>
+<h2 id="120">1.2.0</h2>
+<p>(Released on: 2025-08-19)</p>
+<h3 id="minor-changes-62">Minor Changes</h3>
+<ul>
+<li>✨ export new sick2025 themes (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/985">#985</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/148730d68037ea74dc241ca6627aa6a32af876ab">148730d</a>)</li>
+</ul>
+<h2 id="110">1.1.0</h2>
+<p>(Released on: 2025-08-08)</p>
+<h3 id="minor-changes-63">Minor Changes</h3>
+<ul>
+<li>✨ syn-icon: Provide a function to switch the icon set to brand2025 (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/974">#974</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/1482e34f21ce80b9ad6f25e760f87de13d5f70db">1482e34</a>)</li>
+</ul>
+<h1 id="synergy-design-systemmcp-v100-2025-08-07">@synergy-design-system/mcp-v1.0.0 (2025-08-07)</h1>
+<h3 id="features">Features</h3>
+<ul>
+<li>✨ MCP: Initial release (<a href="https://github.com/synergy-design-system/synergy-design-system/pull/931">#931</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/5f511ca4305981f90e589a5f634e58d0e4e834ee">5f511ca</a>)</li>
+</ul> </div> <footer slot="footer" data-astro-cid-fds66exa> <syn-divider data-astro-cid-fds66exa="true"></syn-divider>
+Changelog for @synergy-design-system/mcp </footer> </syn-card> </main> </div> </body></html>

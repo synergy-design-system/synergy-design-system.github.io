@@ -1,1 +1,0 @@
-import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./tag.component-B222EUds.js";var r=e((()=>{n(),n(),t.define(`syn-tag`)}));export{r as t};
