@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{o as t,s as n}from"./utility-CiY1illa.js";var r=e((()=>{t(),t(),n.define(`syn-option`)}));export{r as t};

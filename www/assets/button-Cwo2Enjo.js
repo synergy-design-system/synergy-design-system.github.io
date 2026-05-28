@@ -1,1 +1,0 @@
-import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./button.component-DIOOgNF2.js";var r=e((()=>{t(),t(),n.define(`syn-button`)}));export{r as t};
