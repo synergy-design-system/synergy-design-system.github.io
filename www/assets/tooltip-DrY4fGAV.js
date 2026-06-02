@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./tooltip.component-R5jtIE1P.js";var r=e((()=>{t(),t(),n.define(`syn-tooltip`)}));export{r as t};
