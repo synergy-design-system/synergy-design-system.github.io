@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./spinner.component-B_Mxr1wc.js";var r=e((()=>{t(),t(),n.define(`syn-spinner`)}));export{r as t};

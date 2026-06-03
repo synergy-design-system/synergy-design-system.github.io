@@ -1,0 +1,1 @@
+import{n as e}from"./chunk-DnJy8xQt.js";import{n as t,t as n}from"./button-group.component-c0_Hj-qZ.js";var r=e((()=>{t(),t(),n.define(`syn-button-group`)}));export{r as t};
