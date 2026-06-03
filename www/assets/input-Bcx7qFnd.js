@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./input.component-CL9f71MT.js";var r=e((()=>{n(),n(),t.define(`syn-input`)}));export{r as t};

@@ -1,1 +1,0 @@
-import{n as e}from"./chunk-DnJy8xQt.js";function t(e,t){return new Promise(n=>{function r(i){i.target===e&&(e.removeEventListener(t,r),n())}e.addEventListener(t,r)})}var n=e((()=>{}));export{t as n,n as t};
