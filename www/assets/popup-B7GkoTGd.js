@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./popup.component-BBOzlxnh.js";var r=e((()=>{t(),t(),n.define(`syn-popup`)}));export{r as t};

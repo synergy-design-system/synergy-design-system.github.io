@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./nav-item.component-EL3Bz4kC.js";var r=e((()=>{t(),t(),n.define(`syn-nav-item`)}));export{r as t};

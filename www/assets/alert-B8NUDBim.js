@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./alert.component-BOBnhBEx.js";var r=e((()=>{t(),t(),n.define(`syn-alert`)}));export{r as t};
