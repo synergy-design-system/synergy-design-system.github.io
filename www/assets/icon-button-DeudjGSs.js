@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./icon-button.component-Dfh6f0gx.js";var r=e((()=>{t(),t(),n.define(`syn-icon-button`)}));export{r as t};

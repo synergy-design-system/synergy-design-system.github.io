@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./divider.component-DmyHtxc1.js";var r=e((()=>{t(),t(),n.define(`syn-divider`)}));export{r as t};
