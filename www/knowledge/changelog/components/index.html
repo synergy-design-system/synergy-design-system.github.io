@@ -1,11 +1,27 @@
-<!DOCTYPE html><script type="module" src="/knowledge/_astro/Layout.astro_astro_type_script_index_0_lang.Ctd9lpJp.js"></script> <html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/knowledge/favicon.svg"><meta name="generator" content="Astro v6.4.2"><link rel="ai-policy" href="/knowledge/llms.txt"><title>Synergy Design System - Design System Specification</title><link rel="stylesheet" href="/knowledge/_astro/ContentHeader.D7bfNAFh.css">
+<!DOCTYPE html><script type="module" src="/knowledge/_astro/Layout.astro_astro_type_script_index_0_lang.BBd1PFcD.js"></script> <html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/knowledge/favicon.svg"><meta name="generator" content="Astro v6.4.2"><link rel="ai-policy" href="/knowledge/llms.txt"><title>Synergy Design System - Design System Specification</title><link rel="stylesheet" href="/knowledge/_astro/ContentHeader.D7bfNAFh.css">
 <style>.changelog-content[data-astro-cid-fds66exa] h1{display:none}.changelog-content[data-astro-cid-fds66exa] h2{font:var(--syn-font-weight-semibold) var(--syn-font-size-x-large) / var(--syn-line-height-normal) var(--syn-font-sans);margin:var(--syn-spacing-2x-large) 0 var(--syn-spacing-small)}.changelog-content[data-astro-cid-fds66exa] h3{font:var(--syn-font-weight-semibold) var(--syn-font-size-large) / var(--syn-line-height-normal) var(--syn-font-sans);color:var(--syn-color-neutral-600);margin:var(--syn-spacing-large) 0 var(--syn-spacing-x-small)}.changelog-content[data-astro-cid-fds66exa] a{color:var(--syn-color-primary-600);text-decoration:none}.changelog-content[data-astro-cid-fds66exa] a:hover{text-decoration:underline}
 </style></head> <body> <syn-header> <a href="/knowledge/" slot="logo" tabindex="0" class="header-logo"> <syn-icon name="logo-color" library="system" label="Custom Logo with link"></syn-icon> </a> <span slot="label">Synergy Design System - Design System Specification</span> <nav slot="meta-navigation"> <syn-tooltip content="Visit Synergies Storybook Developer Documentation"> <syn-icon-button href="https://synergy-design-system.github.io/?path=/docs/welcome--docs" target="_blank" name="storybook" label="Synergy on Storybook" library="logos"></syn-icon-button> </syn-tooltip> <syn-tooltip content="Visit Synergy on Figma"> <syn-icon-button href="https://www.figma.com/design/bZFqk9urD3NlghGUKrkKCR/Synergy-Digital-Design-System?t=aUVrRtmSe1QgX5Iq-0" target="_blank" name="figma" label="Synergy on Figma" library="logos"></syn-icon-button> </syn-tooltip> <syn-tooltip content="Visit Synergy on Github"> <syn-icon-button href="https://github.com/synergy-design-system/synergy-design-system" target="_blank" name="github" label="Synergy on Github" library="logos"></syn-icon-button> </syn-tooltip> <syn-tooltip> <div slot="content">
 Synergy made with love by Synergy Design System Team.
 			This documentation is built using Synergy Design System components and is currently running:
-<ul> <li>Components version 3.15.4</li> <li>Metadata version 3.13.0</li> </ul> </div> <syn-icon-button name="heart" label="Synergy made with Love" library="logos"></syn-icon-button> </syn-tooltip> </nav> </syn-header> <div class="content"> <syn-side-nav variant="sticky" open=""><syn-nav-item><syn-icon slot="prefix" name="brick" library="sidenav"></syn-icon>Components<syn-nav-item href="/knowledge/component/syn-accordion" slot="children">syn-accordion</syn-nav-item><syn-nav-item href="/knowledge/component/syn-alert" slot="children">syn-alert</syn-nav-item><syn-nav-item href="/knowledge/component/syn-badge" slot="children">syn-badge</syn-nav-item><syn-nav-item href="/knowledge/component/syn-breadcrumb" slot="children">syn-breadcrumb</syn-nav-item><syn-nav-item href="/knowledge/component/syn-breadcrumb-item" slot="children">syn-breadcrumb-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-button" slot="children">syn-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-button-group" slot="children">syn-button-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-card" slot="children">syn-card</syn-nav-item><syn-nav-item href="/knowledge/component/syn-chart" slot="children">syn-chart</syn-nav-item><syn-nav-item href="/knowledge/component/syn-checkbox" slot="children">syn-checkbox</syn-nav-item><syn-nav-item href="/knowledge/component/syn-combobox" slot="children">syn-combobox</syn-nav-item><syn-nav-item href="/knowledge/component/syn-details" slot="children">syn-details</syn-nav-item><syn-nav-item href="/knowledge/component/syn-dialog" slot="children">syn-dialog</syn-nav-item><syn-nav-item href="/knowledge/component/syn-divider" slot="children">syn-divider</syn-nav-item><syn-nav-item href="/knowledge/component/syn-drawer" slot="children">syn-drawer</syn-nav-item><syn-nav-item href="/knowledge/component/syn-dropdown" slot="children">syn-dropdown</syn-nav-item><syn-nav-item href="/knowledge/component/syn-file" slot="children">syn-file</syn-nav-item><syn-nav-item href="/knowledge/component/syn-header" slot="children">syn-header</syn-nav-item><syn-nav-item href="/knowledge/component/syn-icon" slot="children">syn-icon</syn-nav-item><syn-nav-item href="/knowledge/component/syn-icon-button" slot="children">syn-icon-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-input" slot="children">syn-input</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu" slot="children">syn-menu</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu-item" slot="children">syn-menu-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu-label" slot="children">syn-menu-label</syn-nav-item><syn-nav-item href="/knowledge/component/syn-nav-item" slot="children">syn-nav-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-optgroup" slot="children">syn-optgroup</syn-nav-item><syn-nav-item href="/knowledge/component/syn-option" slot="children">syn-option</syn-nav-item><syn-nav-item href="/knowledge/component/syn-pagination" slot="children">syn-pagination</syn-nav-item><syn-nav-item href="/knowledge/component/syn-popup" slot="children">syn-popup</syn-nav-item><syn-nav-item href="/knowledge/component/syn-prio-nav" slot="children">syn-prio-nav</syn-nav-item><syn-nav-item href="/knowledge/component/syn-progress-bar" slot="children">syn-progress-bar</syn-nav-item><syn-nav-item href="/knowledge/component/syn-progress-ring" slot="children">syn-progress-ring</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio" slot="children">syn-radio</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio-button" slot="children">syn-radio-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio-group" slot="children">syn-radio-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-range" slot="children">syn-range</syn-nav-item><syn-nav-item href="/knowledge/component/syn-range-tick" slot="children">syn-range-tick</syn-nav-item><syn-nav-item href="/knowledge/component/syn-select" slot="children">syn-select</syn-nav-item><syn-nav-item href="/knowledge/component/syn-side-nav" slot="children">syn-side-nav</syn-nav-item><syn-nav-item href="/knowledge/component/syn-spinner" slot="children">syn-spinner</syn-nav-item><syn-nav-item href="/knowledge/component/syn-switch" slot="children">syn-switch</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab" slot="children">syn-tab</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab-group" slot="children">syn-tab-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab-panel" slot="children">syn-tab-panel</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tag" slot="children">syn-tag</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tag-group" slot="children">syn-tag-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-textarea" slot="children">syn-textarea</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tooltip" slot="children">syn-tooltip</syn-nav-item><syn-nav-item href="/knowledge/component/syn-validate" slot="children">syn-validate</syn-nav-item></syn-nav-item><syn-nav-item><syn-icon slot="prefix" name="pattern" library="sidenav"></syn-icon>Templates<syn-nav-item href="/knowledge/template/appshell" slot="children">Appshell</syn-nav-item><syn-nav-item href="/knowledge/template/breadcrumb" slot="children">Breadcrumb</syn-nav-item><syn-nav-item href="/knowledge/template/footer" slot="children">Footer</syn-nav-item><syn-nav-item href="/knowledge/template/forms" slot="children">Forms</syn-nav-item><syn-nav-item href="/knowledge/template/loading-screen" slot="children">Loading Screen</syn-nav-item><syn-nav-item href="/knowledge/template/localization" slot="children">Localization</syn-nav-item><syn-nav-item href="/knowledge/template/table" slot="children">Table</syn-nav-item><syn-nav-item href="/knowledge/template/tag-group" slot="children">Tag Group</syn-nav-item><syn-nav-item href="/knowledge/template/tooltip" slot="children">Tooltip</syn-nav-item></syn-nav-item><syn-nav-item><syn-icon slot="prefix" name="css" library="sidenav"></syn-icon>Styles<syn-nav-item href="/knowledge/style/syn-body" slot="children">syn-body</syn-nav-item><syn-nav-item href="/knowledge/style/syn-heading" slot="children">syn-heading</syn-nav-item><syn-nav-item href="/knowledge/style/syn-link" slot="children">syn-link</syn-nav-item><syn-nav-item href="/knowledge/style/syn-link-list" slot="children">syn-link-list</syn-nav-item><syn-nav-item href="/knowledge/style/syn-table" slot="children">syn-table</syn-nav-item><syn-nav-item href="/knowledge/style/syn-table-cell" slot="children">syn-table-cell</syn-nav-item><syn-nav-item href="/knowledge/style/syn-weight" slot="children">syn-weight</syn-nav-item></syn-nav-item><syn-nav-item open=""><syn-icon slot="prefix" name="receipt_long" library="sidenav"></syn-icon>Package Changelogs<syn-nav-item href="/knowledge/changelog/assets" slot="children">Assets</syn-nav-item><syn-nav-item current="" href="/knowledge/changelog/components" slot="children">Components</syn-nav-item><syn-nav-item href="/knowledge/changelog/fonts" slot="children">Fonts</syn-nav-item><syn-nav-item href="/knowledge/changelog/mcp" slot="children">MCP</syn-nav-item><syn-nav-item href="/knowledge/changelog/metadata" slot="children">Metadata</syn-nav-item><syn-nav-item href="/knowledge/changelog/styles" slot="children">Styles</syn-nav-item><syn-nav-item href="/knowledge/changelog/tokens" slot="children">Tokens</syn-nav-item></syn-nav-item><syn-nav-item slot="footer"><syn-icon slot="prefix" name="tips_and_updates" library="sidenav"></syn-icon>Additional Information<syn-nav-item href="/knowledge/accessibility" slot="children">Accessibility</syn-nav-item><syn-nav-item href="/knowledge/brand-support" slot="children">Brand Support</syn-nav-item><syn-nav-item href="/knowledge/goals" slot="children">Goals and Guidelines</syn-nav-item><syn-nav-item href="/knowledge/misconceptions" slot="children">Misconceptions</syn-nav-item><syn-nav-item href="/knowledge/out-of-scope" slot="children">Out of Scope</syn-nav-item></syn-nav-item></syn-side-nav><noscript><nav aria-label="Documentation navigation"><ul><li><span>Components</span><ul><li><a href="/knowledge/component/syn-accordion">syn-accordion</a></li><li><a href="/knowledge/component/syn-alert">syn-alert</a></li><li><a href="/knowledge/component/syn-badge">syn-badge</a></li><li><a href="/knowledge/component/syn-breadcrumb">syn-breadcrumb</a></li><li><a href="/knowledge/component/syn-breadcrumb-item">syn-breadcrumb-item</a></li><li><a href="/knowledge/component/syn-button">syn-button</a></li><li><a href="/knowledge/component/syn-button-group">syn-button-group</a></li><li><a href="/knowledge/component/syn-card">syn-card</a></li><li><a href="/knowledge/component/syn-chart">syn-chart</a></li><li><a href="/knowledge/component/syn-checkbox">syn-checkbox</a></li><li><a href="/knowledge/component/syn-combobox">syn-combobox</a></li><li><a href="/knowledge/component/syn-details">syn-details</a></li><li><a href="/knowledge/component/syn-dialog">syn-dialog</a></li><li><a href="/knowledge/component/syn-divider">syn-divider</a></li><li><a href="/knowledge/component/syn-drawer">syn-drawer</a></li><li><a href="/knowledge/component/syn-dropdown">syn-dropdown</a></li><li><a href="/knowledge/component/syn-file">syn-file</a></li><li><a href="/knowledge/component/syn-header">syn-header</a></li><li><a href="/knowledge/component/syn-icon">syn-icon</a></li><li><a href="/knowledge/component/syn-icon-button">syn-icon-button</a></li><li><a href="/knowledge/component/syn-input">syn-input</a></li><li><a href="/knowledge/component/syn-menu">syn-menu</a></li><li><a href="/knowledge/component/syn-menu-item">syn-menu-item</a></li><li><a href="/knowledge/component/syn-menu-label">syn-menu-label</a></li><li><a href="/knowledge/component/syn-nav-item">syn-nav-item</a></li><li><a href="/knowledge/component/syn-optgroup">syn-optgroup</a></li><li><a href="/knowledge/component/syn-option">syn-option</a></li><li><a href="/knowledge/component/syn-pagination">syn-pagination</a></li><li><a href="/knowledge/component/syn-popup">syn-popup</a></li><li><a href="/knowledge/component/syn-prio-nav">syn-prio-nav</a></li><li><a href="/knowledge/component/syn-progress-bar">syn-progress-bar</a></li><li><a href="/knowledge/component/syn-progress-ring">syn-progress-ring</a></li><li><a href="/knowledge/component/syn-radio">syn-radio</a></li><li><a href="/knowledge/component/syn-radio-button">syn-radio-button</a></li><li><a href="/knowledge/component/syn-radio-group">syn-radio-group</a></li><li><a href="/knowledge/component/syn-range">syn-range</a></li><li><a href="/knowledge/component/syn-range-tick">syn-range-tick</a></li><li><a href="/knowledge/component/syn-select">syn-select</a></li><li><a href="/knowledge/component/syn-side-nav">syn-side-nav</a></li><li><a href="/knowledge/component/syn-spinner">syn-spinner</a></li><li><a href="/knowledge/component/syn-switch">syn-switch</a></li><li><a href="/knowledge/component/syn-tab">syn-tab</a></li><li><a href="/knowledge/component/syn-tab-group">syn-tab-group</a></li><li><a href="/knowledge/component/syn-tab-panel">syn-tab-panel</a></li><li><a href="/knowledge/component/syn-tag">syn-tag</a></li><li><a href="/knowledge/component/syn-tag-group">syn-tag-group</a></li><li><a href="/knowledge/component/syn-textarea">syn-textarea</a></li><li><a href="/knowledge/component/syn-tooltip">syn-tooltip</a></li><li><a href="/knowledge/component/syn-validate">syn-validate</a></li></ul></li><li><span>Templates</span><ul><li><a href="/knowledge/template/appshell">Appshell</a></li><li><a href="/knowledge/template/breadcrumb">Breadcrumb</a></li><li><a href="/knowledge/template/footer">Footer</a></li><li><a href="/knowledge/template/forms">Forms</a></li><li><a href="/knowledge/template/loading-screen">Loading Screen</a></li><li><a href="/knowledge/template/localization">Localization</a></li><li><a href="/knowledge/template/table">Table</a></li><li><a href="/knowledge/template/tag-group">Tag Group</a></li><li><a href="/knowledge/template/tooltip">Tooltip</a></li></ul></li><li><span>Styles</span><ul><li><a href="/knowledge/style/syn-body">syn-body</a></li><li><a href="/knowledge/style/syn-heading">syn-heading</a></li><li><a href="/knowledge/style/syn-link">syn-link</a></li><li><a href="/knowledge/style/syn-link-list">syn-link-list</a></li><li><a href="/knowledge/style/syn-table">syn-table</a></li><li><a href="/knowledge/style/syn-table-cell">syn-table-cell</a></li><li><a href="/knowledge/style/syn-weight">syn-weight</a></li></ul></li><li><span>Package Changelogs</span><ul><li><a href="/knowledge/changelog/assets">Assets</a></li><li><a href="/knowledge/changelog/components">Components</a></li><li><a href="/knowledge/changelog/fonts">Fonts</a></li><li><a href="/knowledge/changelog/mcp">MCP</a></li><li><a href="/knowledge/changelog/metadata">Metadata</a></li><li><a href="/knowledge/changelog/styles">Styles</a></li><li><a href="/knowledge/changelog/tokens">Tokens</a></li></ul></li><li><span>Additional Information</span><ul><li><a href="/knowledge/accessibility">Accessibility</a></li><li><a href="/knowledge/brand-support">Brand Support</a></li><li><a href="/knowledge/goals">Goals and Guidelines</a></li><li><a href="/knowledge/misconceptions">Misconceptions</a></li><li><a href="/knowledge/out-of-scope">Out of Scope</a></li></ul></li></ul></nav></noscript> <main> <syn-card class="changelog-view" shadow="true" data-astro-cid-fds66exa="true"> <header class="content-header" slot="header" data-astro-cid-nzwy4yid> <h1 class="syn-heading--3x-large" data-astro-cid-nzwy4yid>@synergy-design-system/components</h1> <div class="content-header-actions" data-astro-cid-nzwy4yid>  </div> </header> <syn-divider slot="header" data-astro-cid-nzwy4yid="true"></syn-divider> <div class="changelog-content" data-astro-cid-fds66exa> <h1 id="changelog">Changelog</h1>
-<h2 id="3154">3.15.4</h2>
+<ul> <li>Components version 3.15.5</li> <li>Metadata version 3.14.0</li> </ul> </div> <syn-icon-button name="heart" label="Synergy made with Love" library="logos"></syn-icon-button> </syn-tooltip> </nav> </syn-header> <div class="content"> <syn-side-nav variant="sticky" open=""><syn-nav-item><syn-icon slot="prefix" name="brick" library="sidenav"></syn-icon>Components<syn-nav-item href="/knowledge/component/syn-accordion" slot="children">syn-accordion</syn-nav-item><syn-nav-item href="/knowledge/component/syn-alert" slot="children">syn-alert</syn-nav-item><syn-nav-item href="/knowledge/component/syn-badge" slot="children">syn-badge</syn-nav-item><syn-nav-item href="/knowledge/component/syn-breadcrumb" slot="children">syn-breadcrumb</syn-nav-item><syn-nav-item href="/knowledge/component/syn-breadcrumb-item" slot="children">syn-breadcrumb-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-button" slot="children">syn-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-button-group" slot="children">syn-button-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-card" slot="children">syn-card</syn-nav-item><syn-nav-item href="/knowledge/component/syn-chart" slot="children">syn-chart</syn-nav-item><syn-nav-item href="/knowledge/component/syn-checkbox" slot="children">syn-checkbox</syn-nav-item><syn-nav-item href="/knowledge/component/syn-combobox" slot="children">syn-combobox</syn-nav-item><syn-nav-item href="/knowledge/component/syn-details" slot="children">syn-details</syn-nav-item><syn-nav-item href="/knowledge/component/syn-dialog" slot="children">syn-dialog</syn-nav-item><syn-nav-item href="/knowledge/component/syn-divider" slot="children">syn-divider</syn-nav-item><syn-nav-item href="/knowledge/component/syn-drawer" slot="children">syn-drawer</syn-nav-item><syn-nav-item href="/knowledge/component/syn-dropdown" slot="children">syn-dropdown</syn-nav-item><syn-nav-item href="/knowledge/component/syn-file" slot="children">syn-file</syn-nav-item><syn-nav-item href="/knowledge/component/syn-header" slot="children">syn-header</syn-nav-item><syn-nav-item href="/knowledge/component/syn-icon" slot="children">syn-icon</syn-nav-item><syn-nav-item href="/knowledge/component/syn-icon-button" slot="children">syn-icon-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-input" slot="children">syn-input</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu" slot="children">syn-menu</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu-item" slot="children">syn-menu-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-menu-label" slot="children">syn-menu-label</syn-nav-item><syn-nav-item href="/knowledge/component/syn-nav-item" slot="children">syn-nav-item</syn-nav-item><syn-nav-item href="/knowledge/component/syn-optgroup" slot="children">syn-optgroup</syn-nav-item><syn-nav-item href="/knowledge/component/syn-option" slot="children">syn-option</syn-nav-item><syn-nav-item href="/knowledge/component/syn-pagination" slot="children">syn-pagination</syn-nav-item><syn-nav-item href="/knowledge/component/syn-popup" slot="children">syn-popup</syn-nav-item><syn-nav-item href="/knowledge/component/syn-prio-nav" slot="children">syn-prio-nav</syn-nav-item><syn-nav-item href="/knowledge/component/syn-progress-bar" slot="children">syn-progress-bar</syn-nav-item><syn-nav-item href="/knowledge/component/syn-progress-ring" slot="children">syn-progress-ring</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio" slot="children">syn-radio</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio-button" slot="children">syn-radio-button</syn-nav-item><syn-nav-item href="/knowledge/component/syn-radio-group" slot="children">syn-radio-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-range" slot="children">syn-range</syn-nav-item><syn-nav-item href="/knowledge/component/syn-range-tick" slot="children">syn-range-tick</syn-nav-item><syn-nav-item href="/knowledge/component/syn-select" slot="children">syn-select</syn-nav-item><syn-nav-item href="/knowledge/component/syn-side-nav" slot="children">syn-side-nav</syn-nav-item><syn-nav-item href="/knowledge/component/syn-spinner" slot="children">syn-spinner</syn-nav-item><syn-nav-item href="/knowledge/component/syn-switch" slot="children">syn-switch</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab" slot="children">syn-tab</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab-group" slot="children">syn-tab-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tab-panel" slot="children">syn-tab-panel</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tag" slot="children">syn-tag</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tag-group" slot="children">syn-tag-group</syn-nav-item><syn-nav-item href="/knowledge/component/syn-textarea" slot="children">syn-textarea</syn-nav-item><syn-nav-item href="/knowledge/component/syn-tooltip" slot="children">syn-tooltip</syn-nav-item><syn-nav-item href="/knowledge/component/syn-validate" slot="children">syn-validate</syn-nav-item></syn-nav-item><syn-nav-item><syn-icon slot="prefix" name="pattern" library="sidenav"></syn-icon>Templates<syn-nav-item href="/knowledge/template/appshell" slot="children">Appshell</syn-nav-item><syn-nav-item href="/knowledge/template/breadcrumb" slot="children">Breadcrumb</syn-nav-item><syn-nav-item href="/knowledge/template/footer" slot="children">Footer</syn-nav-item><syn-nav-item href="/knowledge/template/forms" slot="children">Forms</syn-nav-item><syn-nav-item href="/knowledge/template/loading-screen" slot="children">Loading Screen</syn-nav-item><syn-nav-item href="/knowledge/template/localization" slot="children">Localization</syn-nav-item><syn-nav-item href="/knowledge/template/table" slot="children">Table</syn-nav-item><syn-nav-item href="/knowledge/template/tag-group" slot="children">Tag Group</syn-nav-item><syn-nav-item href="/knowledge/template/tooltip" slot="children">Tooltip</syn-nav-item></syn-nav-item><syn-nav-item><syn-icon slot="prefix" name="css" library="sidenav"></syn-icon>Styles<syn-nav-item href="/knowledge/style/syn-body" slot="children">syn-body</syn-nav-item><syn-nav-item href="/knowledge/style/syn-heading" slot="children">syn-heading</syn-nav-item><syn-nav-item href="/knowledge/style/syn-link" slot="children">syn-link</syn-nav-item><syn-nav-item href="/knowledge/style/syn-link-list" slot="children">syn-link-list</syn-nav-item><syn-nav-item href="/knowledge/style/syn-table" slot="children">syn-table</syn-nav-item><syn-nav-item href="/knowledge/style/syn-table-cell" slot="children">syn-table-cell</syn-nav-item><syn-nav-item href="/knowledge/style/syn-weight" slot="children">syn-weight</syn-nav-item></syn-nav-item><syn-nav-item open=""><syn-icon slot="prefix" name="receipt_long" library="sidenav"></syn-icon>Package Changelogs<syn-nav-item href="/knowledge/changelog/assets" slot="children">Assets</syn-nav-item><syn-nav-item current="" href="/knowledge/changelog/components" slot="children">Components</syn-nav-item><syn-nav-item href="/knowledge/changelog/fonts" slot="children">Fonts</syn-nav-item><syn-nav-item href="/knowledge/changelog/mcp" slot="children">MCP</syn-nav-item><syn-nav-item href="/knowledge/changelog/metadata" slot="children">Metadata</syn-nav-item><syn-nav-item href="/knowledge/changelog/styles" slot="children">Styles</syn-nav-item><syn-nav-item href="/knowledge/changelog/tokens" slot="children">Tokens</syn-nav-item></syn-nav-item><syn-nav-item slot="footer"><syn-icon slot="prefix" name="tips_and_updates" library="sidenav"></syn-icon>Additional Information<syn-nav-item href="/knowledge/accessibility" slot="children">Accessibility</syn-nav-item><syn-nav-item href="/knowledge/brand-support" slot="children">Brand Support</syn-nav-item><syn-nav-item href="/knowledge/goals" slot="children">Goals and Guidelines</syn-nav-item><syn-nav-item href="/knowledge/misconceptions" slot="children">Misconceptions</syn-nav-item><syn-nav-item href="/knowledge/out-of-scope" slot="children">Out of Scope</syn-nav-item></syn-nav-item></syn-side-nav><noscript><nav aria-label="Documentation navigation"><ul><li><span>Components</span><ul><li><a href="/knowledge/component/syn-accordion">syn-accordion</a></li><li><a href="/knowledge/component/syn-alert">syn-alert</a></li><li><a href="/knowledge/component/syn-badge">syn-badge</a></li><li><a href="/knowledge/component/syn-breadcrumb">syn-breadcrumb</a></li><li><a href="/knowledge/component/syn-breadcrumb-item">syn-breadcrumb-item</a></li><li><a href="/knowledge/component/syn-button">syn-button</a></li><li><a href="/knowledge/component/syn-button-group">syn-button-group</a></li><li><a href="/knowledge/component/syn-card">syn-card</a></li><li><a href="/knowledge/component/syn-chart">syn-chart</a></li><li><a href="/knowledge/component/syn-checkbox">syn-checkbox</a></li><li><a href="/knowledge/component/syn-combobox">syn-combobox</a></li><li><a href="/knowledge/component/syn-details">syn-details</a></li><li><a href="/knowledge/component/syn-dialog">syn-dialog</a></li><li><a href="/knowledge/component/syn-divider">syn-divider</a></li><li><a href="/knowledge/component/syn-drawer">syn-drawer</a></li><li><a href="/knowledge/component/syn-dropdown">syn-dropdown</a></li><li><a href="/knowledge/component/syn-file">syn-file</a></li><li><a href="/knowledge/component/syn-header">syn-header</a></li><li><a href="/knowledge/component/syn-icon">syn-icon</a></li><li><a href="/knowledge/component/syn-icon-button">syn-icon-button</a></li><li><a href="/knowledge/component/syn-input">syn-input</a></li><li><a href="/knowledge/component/syn-menu">syn-menu</a></li><li><a href="/knowledge/component/syn-menu-item">syn-menu-item</a></li><li><a href="/knowledge/component/syn-menu-label">syn-menu-label</a></li><li><a href="/knowledge/component/syn-nav-item">syn-nav-item</a></li><li><a href="/knowledge/component/syn-optgroup">syn-optgroup</a></li><li><a href="/knowledge/component/syn-option">syn-option</a></li><li><a href="/knowledge/component/syn-pagination">syn-pagination</a></li><li><a href="/knowledge/component/syn-popup">syn-popup</a></li><li><a href="/knowledge/component/syn-prio-nav">syn-prio-nav</a></li><li><a href="/knowledge/component/syn-progress-bar">syn-progress-bar</a></li><li><a href="/knowledge/component/syn-progress-ring">syn-progress-ring</a></li><li><a href="/knowledge/component/syn-radio">syn-radio</a></li><li><a href="/knowledge/component/syn-radio-button">syn-radio-button</a></li><li><a href="/knowledge/component/syn-radio-group">syn-radio-group</a></li><li><a href="/knowledge/component/syn-range">syn-range</a></li><li><a href="/knowledge/component/syn-range-tick">syn-range-tick</a></li><li><a href="/knowledge/component/syn-select">syn-select</a></li><li><a href="/knowledge/component/syn-side-nav">syn-side-nav</a></li><li><a href="/knowledge/component/syn-spinner">syn-spinner</a></li><li><a href="/knowledge/component/syn-switch">syn-switch</a></li><li><a href="/knowledge/component/syn-tab">syn-tab</a></li><li><a href="/knowledge/component/syn-tab-group">syn-tab-group</a></li><li><a href="/knowledge/component/syn-tab-panel">syn-tab-panel</a></li><li><a href="/knowledge/component/syn-tag">syn-tag</a></li><li><a href="/knowledge/component/syn-tag-group">syn-tag-group</a></li><li><a href="/knowledge/component/syn-textarea">syn-textarea</a></li><li><a href="/knowledge/component/syn-tooltip">syn-tooltip</a></li><li><a href="/knowledge/component/syn-validate">syn-validate</a></li></ul></li><li><span>Templates</span><ul><li><a href="/knowledge/template/appshell">Appshell</a></li><li><a href="/knowledge/template/breadcrumb">Breadcrumb</a></li><li><a href="/knowledge/template/footer">Footer</a></li><li><a href="/knowledge/template/forms">Forms</a></li><li><a href="/knowledge/template/loading-screen">Loading Screen</a></li><li><a href="/knowledge/template/localization">Localization</a></li><li><a href="/knowledge/template/table">Table</a></li><li><a href="/knowledge/template/tag-group">Tag Group</a></li><li><a href="/knowledge/template/tooltip">Tooltip</a></li></ul></li><li><span>Styles</span><ul><li><a href="/knowledge/style/syn-body">syn-body</a></li><li><a href="/knowledge/style/syn-heading">syn-heading</a></li><li><a href="/knowledge/style/syn-link">syn-link</a></li><li><a href="/knowledge/style/syn-link-list">syn-link-list</a></li><li><a href="/knowledge/style/syn-table">syn-table</a></li><li><a href="/knowledge/style/syn-table-cell">syn-table-cell</a></li><li><a href="/knowledge/style/syn-weight">syn-weight</a></li></ul></li><li><span>Package Changelogs</span><ul><li><a href="/knowledge/changelog/assets">Assets</a></li><li><a href="/knowledge/changelog/components">Components</a></li><li><a href="/knowledge/changelog/fonts">Fonts</a></li><li><a href="/knowledge/changelog/mcp">MCP</a></li><li><a href="/knowledge/changelog/metadata">Metadata</a></li><li><a href="/knowledge/changelog/styles">Styles</a></li><li><a href="/knowledge/changelog/tokens">Tokens</a></li></ul></li><li><span>Additional Information</span><ul><li><a href="/knowledge/accessibility">Accessibility</a></li><li><a href="/knowledge/brand-support">Brand Support</a></li><li><a href="/knowledge/goals">Goals and Guidelines</a></li><li><a href="/knowledge/misconceptions">Misconceptions</a></li><li><a href="/knowledge/out-of-scope">Out of Scope</a></li></ul></li></ul></nav></noscript> <main> <syn-card class="changelog-view" shadow="true" data-astro-cid-fds66exa="true"> <header class="content-header" slot="header" data-astro-cid-nzwy4yid> <h1 class="syn-heading--3x-large" data-astro-cid-nzwy4yid>@synergy-design-system/components</h1> <div class="content-header-actions" data-astro-cid-nzwy4yid>  </div> </header> <syn-divider slot="header" data-astro-cid-nzwy4yid="true"></syn-divider> <div class="changelog-content" data-astro-cid-fds66exa> <h1 id="changelog">Changelog</h1>
+<h2 id="3155">3.15.5</h2>
 <h3 id="patch-changes">Patch Changes</h3>
+<ul>
+<li>
+<p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1306">#1306</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/b4494ba1bcaf1016c83bc03c44b1ece17b8a194a"><code>b4494ba</code></a> Thanks <a href="https://github.com/kirchsuSICKAG">@kirchsuSICKAG</a>! - Released on: 2026-06-16</p>
+<p>fix: 🐛 Focus Issues with new Chromium version (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1304">#1304</a>)</p>
+<p>This release fixes focus-related issues caused by changes in newer Chromium versions.
+Affected were <code>&#x3C;syn-select /></code> and <code>&#x3C;syn-dropdown /></code> in combination with <code>&#x3C;syn-dialog /></code> or <code>&#x3C;syn-drawer /></code></p>
+</li>
+<li>
+<p>Updated dependencies []:</p>
+<ul>
+<li>@synergy-design-system/tokens@3.15.5</li>
+</ul>
+</li>
+</ul>
+<h2 id="3154">3.15.4</h2>
+<h3 id="patch-changes-1">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1294">#1294</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/7dd08e1f2dc1cd9ca93fd0a3e0f2795677dec5d3"><code>7dd08e1</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-06-10</p>
@@ -20,7 +36,7 @@ Synergy made with love by Synergy Design System Team.
 </li>
 </ul>
 <h2 id="3153">3.15.3</h2>
-<h3 id="patch-changes-1">Patch Changes</h3>
+<h3 id="patch-changes-2">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1298">#1298</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/49e5b92f06c0600c5e8612834cb34e0f7c2a474a"><code>49e5b92</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-06-08</p>
@@ -35,7 +51,7 @@ Synergy made with love by Synergy Design System Team.
 </li>
 </ul>
 <h2 id="3152">3.15.2</h2>
-<h3 id="patch-changes-2">Patch Changes</h3>
+<h3 id="patch-changes-3">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1293">#1293</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/513e931c88a46e1e71a3a4d8ca7ac3c3a85b2189"><code>513e931</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-06-03</p>
@@ -49,7 +65,7 @@ Synergy made with love by Synergy Design System Team.
 </li>
 </ul>
 <h2 id="3151">3.15.1</h2>
-<h3 id="patch-changes-3">Patch Changes</h3>
+<h3 id="patch-changes-4">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1296">#1296</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/4fdb69aec5ddb0ddfa76a948c87eaf84be6fd670"><code>4fdb69a</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-06-03</p>
@@ -81,7 +97,7 @@ It is available for Web Component, React, Angular and Vue</p>
 </blockquote>
 </li>
 </ul>
-<h3 id="patch-changes-4">Patch Changes</h3>
+<h3 id="patch-changes-5">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/74917ea30e2d26780202c382c7f157c63e3833ef"><code>74917ea</code></a>]:
 <ul>
@@ -103,7 +119,7 @@ It is available for Web Component, React, Angular and Vue</p>
 </ul>
 </li>
 </ul>
-<h3 id="patch-changes-5">Patch Changes</h3>
+<h3 id="patch-changes-6">Patch Changes</h3>
 <ul>
 <li>Updated dependencies []:
 <ul>
@@ -112,7 +128,7 @@ It is available for Web Component, React, Angular and Vue</p>
 </li>
 </ul>
 <h2 id="3134">3.13.4</h2>
-<h3 id="patch-changes-6">Patch Changes</h3>
+<h3 id="patch-changes-7">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1281">#1281</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/a4b0e1139dfc644d5607b7bfd08fd20158ace570"><code>a4b0e11</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-05-06</p>
@@ -127,7 +143,7 @@ It is available for Web Component, React, Angular and Vue</p>
 </li>
 </ul>
 <h2 id="3133">3.13.3</h2>
-<h3 id="patch-changes-7">Patch Changes</h3>
+<h3 id="patch-changes-8">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1279">#1279</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/de1f21e46ac3092e8bd3a1911e1284936b3354cf"><code>de1f21e</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-05-06</p>
@@ -143,7 +159,7 @@ If a selected option name changes, the field now updates right away instead of s
 </li>
 </ul>
 <h2 id="3132">3.13.2</h2>
-<h3 id="patch-changes-8">Patch Changes</h3>
+<h3 id="patch-changes-9">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1278">#1278</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/e84b97ae70affae71afcc85725e56b3f690a445e"><code>e84b97a</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-05-04</p>
@@ -158,7 +174,7 @@ If a selected option name changes, the field now updates right away instead of s
 </li>
 </ul>
 <h2 id="3131">3.13.1</h2>
-<h3 id="patch-changes-9">Patch Changes</h3>
+<h3 id="patch-changes-10">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1267">#1267</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/2444517aaedc22b115d9572dd14d47c43189ec5d"><code>2444517</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-04-29</p>
@@ -173,7 +189,7 @@ If a selected option name changes, the field now updates right away instead of s
 </li>
 </ul>
 <h2 id="3130">3.13.0</h2>
-<h3 id="patch-changes-10">Patch Changes</h3>
+<h3 id="patch-changes-11">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/930328af3af87ba91738b89984ad7b11edd78ec5"><code>930328a</code></a>]:
 <ul>
@@ -182,7 +198,7 @@ If a selected option name changes, the field now updates right away instead of s
 </li>
 </ul>
 <h2 id="3121">3.12.1</h2>
-<h3 id="patch-changes-11">Patch Changes</h3>
+<h3 id="patch-changes-12">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1263">#1263</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/f422a1f5e7c8d8970b086d914dbba3a5b3bb8d0b"><code>f422a1f</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-04-28</p>
@@ -204,7 +220,7 @@ If a selected option name changes, the field now updates right away instead of s
 <p>Adds a new component <code>&#x3C;syn-pagination></code> that may be used to paginate large datasets.</p>
 </li>
 </ul>
-<h3 id="patch-changes-12">Patch Changes</h3>
+<h3 id="patch-changes-13">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/06c29d4be7b9297d34919646cfd71394abdc6f88"><code>06c29d4</code></a>]:
 <ul>
@@ -213,7 +229,7 @@ If a selected option name changes, the field now updates right away instead of s
 </li>
 </ul>
 <h2 id="3111">3.11.1</h2>
-<h3 id="patch-changes-13">Patch Changes</h3>
+<h3 id="patch-changes-14">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1252">#1252</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/9d36167d35ebbdd43820d520140d6823e1331ea1"><code>9d36167</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-04-20</p>
@@ -240,7 +256,7 @@ It also removes unneeded dependencies from the components package:</p>
 </ul>
 </li>
 </ul>
-<h3 id="patch-changes-14">Patch Changes</h3>
+<h3 id="patch-changes-15">Patch Changes</h3>
 <ul>
 <li>Updated dependencies []:
 <ul>
@@ -249,7 +265,7 @@ It also removes unneeded dependencies from the components package:</p>
 </li>
 </ul>
 <h2 id="3105">3.10.5</h2>
-<h3 id="patch-changes-15">Patch Changes</h3>
+<h3 id="patch-changes-16">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1246">#1246</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/5f0eb58996be36571edf1764a7314f78bac96dd9"><code>5f0eb58</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-27</p>
@@ -263,7 +279,7 @@ It also removes unneeded dependencies from the components package:</p>
 </li>
 </ul>
 <h2 id="3104">3.10.4</h2>
-<h3 id="patch-changes-16">Patch Changes</h3>
+<h3 id="patch-changes-17">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1228">#1228</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/0c5d1761ca6ef9d60714ec4010cd47665c2f7731"><code>0c5d176</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-20</p>
@@ -279,7 +295,7 @@ When using this combination, the <code>border-radius</code> looked either blurry
 </li>
 </ul>
 <h2 id="3103">3.10.3</h2>
-<h3 id="patch-changes-17">Patch Changes</h3>
+<h3 id="patch-changes-18">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1227">#1227</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/c82738594731dc3c2a5041695741f099393068de"><code>c827385</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-10</p>
@@ -293,7 +309,7 @@ When using this combination, the <code>border-radius</code> looked either blurry
 </li>
 </ul>
 <h2 id="3102">3.10.2</h2>
-<h3 id="patch-changes-18">Patch Changes</h3>
+<h3 id="patch-changes-19">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1224">#1224</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/7defd0349dc50d4f9549eda59c4b6bcc96c4612c"><code>7defd03</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-09</p>
@@ -308,7 +324,7 @@ When using this combination, the <code>border-radius</code> looked either blurry
 </li>
 </ul>
 <h2 id="3101">3.10.1</h2>
-<h3 id="patch-changes-19">Patch Changes</h3>
+<h3 id="patch-changes-20">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1223">#1223</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/60b2845fc089c2508f7e4a2b068b359fad166288"><code>60b2845</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-09</p>
@@ -332,7 +348,7 @@ It will automatically set the correct <code>height</code> on vertically aligned 
 <p><code>&#x3C;syn-header></code> now also exposes a new <code>cssproperty</code> <code>--metanavigation-item-size</code> that can be used to define the size of rendered <code>&#x3C;syn-icon-buttons></code>, as well as the height of <code>&#x3C;syn-divider></code></p>
 </li>
 </ul>
-<h3 id="patch-changes-20">Patch Changes</h3>
+<h3 id="patch-changes-21">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/5704a96fbe2d0481822a30ce171a01df960c82f1"><code>5704a96</code></a>]:
 <ul>
@@ -341,7 +357,7 @@ It will automatically set the correct <code>height</code> on vertically aligned 
 </li>
 </ul>
 <h2 id="390">3.9.0</h2>
-<h3 id="patch-changes-21">Patch Changes</h3>
+<h3 id="patch-changes-22">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/8d3e2a712619cb94938083620168caafc091323f"><code>8d3e2a7</code></a>]:
 <ul>
@@ -360,7 +376,7 @@ This provides the ability to set the maximal amount of free text input for the c
 It still allows to use options from the list of available options and works as a restriction for free text only.</p>
 </li>
 </ul>
-<h3 id="patch-changes-22">Patch Changes</h3>
+<h3 id="patch-changes-23">Patch Changes</h3>
 <ul>
 <li>Updated dependencies []:
 <ul>
@@ -377,7 +393,7 @@ It still allows to use options from the list of available options and works as a
 <p>Adds a new component <code>&#x3C;syn-tag-group></code>, including templates how to use this component.</p>
 </li>
 </ul>
-<h3 id="patch-changes-23">Patch Changes</h3>
+<h3 id="patch-changes-24">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/c7f6a8bc8ed2eb76c5f9510c1d499f6feca5d302"><code>c7f6a8b</code></a>]:
 <ul>
@@ -386,7 +402,7 @@ It still allows to use options from the list of available options and works as a
 </li>
 </ul>
 <h2 id="362">3.6.2</h2>
-<h3 id="patch-changes-24">Patch Changes</h3>
+<h3 id="patch-changes-25">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1214">#1214</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/01c5e9cc231c6bcc260cedc2f5d5713cf71ea254"><code>01c5e9c</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-06</p>
@@ -401,7 +417,7 @@ It still allows to use options from the list of available options and works as a
 </li>
 </ul>
 <h2 id="361">3.6.1</h2>
-<h3 id="patch-changes-25">Patch Changes</h3>
+<h3 id="patch-changes-26">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1208">#1208</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/49c9d1c30d777384024134ec983d183aed109421"><code>49c9d1c</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-03-03</p>
@@ -425,7 +441,7 @@ It still allows to use options from the list of available options and works as a
 To use this feature, set the <code>variant</code> property to <code>tooltip</code>.</p>
 </li>
 </ul>
-<h3 id="patch-changes-26">Patch Changes</h3>
+<h3 id="patch-changes-27">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/31c54c04a651a14e20bc5f4b2aff1bd92ad26bc0"><code>31c54c0</code></a>]:
 <ul>
@@ -454,7 +470,7 @@ To use this feature, set the <code>variant</code> property to <code>tooltip</cod
 <p>Field marked <code>readonly</code> may receive focus, but their value cannot be changed by customer inputs.</p>
 </li>
 </ul>
-<h3 id="patch-changes-27">Patch Changes</h3>
+<h3 id="patch-changes-28">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/a4f49ac79a660ef5b8d1b380fe9fcd2159dc9b78"><code>a4f49ac</code></a>]:
 <ul>
@@ -463,7 +479,7 @@ To use this feature, set the <code>variant</code> property to <code>tooltip</cod
 </li>
 </ul>
 <h2 id="341">3.4.1</h2>
-<h3 id="patch-changes-28">Patch Changes</h3>
+<h3 id="patch-changes-29">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1196">#1196</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/6a9b9349f6404a638fadd842e3f2fd8216fd81cd"><code>6a9b934</code></a> Thanks <a href="https://github.com/kirchsuSICKAG">@kirchsuSICKAG</a>! - Released on: 2026-02-25</p>
@@ -487,7 +503,7 @@ This adds <code>position: sticky</code>, as well as a small shadow that indicate
 You can configure the <code>top</code> position via the new <code>--sticky-position</code> css property (defaults to <code>0</code> to make it stick to the top).</p>
 </li>
 </ul>
-<h3 id="patch-changes-29">Patch Changes</h3>
+<h3 id="patch-changes-30">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/c60deb9da1175404ddaa25b2c19ce9e182205cd2"><code>c60deb9</code></a>]:
 <ul>
@@ -506,7 +522,7 @@ This was now added for consistency with other elements that have a <code>size</c
 <p>This can be used via <code>&#x3C;syn-details size="small">&#x3C;/syn-details></code> or <code>&#x3C;syn-accordion size="small">&#x3C;/syn-accordion></code>.</p>
 </li>
 </ul>
-<h3 id="patch-changes-30">Patch Changes</h3>
+<h3 id="patch-changes-31">Patch Changes</h3>
 <ul>
 <li>Updated dependencies []:
 <ul>
@@ -515,7 +531,7 @@ This was now added for consistency with other elements that have a <code>size</c
 </li>
 </ul>
 <h2 id="321">3.2.1</h2>
-<h3 id="patch-changes-31">Patch Changes</h3>
+<h3 id="patch-changes-32">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1182">#1182</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/460f8c22dfdc305d3990ba0af4b4aefc451fa8ea"><code>460f8c2</code></a> Thanks <a href="https://github.com/kirchsuSICKAG">@kirchsuSICKAG</a>! - Released on: 2026-02-19</p>
@@ -544,7 +560,7 @@ This was now added for consistency with other elements that have a <code>size</c
 </ul>
 </li>
 </ul>
-<h3 id="patch-changes-32">Patch Changes</h3>
+<h3 id="patch-changes-33">Patch Changes</h3>
 <ul>
 <li>Updated dependencies []:
 <ul>
@@ -562,7 +578,7 @@ This was now added for consistency with other elements that have a <code>size</c
 <p>It will automatically apply its <code>size</code> and <code>variant</code> properties to all nested buttons.</p>
 </li>
 </ul>
-<h3 id="patch-changes-33">Patch Changes</h3>
+<h3 id="patch-changes-34">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/96dff2ebb47cee901f72773664ee864db5653219"><code>96dff2e</code></a>]:
 <ul>
@@ -601,7 +617,7 @@ This was now added for consistency with other elements that have a <code>size</c
 <p>For detailed migration instructions, please refer to the <a href="https://synergy-design-system.github.io/?path=/docs/packages-components-breaking-changes--docs">breaking changes documentation</a>.</p>
 </li>
 </ul>
-<h3 id="patch-changes-34">Patch Changes</h3>
+<h3 id="patch-changes-35">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/669cbcb9cccce72134beac99ac12a2591f3e3c74"><code>669cbcb</code></a>]:
 <ul>
@@ -610,7 +626,7 @@ This was now added for consistency with other elements that have a <code>size</c
 </li>
 </ul>
 <h2 id="2771">2.77.1</h2>
-<h3 id="patch-changes-35">Patch Changes</h3>
+<h3 id="patch-changes-36">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1148">#1148</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/73b70118ae21bc58c83cbfeb9e2e8447873803a6"><code>73b7011</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2026-01-08</p>
@@ -647,7 +663,7 @@ This was now added for consistency with other elements that have a <code>size</c
 </ul>
 </li>
 </ul>
-<h3 id="patch-changes-36">Patch Changes</h3>
+<h3 id="patch-changes-37">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/dc56e6f0ebc08e44b23bdbdaa6fffa03abc26e9e"><code>dc56e6f</code></a>]:
 <ul>
@@ -664,7 +680,7 @@ This was now added for consistency with other elements that have a <code>size</c
 feat: ✨ Brand updates for <code>&#x3C;syn-dropdown></code> (#949)</p>
 </li>
 </ul>
-<h3 id="patch-changes-37">Patch Changes</h3>
+<h3 id="patch-changes-38">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/6b4b7e2940b5c87e44d5da6030354ec0e21f2f38"><code>6b4b7e2</code></a>]:
 <ul>
@@ -673,7 +689,7 @@ feat: ✨ Brand updates for <code>&#x3C;syn-dropdown></code> (#949)</p>
 </li>
 </ul>
 <h2 id="2744">2.74.4</h2>
-<h3 id="patch-changes-38">Patch Changes</h3>
+<h3 id="patch-changes-39">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1134">#1134</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/53bd655f465b76c2aa7d57449750b99e8fcfb500"><code>53bd655</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-16</p>
@@ -683,7 +699,7 @@ Both components now use a combination of <code>background</code> and <code>borde
 </li>
 </ul>
 <h2 id="2743">2.74.3</h2>
-<h3 id="patch-changes-39">Patch Changes</h3>
+<h3 id="patch-changes-40">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1139">#1139</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/6cc737681f2b137702f3e95b0a666ae6f28b5039"><code>6cc7376</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-16</p>
@@ -692,7 +708,7 @@ Both components now use a combination of <code>background</code> and <code>borde
 </li>
 </ul>
 <h2 id="2742">2.74.2</h2>
-<h3 id="patch-changes-40">Patch Changes</h3>
+<h3 id="patch-changes-41">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1136">#1136</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/212b5bd29087b10d1fe0e6bbb94c97090b7b4f74"><code>212b5bd</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-16</p>
@@ -702,7 +718,7 @@ The close icons is now always aligned to the top of the <code>&#x3C;syn-alert></
 </li>
 </ul>
 <h2 id="2741">2.74.1</h2>
-<h3 id="patch-changes-41">Patch Changes</h3>
+<h3 id="patch-changes-42">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1133">#1133</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/82ea066fa18e35831d94f22c7ac620135bc8c334"><code>82ea066</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-12-15</p>
@@ -735,7 +751,7 @@ The property can also be used with Synergy <code>defaultSettings</code>.</p>
 </ul>
 </li>
 </ul>
-<h3 id="patch-changes-42">Patch Changes</h3>
+<h3 id="patch-changes-43">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/740816b1a86768e7f2fed5516241bdb3a9df4ef7"><code>740816b</code></a>]:
 <ul>
@@ -797,7 +813,7 @@ feat: ✨ Brand updates for <code>&#x3C;syn-combobox></code> (#944)</p>
 <p>feat: ✨ Brand update for <code>syn-file</code> (#953)</p>
 </li>
 </ul>
-<h3 id="patch-changes-43">Patch Changes</h3>
+<h3 id="patch-changes-44">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/b82f1d961aa4c2898f41b7c55eb3b7d43220878c"><code>b82f1d9</code></a>]:
 <ul>
@@ -822,7 +838,7 @@ feat: ✨ Brand updates for <code>&#x3C;syn-combobox></code> (#944)</p>
 </li>
 </ul>
 <h2 id="2641">2.64.1</h2>
-<h3 id="patch-changes-44">Patch Changes</h3>
+<h3 id="patch-changes-45">Patch Changes</h3>
 <ul>
 <li>
 <p><a href="https://github.com/synergy-design-system/synergy-design-system/pull/1098">#1098</a> <a href="https://github.com/synergy-design-system/synergy-design-system/commit/92973ed0242ceb836dfe662cbe8e81b7a5364c2e"><code>92973ed</code></a> Thanks <a href="https://github.com/schilchSICKAG">@schilchSICKAG</a>! - Released on: 2025-11-27</p>
@@ -838,7 +854,7 @@ feat: ✨ Brand updates for <code>&#x3C;syn-combobox></code> (#944)</p>
 <p>feat: ✨ Brand updates for <code>&#x3C;syn-menu></code>, <code>&#x3C;syn-menu-item></code> and <code>&#x3C;syn-menu-label></code> (#958)</p>
 </li>
 </ul>
-<h3 id="patch-changes-45">Patch Changes</h3>
+<h3 id="patch-changes-46">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/ac24e6379862c7e60b5d5293614f0d804eeb7388"><code>ac24e63</code></a>]:
 <ul>
@@ -878,7 +894,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 <p>feat: ✨ Brand updates for <code>&#x3C;syn validate></code> (#973)</p>
 </li>
 </ul>
-<h3 id="patch-changes-46">Patch Changes</h3>
+<h3 id="patch-changes-47">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/515226c44f8bba7b2b4b80cdd0f21f3237f0670d"><code>515226c</code></a>]:
 <ul>
@@ -894,7 +910,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 <p>feat: ✨ Brand updates for <code>&#x3C;syn-side-nav></code>, <code>&#x3C;syn-prio-nav></code> and <code>&#x3C;syn-nav-item></code> (#967, #960)</p>
 </li>
 </ul>
-<h3 id="patch-changes-47">Patch Changes</h3>
+<h3 id="patch-changes-48">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/1392ed23aba2b628344356adba0a78e1e8beff84"><code>1392ed2</code></a>]:
 <ul>
@@ -910,7 +926,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 <p>feat: ✨ Brand update for syn-range and syn-range-tick (#966)</p>
 </li>
 </ul>
-<h3 id="patch-changes-48">Patch Changes</h3>
+<h3 id="patch-changes-49">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/6e616f51007ebde567eeb33190518159becc7c32"><code>6e616f5</code></a>]:
 <ul>
@@ -926,7 +942,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 <p>feat: ✨ Brand updates for <code>&#x3C;syn-card></code> (#942)</p>
 </li>
 </ul>
-<h3 id="patch-changes-49">Patch Changes</h3>
+<h3 id="patch-changes-50">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/81dae1e912bcbdefb4346b4a3bbc245f7fac9f12"><code>81dae1e</code></a>]:
 <ul>
@@ -943,7 +959,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 <p>Also made sure to have smaller <code>blur</code> settings as the token has double the size in Figma.</p>
 </li>
 </ul>
-<h3 id="patch-changes-50">Patch Changes</h3>
+<h3 id="patch-changes-51">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/0ae632c5331f0583ba652add18755df01766cbf5"><code>0ae632c</code></a>]:
 <ul>
@@ -960,7 +976,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 <p>This PR migrates Synergies ci/cd system from <code>semantic-release</code> to <code>changesets</code>.</p>
 </li>
 </ul>
-<h3 id="patch-changes-51">Patch Changes</h3>
+<h3 id="patch-changes-52">Patch Changes</h3>
 <ul>
 <li>Updated dependencies [<a href="https://github.com/synergy-design-system/synergy-design-system/commit/bc0bc639a996fc75c57194244596d5733097389d"><code>bc0bc63</code></a>]:
 <ul>
@@ -970,13 +986,13 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2562">2.56.2</h2>
 <p>(Released on: 2025-11-03)</p>
-<h3 id="patch-changes-52">Patch Changes</h3>
+<h3 id="patch-changes-53">Patch Changes</h3>
 <ul>
 <li>🐛 Async delimiter change for pre-selected value in syn-select not displayed (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1061">#1061</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/5f6d36102b669cc34aa44cded47ef49559e74529">5f6d361</a>)</li>
 </ul>
 <h2 id="2561">2.56.1</h2>
 <p>(Released on: 2025-11-03)</p>
-<h3 id="patch-changes-53">Patch Changes</h3>
+<h3 id="patch-changes-54">Patch Changes</h3>
 <ul>
 <li>🐛 Show scrollbars for closed sticky variant of side-nav (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1062">#1062</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/926905bd15c87948700e5f32382547b2a1c43821">926905b</a>)</li>
 </ul>
@@ -1036,13 +1052,13 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2472">2.47.2</h2>
 <p>(Released on: 2025-10-15)</p>
-<h3 id="patch-changes-54">Patch Changes</h3>
+<h3 id="patch-changes-55">Patch Changes</h3>
 <ul>
 <li>🐛 Upgrade packages to latest versions - 10/25 (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1035">#1035</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/2fb5693e536df706ea2c99a8ffc6e4d853442bbf">2fb5693</a>)</li>
 </ul>
 <h2 id="2471">2.47.1</h2>
 <p>(Released on: 2025-10-13)</p>
-<h3 id="patch-changes-55">Patch Changes</h3>
+<h3 id="patch-changes-56">Patch Changes</h3>
 <ul>
 <li>🐛 Testing syn-popup in angular results in console errors (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1042">#1042</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/544e01a1227e4760c76d7a74238a224c7ca31a18">544e01a</a>)</li>
 </ul>
@@ -1054,7 +1070,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2461">2.46.1</h2>
 <p>(Released on: 2025-10-08)</p>
-<h3 id="patch-changes-56">Patch Changes</h3>
+<h3 id="patch-changes-57">Patch Changes</h3>
 <ul>
 <li>🐛 Subsequently changed delimiter not taking into account for option value (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1040">#1040</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/fb45b32c36d39046da754a294bff79d1a0ffeb42">fb45b32</a>)</li>
 </ul>
@@ -1066,13 +1082,13 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2452">2.45.2</h2>
 <p>(Released on: 2025-10-02)</p>
-<h3 id="patch-changes-57">Patch Changes</h3>
+<h3 id="patch-changes-58">Patch Changes</h3>
 <ul>
 <li>🐛 Synergy does not work with Typescript 5.9.x (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1027">#1027</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/7f6921cccb536a9a91e7d61b487fef2ad62dc831">7f6921c</a>)</li>
 </ul>
 <h2 id="2451">2.45.1</h2>
 <p>(Released on: 2025-09-30)</p>
-<h3 id="patch-changes-58">Patch Changes</h3>
+<h3 id="patch-changes-59">Patch Changes</h3>
 <ul>
 <li>🐛 Synergy element which use syn-popup may break if used in a stacking context (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1034">#1034</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/8d23dc737e36065a0208bc01a98981541540d0ef">8d23dc7</a>)</li>
 </ul>
@@ -1102,7 +1118,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2411">2.41.1</h2>
 <p>(Released on: 2025-08-28)</p>
-<h3 id="patch-changes-59">Patch Changes</h3>
+<h3 id="patch-changes-60">Patch Changes</h3>
 <ul>
 <li>🐛 Add old token as fallback token for new SICK 2025 tokens (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/1006">#1006</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/e5fff3060b340ceae2707eefdd06b2f2b32b9224">e5fff30</a>)</li>
 </ul>
@@ -1114,7 +1130,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2401">2.40.1</h2>
 <p>(Released on: 2025-08-21)</p>
-<h3 id="patch-changes-60">Patch Changes</h3>
+<h3 id="patch-changes-61">Patch Changes</h3>
 <ul>
 <li>🐛 Placeholder is clipped for syn-select multiple (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/992">#992</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/973933e477a2cba1611c2f73f77e4e79d755c8a1">973933e</a>)</li>
 </ul>
@@ -1126,13 +1142,13 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2392">2.39.2</h2>
 <p>(Released on: 2025-08-05)</p>
-<h3 id="patch-changes-61">Patch Changes</h3>
+<h3 id="patch-changes-62">Patch Changes</h3>
 <ul>
 <li>🐛 syn-header with syn-side-nav burger menu stops working (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/976">#976</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/cdf744ccb77cd83dc700b2816f53aa6e7d7a7da9">cdf744c</a>)</li>
 </ul>
 <h2 id="2391">2.39.1</h2>
 <p>(Released on: 2025-07-11)</p>
-<h3 id="patch-changes-62">Patch Changes</h3>
+<h3 id="patch-changes-63">Patch Changes</h3>
 <ul>
 <li>🐛 syn-validate - Incorrect state of form element if setting customValidationMessage via custom event (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/916">#916</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/679a92f4499d2ff81b8fd83c4f78a45375694e56">679a92f</a>)</li>
 </ul>
@@ -1150,7 +1166,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2371">2.37.1</h2>
 <p>(Released on: 2025-06-20)</p>
-<h3 id="patch-changes-63">Patch Changes</h3>
+<h3 id="patch-changes-64">Patch Changes</h3>
 <ul>
 <li>🐛 Upgrade packages to latest versions (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/905">#905</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/64de3cd72f7ab3c7eeb727a9de85d9d980b27055">64de3cd</a>)</li>
 </ul>
@@ -1174,19 +1190,19 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2343">2.34.3</h2>
 <p>(Released on: 2025-06-04)</p>
-<h3 id="patch-changes-64">Patch Changes</h3>
+<h3 id="patch-changes-65">Patch Changes</h3>
 <ul>
 <li>🐛 syn-select with numeric value does not work with 0 (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/892">#892</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/9e09a8f4aad6bbc8de9c855f4cabbaa0e22fc706">9e09a8f</a>)</li>
 </ul>
 <h2 id="2342">2.34.2</h2>
 <p>(Released on: 2025-05-27)</p>
-<h3 id="patch-changes-65">Patch Changes</h3>
+<h3 id="patch-changes-66">Patch Changes</h3>
 <ul>
 <li>🐛 syn-input: Numeric inputs having wrong min/max state when setting the value prop externally (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/881">#881</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/01a31693a6490fb944391dd85b668619607d643f">01a3169</a>)</li>
 </ul>
 <h2 id="2341">2.34.1</h2>
 <p>(Released on: 2025-05-27)</p>
-<h3 id="patch-changes-66">Patch Changes</h3>
+<h3 id="patch-changes-67">Patch Changes</h3>
 <ul>
 <li>🐛 syn-nav-item: syn-icon not in dependencies list (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/879">#879</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/61c107557e3f0b58aa88a57edaf3b25932a1df59">61c1075</a>)</li>
 </ul>
@@ -1214,13 +1230,13 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2312">2.31.2</h2>
 <p>(Released on: 2025-05-20)</p>
-<h3 id="patch-changes-67">Patch Changes</h3>
+<h3 id="patch-changes-68">Patch Changes</h3>
 <ul>
 <li>🐛 Angular problem with multiple select and async options (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/867">#867</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/350871007772fd7a5a5ed4cc4239c33b403f7291">3508710</a>)</li>
 </ul>
 <h2 id="2311">2.31.1</h2>
 <p>(Released on: 2025-05-19)</p>
-<h3 id="patch-changes-68">Patch Changes</h3>
+<h3 id="patch-changes-69">Patch Changes</h3>
 <ul>
 <li>🐛 syn-side-nav does not correctly reappear after double-click on burger menu (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/865">#865</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/fde5c13426b410fc98a31d21432ab191cdb57392">fde5c13</a>)</li>
 </ul>
@@ -1232,31 +1248,31 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2305">2.30.5</h2>
 <p>(Released on: 2025-05-13)</p>
-<h3 id="patch-changes-69">Patch Changes</h3>
+<h3 id="patch-changes-70">Patch Changes</h3>
 <ul>
 <li>🐛 syn-tooltip - box-shadow bleeds into tooltip arrow (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/863">#863</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/853ed2534f9cc470959501f66453d0e17ec5839f">853ed25</a>)</li>
 </ul>
 <h2 id="2304">2.30.4</h2>
 <p>(Released on: 2025-05-12)</p>
-<h3 id="patch-changes-70">Patch Changes</h3>
+<h3 id="patch-changes-71">Patch Changes</h3>
 <ul>
 <li>🐛 Tags expand and push out UI elements in syn-select with multiple enabled and fixed width (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/859">#859</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/74a33f423735a1a125582eb868da052809200fe6">74a33f4</a>)</li>
 </ul>
 <h2 id="2303">2.30.3</h2>
 <p>(Released on: 2025-05-08)</p>
-<h3 id="patch-changes-71">Patch Changes</h3>
+<h3 id="patch-changes-72">Patch Changes</h3>
 <ul>
 <li>🤔 Vendorism rewrites inline comment tickets to github to synergy account (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/860">#860</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/99c9b438e0485550215a810c2d33833140ac941e">99c9b43</a>)</li>
 </ul>
 <h2 id="2302">2.30.2</h2>
 <p>(Released on: 2025-05-07)</p>
-<h3 id="patch-changes-72">Patch Changes</h3>
+<h3 id="patch-changes-73">Patch Changes</h3>
 <ul>
 <li>🐛 Form fields: Allow to set title attribute for the whole component (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/858">#858</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/affa56bd5d22d93aaf615a1293ff8b4b9f541d22">affa56b</a>)</li>
 </ul>
 <h2 id="2301">2.30.1</h2>
 <p>(Released on: 2025-04-28)</p>
-<h3 id="patch-changes-73">Patch Changes</h3>
+<h3 id="patch-changes-74">Patch Changes</h3>
 <ul>
 <li>🐛 syn-input has some paddings which are not aligned with design (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/852">#852</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/15f110aca5b3e81d1860cf930942a3d1555d6d9b">15f110a</a>)</li>
 </ul>
@@ -1268,7 +1284,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2291">2.29.1</h2>
 <p>(Released on: 2025-04-14)</p>
-<h3 id="patch-changes-74">Patch Changes</h3>
+<h3 id="patch-changes-75">Patch Changes</h3>
 <ul>
 <li>🐛 Make the syn-select more robust to allow undefined as value (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/846">#846</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/87fc921b8ce2f50fc609d6827b7923e1ab27a86e">87fc921</a>)</li>
 </ul>
@@ -1292,25 +1308,25 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2264">2.26.4</h2>
 <p>(Released on: 2025-04-02)</p>
-<h3 id="patch-changes-75">Patch Changes</h3>
+<h3 id="patch-changes-76">Patch Changes</h3>
 <ul>
 <li>🐛 dynamically added active tab in angular does not show any panel content (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/832">#832</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/bb9c1c00333b38f2db2d1a788aff7e42434ae89d">bb9c1c0</a>)</li>
 </ul>
 <h2 id="2263">2.26.3</h2>
 <p>(Released on: 2025-04-01)</p>
-<h3 id="patch-changes-76">Patch Changes</h3>
+<h3 id="patch-changes-77">Patch Changes</h3>
 <ul>
 <li>🐛 disabling syn-option does not work when nested in syn-optgroup (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/819">#819</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/507797ec54cc9514e11bc32528ea5fd70d93d2b0">507797e</a>)</li>
 </ul>
 <h2 id="2262">2.26.2</h2>
 <p>(Released on: 2025-03-31)</p>
-<h3 id="patch-changes-77">Patch Changes</h3>
+<h3 id="patch-changes-78">Patch Changes</h3>
 <ul>
 <li>🐛 Upgrade packages to latest versions (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/830">#830</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/f5fe54fb55732b1e3efdf3062d55ee517aef4e81">f5fe54f</a>)</li>
 </ul>
 <h2 id="2261">2.26.1</h2>
 <p>(Released on: 2025-03-31)</p>
-<h3 id="patch-changes-78">Patch Changes</h3>
+<h3 id="patch-changes-79">Patch Changes</h3>
 <ul>
 <li>🐛 Combobox and select not showing selected value if value was initially set via property binding (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/822">#822</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/bb06d87e64467d3710acf74868a69372be1225aa">bb06d87</a>)</li>
 </ul>
@@ -1328,7 +1344,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2241">2.24.1</h2>
 <p>(Released on: 2025-03-24)</p>
-<h3 id="patch-changes-79">Patch Changes</h3>
+<h3 id="patch-changes-80">Patch Changes</h3>
 <ul>
 <li>🐛 Combobox should always show the text content of the option instead of the value (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/816">#816</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/9999fb885795019b598bf90fcdbedfe3fa262fcc">9999fb8</a>)</li>
 </ul>
@@ -1346,37 +1362,37 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2226">2.22.6</h2>
 <p>(Released on: 2025-03-11)</p>
-<h3 id="patch-changes-80">Patch Changes</h3>
+<h3 id="patch-changes-81">Patch Changes</h3>
 <ul>
 <li>🐛 setGlobalDefaultSettings does overwrite explicitly set default property values with new default size (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/801">#801</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/46b3ebd5f39f58682995d75e3b665dfd6b800961">46b3ebd</a>)</li>
 </ul>
 <h2 id="2225">2.22.5</h2>
 <p>(Released on: 2025-03-03)</p>
-<h3 id="patch-changes-81">Patch Changes</h3>
+<h3 id="patch-changes-82">Patch Changes</h3>
 <ul>
 <li>🐛 stepper buttons of reused syn-input type=number nodes no longer working (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/796">#796</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/300d044dc59d2678861e9a8306d2ee7a3db5d6c1">300d044</a>)</li>
 </ul>
 <h2 id="2224">2.22.4</h2>
 <p>(Released on: 2025-02-27)</p>
-<h3 id="patch-changes-82">Patch Changes</h3>
+<h3 id="patch-changes-83">Patch Changes</h3>
 <ul>
 <li>🐛 syn-details in angular animates incorrectly when it is set to be open initially via property binding (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/790">#790</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/e9f50a192ed284cd556b3328f1b5fee905bda025">e9f50a1</a>)</li>
 </ul>
 <h2 id="2223">2.22.3</h2>
 <p>(Released on: 2025-02-27)</p>
-<h3 id="patch-changes-83">Patch Changes</h3>
+<h3 id="patch-changes-84">Patch Changes</h3>
 <ul>
 <li>🐛 syn-alert should not emit warnings when closing and a slotted element has focus (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/787">#787</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/61c8cd3453f182c08884b40c7eada1e1c878248f">61c8cd3</a>)</li>
 </ul>
 <h2 id="2222">2.22.2</h2>
 <p>(Released on: 2025-02-27)</p>
-<h3 id="patch-changes-84">Patch Changes</h3>
+<h3 id="patch-changes-85">Patch Changes</h3>
 <ul>
 <li>🐛 syn-card font-size and color of slot content can not be changed (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/792">#792</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/e3c470ca7a07d81c06d881a81d7f3ff46829f31b">e3c470c</a>)</li>
 </ul>
 <h2 id="2221">2.22.1</h2>
 <p>(Released on: 2025-02-26)</p>
-<h3 id="patch-changes-85">Patch Changes</h3>
+<h3 id="patch-changes-86">Patch Changes</h3>
 <ul>
 <li>🐛 syn-select with multiple should not error when value is set to a falsy value (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/788">#788</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/e0ac2978f25d4d7632dea465c746cbc649776fe5">e0ac297</a>)</li>
 </ul>
@@ -1391,7 +1407,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2211">2.21.1</h2>
 <p>(Released on: 2025-02-13)</p>
-<h3 id="patch-changes-86">Patch Changes</h3>
+<h3 id="patch-changes-87">Patch Changes</h3>
 <ul>
 <li>🐛 Closable syn-alert closes on whole vertical area instead of the close icon only (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/774">#774</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/3793ab283cbb26bccc57612eb56bdc90aa3b563b">3793ab2</a>)</li>
 </ul>
@@ -1403,7 +1419,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2201">2.20.1</h2>
 <p>(Released on: 2025-02-10)</p>
-<h3 id="patch-changes-87">Patch Changes</h3>
+<h3 id="patch-changes-88">Patch Changes</h3>
 <ul>
 <li>🐛 SynTabGroup does not allow nested SynTabGroup as a child (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/766">#766</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/4ccb9382b2a40e009761af5aef117751f4230ccb">4ccb938</a>)</li>
 </ul>
@@ -1415,19 +1431,19 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2193">2.19.3</h2>
 <p>(Released on: 2025-02-07)</p>
-<h3 id="patch-changes-88">Patch Changes</h3>
+<h3 id="patch-changes-89">Patch Changes</h3>
 <ul>
 <li>🐛 syn-input is overflowing in flex and grid container with fix size (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/768">#768</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/fb68576ca378466cc3eb22e0f30228d2008e84c3">fb68576</a>)</li>
 </ul>
 <h2 id="2192">2.19.2</h2>
 <p>(Released on: 2025-02-07)</p>
-<h3 id="patch-changes-89">Patch Changes</h3>
+<h3 id="patch-changes-90">Patch Changes</h3>
 <ul>
 <li>🐛 Only apply min-width styling for syn-input type=“number” with spin buttons (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/767">#767</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/dfacbcbb79768a3cd658e0de440d270fa768fcfb">dfacbcb</a>)</li>
 </ul>
 <h2 id="2191">2.19.1</h2>
 <p>(Released on: 2025-01-27)</p>
-<h3 id="patch-changes-90">Patch Changes</h3>
+<h3 id="patch-changes-91">Patch Changes</h3>
 <ul>
 <li>🐛 Remove warning message in console for syn-header and syn-combobox in dev mode (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/756">#756</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/724196c50bb598bfaf40a30792fc140f2aa704a2">724196c</a>)</li>
 </ul>
@@ -1439,19 +1455,19 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2188">2.18.8</h2>
 <p>(Released on: 2025-01-23)</p>
-<h3 id="patch-changes-91">Patch Changes</h3>
+<h3 id="patch-changes-92">Patch Changes</h3>
 <ul>
 <li>🐛 React: style and ref for react19 not working (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/748">#748</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/b71d73a2c4d561a9d744c7301606070b179f25c3">b71d73a</a>)</li>
 </ul>
 <h2 id="2187">2.18.7</h2>
 <p>(Released on: 2025-01-23)</p>
-<h3 id="patch-changes-92">Patch Changes</h3>
+<h3 id="patch-changes-93">Patch Changes</h3>
 <ul>
 <li>🐛 Accessibility error in console when using syn-side-nav as rail (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/752">#752</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/a5d7d4d33a59af5507940508b374306544745da1">a5d7d4d</a>)</li>
 </ul>
 <h2 id="2186">2.18.6</h2>
 <p>(Released on: 2025-01-20)</p>
-<h3 id="patch-changes-93">Patch Changes</h3>
+<h3 id="patch-changes-94">Patch Changes</h3>
 <ul>
 <li>🐛 syn-range Various issues for syn-range (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/742">#742</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/d6dc3505576aa65cadb7c78f7a4a44deeffb3e4a">d6dc350</a>)
 <ul>
@@ -1464,31 +1480,31 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2185">2.18.5</h2>
 <p>(Released on: 2025-01-20)</p>
-<h3 id="patch-changes-94">Patch Changes</h3>
+<h3 id="patch-changes-95">Patch Changes</h3>
 <ul>
 <li>🐛 syn-validate: Rendered input should be highlighted as error when loading with an invalid state (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/745">#745</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/c07e6885a8c1392cd42adfd3877f7869125ced6b">c07e688</a>)</li>
 </ul>
 <h2 id="2184">2.18.4</h2>
 <p>(Released on: 2025-01-20)</p>
-<h3 id="patch-changes-95">Patch Changes</h3>
+<h3 id="patch-changes-96">Patch Changes</h3>
 <ul>
 <li>🐛 syn-validate: Validation message not removed when the slotted input is set to readonly or disabled (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/739">#739</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/12766f008f9c73de2c2f72d49d6830fa2a780b13">12766f0</a>)</li>
 </ul>
 <h2 id="2183">2.18.3</h2>
 <p>(Released on: 2025-01-20)</p>
-<h3 id="patch-changes-96">Patch Changes</h3>
+<h3 id="patch-changes-97">Patch Changes</h3>
 <ul>
 <li>🐛 Side-nav not working correctly for some production builds (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/744">#744</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/c7d5a5719edca5e6759d4eae6a20b240e6143ffd">c7d5a57</a>)</li>
 </ul>
 <h2 id="2182">2.18.2</h2>
 <p>(Released on: 2025-01-17)</p>
-<h3 id="patch-changes-97">Patch Changes</h3>
+<h3 id="patch-changes-98">Patch Changes</h3>
 <ul>
 <li>🐛 Checkbox and Radio have different disabled styles (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/740">#740</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/c2c77d3d6c72175b707b1a9808bc117d6daa2674">c2c77d3</a>)</li>
 </ul>
 <h2 id="2181">2.18.1</h2>
 <p>(Released on: 2025-01-16)</p>
-<h3 id="patch-changes-98">Patch Changes</h3>
+<h3 id="patch-changes-99">Patch Changes</h3>
 <ul>
 <li>🐛 Z-index order rendering problem with syn-side-nav in rail mode (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/737">#737</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/dce8bb21a9594a6b6d9bc00b3201907e992dc044">dce8bb2</a>)</li>
 </ul>
@@ -1512,7 +1528,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2152">2.15.2</h2>
 <p>(Released on: 2025-01-07)</p>
-<h3 id="patch-changes-99">Patch Changes</h3>
+<h3 id="patch-changes-100">Patch Changes</h3>
 <ul>
 <li>🐛 Various issues with syn-combobox (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/723">#723</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/744c485a7c24636f5f7cdd9f61f6640e593fcb8b">744c485</a>)
 <ul>
@@ -1524,7 +1540,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2151">2.15.1</h2>
 <p>(Released on: 2024-12-20)</p>
-<h3 id="patch-changes-100">Patch Changes</h3>
+<h3 id="patch-changes-101">Patch Changes</h3>
 <ul>
 <li>🐛 Indentation of nested nav-items in side-nav is not shown correctly for firefox (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/722">#722</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/916a79dd4a7cc6bac079d76464bffdbbfc624b51">916a79d</a>)</li>
 </ul>
@@ -1536,25 +1552,25 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2144">2.14.4</h2>
 <p>(Released on: 2024-12-10)</p>
-<h3 id="patch-changes-101">Patch Changes</h3>
+<h3 id="patch-changes-102">Patch Changes</h3>
 <ul>
 <li>🐛 Align prefixes, suffixes and build-in icons to design (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/709">#709</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/b91fa56004070cffcd6f59989b7d783c3fac4cb9">b91fa56</a>)</li>
 </ul>
 <h2 id="2143">2.14.3</h2>
 <p>(Released on: 2024-12-05)</p>
-<h3 id="patch-changes-102">Patch Changes</h3>
+<h3 id="patch-changes-103">Patch Changes</h3>
 <ul>
 <li> 🐛 select does not respect async value property anymore (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/705">#705</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/f4fc645092ab6a902e66c7e59aeb1a5178e3956a">f4fc645</a>)</li>
 </ul>
 <h2 id="2142">2.14.2</h2>
 <p>(Released on: 2024-12-04)</p>
-<h3 id="patch-changes-103">Patch Changes</h3>
+<h3 id="patch-changes-104">Patch Changes</h3>
 <ul>
 <li> 🐛 Change active tab via active property of syn-tab (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/701">#701</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/2f84cbe961b19247d829ec93c379778784ca1b74">2f84cbe</a>)</li>
 </ul>
 <h2 id="2141">2.14.1</h2>
 <p>(Released on: 2024-11-29)</p>
-<h3 id="patch-changes-104">Patch Changes</h3>
+<h3 id="patch-changes-105">Patch Changes</h3>
 <ul>
 <li>🤔 Adjust Paddings for syn-prio-nav (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/691">#691</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/2c2937b3d4e4c847e9cdd3df55555cc8085a4b74">2c2937b</a>)</li>
 </ul>
@@ -1589,7 +1605,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2121">2.12.1</h2>
 <p>(Released on: 2024-11-22)</p>
-<h3 id="patch-changes-105">Patch Changes</h3>
+<h3 id="patch-changes-106">Patch Changes</h3>
 <ul>
 <li>🤔 Syn-radio uses wrong line-height when in multi-line mode (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/681">#681</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/1638bd91a55f45fedc3eada4b69c525c150b26a3">1638bd9</a>)</li>
 </ul>
@@ -1601,49 +1617,49 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2118">2.11.8</h2>
 <p>(Released on: 2024-11-15)</p>
-<h3 id="patch-changes-106">Patch Changes</h3>
+<h3 id="patch-changes-107">Patch Changes</h3>
 <ul>
 <li>🐛 syn-alert’s left border does not reach the edge anymore (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/676">#676</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/83eebd8ac4762fc57c4470aaf99fcdc2143f542d">83eebd8</a>)</li>
 </ul>
 <h2 id="2117">2.11.7</h2>
 <p>(Released on: 2024-11-11)</p>
-<h3 id="patch-changes-107">Patch Changes</h3>
+<h3 id="patch-changes-108">Patch Changes</h3>
 <ul>
 <li>🤔 Vue: Using registerIconLibrary with wrappers lead to bigger bundle size (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/670">#670</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/61a13afe843f113a7e8d76f9e2eb3d8089df73fe">61a13af</a>)</li>
 </ul>
 <h2 id="2116">2.11.6</h2>
 <p>(Released on: 2024-11-08)</p>
-<h3 id="patch-changes-108">Patch Changes</h3>
+<h3 id="patch-changes-109">Patch Changes</h3>
 <ul>
 <li>🐛 syn-prio-nav takes size of prio menu into account when it’s not shown (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/665">#665</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/3218669c14a89b0f613edddb0d0c2866a2b0a48e">3218669</a>)</li>
 </ul>
 <h2 id="2115">2.11.5</h2>
 <p>(Released on: 2024-11-05)</p>
-<h3 id="patch-changes-109">Patch Changes</h3>
+<h3 id="patch-changes-110">Patch Changes</h3>
 <ul>
 <li>🐛 Add default entry for default export for better tooling compatibility (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/668">#668</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/c1206e9dce7e4d45a6b8d5569ad2163b735b9497">c1206e9</a>)</li>
 </ul>
 <h2 id="2114">2.11.4</h2>
 <p>(Released on: 2024-10-25)</p>
-<h3 id="patch-changes-110">Patch Changes</h3>
+<h3 id="patch-changes-111">Patch Changes</h3>
 <ul>
 <li>🐛 Make attribute:false properties work with all wrappers (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/658">#658</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/6bf63e93ca36c4eed2e823bef856b8be72ed3be0">6bf63e9</a>)</li>
 </ul>
 <h2 id="2113">2.11.3</h2>
 <p>(Released on: 2024-10-24)</p>
-<h3 id="patch-changes-111">Patch Changes</h3>
+<h3 id="patch-changes-112">Patch Changes</h3>
 <ul>
 <li>🐛 Incorrect scaling of syn-icon with font-size if using spritesheet (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/656">#656</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/593cbc4aec47866bed8316ac0acb63a03de0e7bf">593cbc4</a>)</li>
 </ul>
 <h2 id="2112">2.11.2</h2>
 <p>(Released on: 2024-10-23)</p>
-<h3 id="patch-changes-112">Patch Changes</h3>
+<h3 id="patch-changes-113">Patch Changes</h3>
 <ul>
 <li>🐛 Incorrect validations in angular forms (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/655">#655</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/cb3a3fc551620d0ff27e7284f0c26221eaf125b0">cb3a3fc</a>)</li>
 </ul>
 <h2 id="2111">2.11.1</h2>
 <p>(Released on: 2024-10-16)</p>
-<h3 id="patch-changes-113">Patch Changes</h3>
+<h3 id="patch-changes-114">Patch Changes</h3>
 <ul>
 <li>🐛 syn-tab-group may throw an error when unmounted too quick (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/653">#653</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/6ac5b378b3b60babdf7eb68e00a53211b42992e4">6ac5b37</a>)</li>
 </ul>
@@ -1655,7 +1671,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2102">2.10.2</h2>
 <p>(Released on: 2024-10-11)</p>
-<h3 id="patch-changes-114">Patch Changes</h3>
+<h3 id="patch-changes-115">Patch Changes</h3>
 <ul>
 <li>🐛 Various issues with syn-prio-nav (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/645">#645</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/f509e94672d494aa6393cf3287a749ca8eeee1ed">f509e94</a>)
 <ul>
@@ -1670,7 +1686,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="2101">2.10.1</h2>
 <p>(Released on: 2024-10-02)</p>
-<h3 id="patch-changes-115">Patch Changes</h3>
+<h3 id="patch-changes-116">Patch Changes</h3>
 <ul>
 <li>🐛 syn-prio-nav: priority menu position is always calculated from the absolute left of the document (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/608">#608</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/06a7974b6f6e93dbe7b6eee66e0c1ede99377629">06a7974</a>)</li>
 </ul>
@@ -1688,7 +1704,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="281">2.8.1</h2>
 <p>(Released on: 2024-09-26)</p>
-<h3 id="patch-changes-116">Patch Changes</h3>
+<h3 id="patch-changes-117">Patch Changes</h3>
 <ul>
 <li>🐛 syn-combobox: Keyboard navigation not working after text was entered (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/634">#634</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/077d010c25995663e521e2eafa065612db1cb739">077d010</a>)</li>
 </ul>
@@ -1700,19 +1716,19 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="273">2.7.3</h2>
 <p>(Released on: 2024-09-16)</p>
-<h3 id="patch-changes-117">Patch Changes</h3>
+<h3 id="patch-changes-118">Patch Changes</h3>
 <ul>
 <li>🤔 Build: Use prettier for formatting generated framework wrappers (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/611">#611</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/a6b2c90f9efd411ae5b6adc71a8ae559114dc651">a6b2c90</a>)</li>
 </ul>
 <h2 id="272">2.7.2</h2>
 <p>(Released on: 2024-09-13)</p>
-<h3 id="patch-changes-118">Patch Changes</h3>
+<h3 id="patch-changes-119">Patch Changes</h3>
 <ul>
 <li>🐛 Wrong font weight for text content in button (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/606">#606</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/42f3054cb7652ab16e5e276e499f6c60eeebf81b">42f3054</a>)</li>
 </ul>
 <h2 id="271">2.7.1</h2>
 <p>(Released on: 2024-09-05)</p>
-<h3 id="patch-changes-119">Patch Changes</h3>
+<h3 id="patch-changes-120">Patch Changes</h3>
 <ul>
 <li>🐛 syn-icon-button is not honoring ‘currentColor’ correctly (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/597">#597</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/670528c9ebdec2465e905141fe6930204aceca56">670528c</a>)</li>
 </ul>
@@ -1736,19 +1752,19 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="243">2.4.3</h2>
 <p>(Released on: 2024-07-24)</p>
-<h3 id="patch-changes-120">Patch Changes</h3>
+<h3 id="patch-changes-121">Patch Changes</h3>
 <ul>
 <li>🤔 syn-side-nav and syn-details may throw an error when unmounted too quick (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/565">#565</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/c308e28cd3dbdd452273b1c1d80344c3f378f1dc">c308e28</a>)</li>
 </ul>
 <h2 id="242">2.4.2</h2>
 <p>(Released on: 2024-07-17)</p>
-<h3 id="patch-changes-121">Patch Changes</h3>
+<h3 id="patch-changes-122">Patch Changes</h3>
 <ul>
 <li>🤔 Typescript error on vue components with no properties (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/558">#558</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/8564df1880fc6e17b6dc077a1cde7c4262705699">8564df1</a>)</li>
 </ul>
 <h2 id="241">2.4.1</h2>
 <p>(Released on: 2024-06-25)</p>
-<h3 id="patch-changes-122">Patch Changes</h3>
+<h3 id="patch-changes-123">Patch Changes</h3>
 <ul>
 <li>🤔 added invalid state to syn-select (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/517">#517</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/ac290d16dd208342d2c2565259895bf8eca62a96">ac290d1</a>)</li>
 </ul>
@@ -1766,7 +1782,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="221">2.2.1</h2>
 <p>(Released on: 2024-06-20)</p>
-<h3 id="patch-changes-123">Patch Changes</h3>
+<h3 id="patch-changes-124">Patch Changes</h3>
 <ul>
 <li>🤔 syn-tab-group may throw an error when unmounted too quick (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/512">#512</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/49ca55659358577973122fff9059a6c36b5343d9">49ca556</a>)</li>
 </ul>
@@ -1784,7 +1800,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="200">2.0.0</h2>
 <p>(Released on: 2024-06-05)</p>
-<h3 id="patch-changes-124">Patch Changes</h3>
+<h3 id="patch-changes-125">Patch Changes</h3>
 <ul>
 <li>🤔 v2 breaking changes (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/448">#448</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/b251fa72ec6668d005eed23c561e901dc050ab83">b251fa7</a>)</li>
 </ul>
@@ -1805,19 +1821,19 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="1263">1.26.3</h2>
 <p>(Released on: 2024-06-05)</p>
-<h3 id="patch-changes-125">Patch Changes</h3>
+<h3 id="patch-changes-126">Patch Changes</h3>
 <ul>
 <li>🤔  syn-nav-item getting too wide when in syn-side-nav with keyboard navigation (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/503">#503</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/e2974749b8a3d19b3a7c1ecd3fda0f1855ceca7c">e297474</a>)</li>
 </ul>
 <h2 id="1262">1.26.2</h2>
 <p>(Released on: 2024-06-05)</p>
-<h3 id="patch-changes-126">Patch Changes</h3>
+<h3 id="patch-changes-127">Patch Changes</h3>
 <ul>
 <li>🤔 Support Angular@18 (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/502">#502</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/10cb7fc47c951a9dfb0ea1f6070780262c0632c4">10cb7fc</a>)</li>
 </ul>
 <h2 id="1261">1.26.1</h2>
 <p>(Released on: 2024-06-03)</p>
-<h3 id="patch-changes-127">Patch Changes</h3>
+<h3 id="patch-changes-128">Patch Changes</h3>
 <ul>
 <li>🤔 Nav-item has incorrect hover state when :focus (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/497">#497</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/ace15b3c67a88c8136ce97aa4df522f1d18eded5">ace15b3</a>)</li>
 </ul>
@@ -1835,7 +1851,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="1241">1.24.1</h2>
 <p>(Released on: 2024-05-15)</p>
-<h3 id="patch-changes-128">Patch Changes</h3>
+<h3 id="patch-changes-129">Patch Changes</h3>
 <ul>
 <li>🤔 syn-header label uses wrong text color (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/487">#487</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/a09ea5ea26610b3e1107ed9b742050a4f53c0947">a09ea5e</a>)</li>
 </ul>
@@ -1847,7 +1863,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="1231">1.23.1</h2>
 <p>(Released on: 2024-05-08)</p>
-<h3 id="patch-changes-129">Patch Changes</h3>
+<h3 id="patch-changes-130">Patch Changes</h3>
 <ul>
 <li>🤔 Syn-Checkbox uses wrong line-height when in multi-line mode (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/456">#456</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/b072591bb1c8e6052cbff96936905c173ec64ce5">b072591</a>)</li>
 </ul>
@@ -1871,13 +1887,13 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="1202">1.20.2</h2>
 <p>(Released on: 2024-04-26)</p>
-<h3 id="patch-changes-130">Patch Changes</h3>
+<h3 id="patch-changes-131">Patch Changes</h3>
 <ul>
 <li>🤔 chevron of syn-nav-item using wrong symbol (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/447">#447</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/f1c202329eebb7d4c480bceab2f7d63adf267c64">f1c2023</a>)</li>
 </ul>
 <h2 id="1201">1.20.1</h2>
 <p>(Released on: 2024-04-23)</p>
-<h3 id="patch-changes-131">Patch Changes</h3>
+<h3 id="patch-changes-132">Patch Changes</h3>
 <ul>
 <li>🤔 Flickering of side-nav if changing its width via css variable (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/445">#445</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/4c98710d4dec9005340ed329086972f9da0ab1e9">4c98710</a>)</li>
 </ul>
@@ -1901,13 +1917,13 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="1172">1.17.2</h2>
 <p>(Released on: 2024-04-23)</p>
-<h3 id="patch-changes-132">Patch Changes</h3>
+<h3 id="patch-changes-133">Patch Changes</h3>
 <ul>
 <li>🤔 update dependencies (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/438">#438</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/f3d648b2071214cd6d58ff18d66e434dd32bfc76">f3d648b</a>)</li>
 </ul>
 <h2 id="1171">1.17.1</h2>
 <p>(Released on: 2024-04-23)</p>
-<h3 id="patch-changes-133">Patch Changes</h3>
+<h3 id="patch-changes-134">Patch Changes</h3>
 <ul>
 <li>🤔 syn-text-area may throw an error when unmounted too quick (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/437">#437</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/096f99fb92c13508ea3a32bc648ff555dd36fad1">096f99f</a>)</li>
 </ul>
@@ -1968,7 +1984,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="1101">1.10.1</h2>
 <p>(Released on: 2024-03-07)</p>
-<h3 id="patch-changes-134">Patch Changes</h3>
+<h3 id="patch-changes-135">Patch Changes</h3>
 <ul>
 <li>🤔 syn-icon-button has a border-radius (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/358">#358</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/fc591858578f2a7f64a38548e98a14abee4621ac">fc59185</a>)</li>
 </ul>
@@ -2011,7 +2027,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="161">1.6.1</h2>
 <p>(Released on: 2024-02-07)</p>
-<h3 id="patch-changes-135">Patch Changes</h3>
+<h3 id="patch-changes-136">Patch Changes</h3>
 <ul>
 <li>🤔 Vue two way data binding does not honor the provided default value (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/308">#308</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/507f0ca31d8bfb301edc47582aefbece6decab40">507f0ca</a>)</li>
 </ul>
@@ -2023,7 +2039,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="151">1.5.1</h2>
 <p>(Released on: 2024-01-31)</p>
-<h3 id="patch-changes-136">Patch Changes</h3>
+<h3 id="patch-changes-137">Patch Changes</h3>
 <ul>
 <li>🤔 disabled button uses wrong color (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/284">#284</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/028fbd158f0e8e36c908054fdc672d267ad3503e">028fbd1</a>)</li>
 </ul>
@@ -2035,7 +2051,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="141">1.4.1</h2>
 <p>(Released on: 2024-01-24)</p>
-<h3 id="patch-changes-137">Patch Changes</h3>
+<h3 id="patch-changes-138">Patch Changes</h3>
 <ul>
 <li>🤔 Update project dependencies (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/276">#276</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/9aa94beb8f1191862d7cf48617af2d1994a6df9c">9aa94be</a>)</li>
 </ul>
@@ -2053,7 +2069,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="122">1.2.2</h2>
 <p>(Released on: 2024-01-15)</p>
-<h3 id="patch-changes-138">Patch Changes</h3>
+<h3 id="patch-changes-139">Patch Changes</h3>
 <ul>
 <li>🤔 Update to shoelace 2.12.0 (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/257">#257</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/42b1c268688a32290ab67795c758c96b5a382aff">42b1c26</a>)
 <ul>
@@ -2066,7 +2082,7 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="121">1.2.1</h2>
 <p>(Released on: 2024-01-15)</p>
-<h3 id="patch-changes-139">Patch Changes</h3>
+<h3 id="patch-changes-140">Patch Changes</h3>
 <ul>
 <li>🤔 Syn-Button Spacing (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/254">#254</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/808db09668e0bd1871d894cfaf3433d39ce41637">808db09</a>)</li>
 </ul>
@@ -2084,13 +2100,13 @@ In cases where needed, you may also use <code>migrateIconNameFilled</code>, whic
 </ul>
 <h2 id="102">1.0.2</h2>
 <p>(Released on: 2023-12-14)</p>
-<h3 id="patch-changes-140">Patch Changes</h3>
+<h3 id="patch-changes-141">Patch Changes</h3>
 <ul>
 <li>📚 improve links in documentation (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/224">#224</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/f55934c34c6c53b0f7c9a5afa8d91bc520df4fdf">f55934c</a>)</li>
 </ul>
 <h2 id="101">1.0.1</h2>
 <p>(Released on: 2023-12-06)</p>
-<h3 id="patch-changes-141">Patch Changes</h3>
+<h3 id="patch-changes-142">Patch Changes</h3>
 <ul>
 <li>improve changelogs (<a href="https://github.com/synergy-design-system/synergy-design-system/issues/213">#213</a>) (<a href="https://github.com/synergy-design-system/synergy-design-system/commit/3674aed156b3f604a220be23957ca2da05717472">3674aed</a>)</li>
 </ul>
