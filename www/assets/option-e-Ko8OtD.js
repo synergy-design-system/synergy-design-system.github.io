@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{o as t,s as n}from"./utility-B51g0qSq.js";var r=e((()=>{t(),t(),n.define(`syn-option`)}));export{r as t};
