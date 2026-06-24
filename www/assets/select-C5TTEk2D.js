@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./select.component-B6fA-xoF.js";var r=e((()=>{n(),n(),t.define(`syn-select`)}));export{r as t};
