@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./tag.component-5LWPX26f.js";var r=e((()=>{n(),n(),t.define(`syn-tag`)}));export{r as t};
