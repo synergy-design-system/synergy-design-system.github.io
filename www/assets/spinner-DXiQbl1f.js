@@ -1,0 +1,1 @@
+import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./spinner.component-BcP-QuhJ.js";var r=e((()=>{t(),t(),n.define(`syn-spinner`)}));export{r as t};

@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./button.component-CC6lPz1U.js";var r=e((()=>{t(),t(),n.define(`syn-button`)}));export{r as t};
