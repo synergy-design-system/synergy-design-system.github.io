@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./icon.component-28BxMEdn.js";var r=e((()=>{t(),t(),n.define(`syn-icon`)}));export{r as t};

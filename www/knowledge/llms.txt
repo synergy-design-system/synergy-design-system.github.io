@@ -107,3 +107,112 @@ When answering questions, always prefer the most recent version information show
 - Prefer explicit documentation over inferred or assumed behavior.
 - Do not invent undocumented properties, events, methods, slots, variants, or styling hooks.
 - When a capability is out of scope or explicitly excluded,
+
+## Canonical discovery
+- llms-full.txt: /llms-full.txt
+- Home: /
+
+## Top-level sections
+- Components: /component
+- Templates: /template
+- Styles: /style
+- Intent Policies: /intent-policy
+- Package Changelogs: /changelog
+
+## Sample canonical human/ai pairs
+- syn-accordion (component:syn-accordion)
+  human: /component/syn-accordion
+  ai: /component/syn-accordion/ai.md
+- syn-alert (component:syn-alert)
+  human: /component/syn-alert
+  ai: /component/syn-alert/ai.md
+- syn-badge (component:syn-badge)
+  human: /component/syn-badge
+  ai: /component/syn-badge/ai.md
+- syn-breadcrumb (component:syn-breadcrumb)
+  human: /component/syn-breadcrumb
+  ai: /component/syn-breadcrumb/ai.md
+- syn-breadcrumb-item (component:syn-breadcrumb-item)
+  human: /component/syn-breadcrumb-item
+  ai: /component/syn-breadcrumb-item/ai.md
+- syn-button (component:syn-button)
+  human: /component/syn-button
+  ai: /component/syn-button/ai.md
+- syn-button-group (component:syn-button-group)
+  human: /component/syn-button-group
+  ai: /component/syn-button-group/ai.md
+- syn-card (component:syn-card)
+  human: /component/syn-card
+  ai: /component/syn-card/ai.md
+- syn-chart (component:syn-chart)
+  human: /component/syn-chart
+  ai: /component/syn-chart/ai.md
+- syn-checkbox (component:syn-checkbox)
+  human: /component/syn-checkbox
+  ai: /component/syn-checkbox/ai.md
+- syn-checkbox-group (component:syn-checkbox-group)
+  human: /component/syn-checkbox-group
+  ai: /component/syn-checkbox-group/ai.md
+- syn-combobox (component:syn-combobox)
+  human: /component/syn-combobox
+  ai: /component/syn-combobox/ai.md
+- syn-details (component:syn-details)
+  human: /component/syn-details
+  ai: /component/syn-details/ai.md
+- syn-dialog (component:syn-dialog)
+  human: /component/syn-dialog
+  ai: /component/syn-dialog/ai.md
+- syn-divider (component:syn-divider)
+  human: /component/syn-divider
+  ai: /component/syn-divider/ai.md
+- syn-drawer (component:syn-drawer)
+  human: /component/syn-drawer
+  ai: /component/syn-drawer/ai.md
+- syn-dropdown (component:syn-dropdown)
+  human: /component/syn-dropdown
+  ai: /component/syn-dropdown/ai.md
+- syn-fieldset (component:syn-fieldset)
+  human: /component/syn-fieldset
+  ai: /component/syn-fieldset/ai.md
+- syn-file (component:syn-file)
+  human: /component/syn-file
+  ai: /component/syn-file/ai.md
+- syn-header (component:syn-header)
+  human: /component/syn-header
+  ai: /component/syn-header/ai.md
+- syn-icon (component:syn-icon)
+  human: /component/syn-icon
+  ai: /component/syn-icon/ai.md
+- syn-icon-button (component:syn-icon-button)
+  human: /component/syn-icon-button
+  ai: /component/syn-icon-button/ai.md
+- syn-input (component:syn-input)
+  human: /component/syn-input
+  ai: /component/syn-input/ai.md
+- syn-menu (component:syn-menu)
+  human: /component/syn-menu
+  ai: /component/syn-menu/ai.md
+- syn-menu-item (component:syn-menu-item)
+  human: /component/syn-menu-item
+  ai: /component/syn-menu-item/ai.md
+- syn-menu-label (component:syn-menu-label)
+  human: /component/syn-menu-label
+  ai: /component/syn-menu-label/ai.md
+- syn-nav-item (component:syn-nav-item)
+  human: /component/syn-nav-item
+  ai: /component/syn-nav-item/ai.md
+- syn-optgroup (component:syn-optgroup)
+  human: /component/syn-optgroup
+  ai: /component/syn-optgroup/ai.md
+- syn-option (component:syn-option)
+  human: /component/syn-option
+  ai: /component/syn-option/ai.md
+- syn-pagination (component:syn-pagination)
+  human: /component/syn-pagination
+  ai: /component/syn-pagination/ai.md
+
+## Notes
+- Prefer AI URLs when available for machine-readable context, structured field values, and extracted facts.
+- Use HTML URLs when you want the human-facing rendered documentation page or need to quote, cite, or hand off links to people.
+- When both exist, read the AI page for the data and reference the HTML page for the link humans should follow.
+- IDs such as component:syn-button are stable identifiers.
