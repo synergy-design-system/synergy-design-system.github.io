@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-DaJ6WEGw.js";import{n as t,t as n}from"./tag.component-DfksmafM.js";var r=e((()=>{n(),n(),t.define(`syn-tag`)}));export{r as t};

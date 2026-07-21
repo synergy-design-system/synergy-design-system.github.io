@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DaJ6WEGw.js";import{n as t,t as n}from"./alert.component-DI_i2Pcs.js";var r=e((()=>{t(),t(),n.define(`syn-alert`)}));export{r as t};
