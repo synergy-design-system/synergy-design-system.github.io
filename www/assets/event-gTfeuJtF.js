@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-xPQekRTU.js";function t(e,t){return new Promise(n=>{function r(i){i.target===e&&(e.removeEventListener(t,r),n())}e.addEventListener(t,r)})}var n=e((()=>{}));export{t as n,n as t};

@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DaJ6WEGw.js";var t,n=e((()=>{t=e=>{let{activeElement:t}=document;t&&e.contains(t)&&document.activeElement?.blur()}}));export{n,t};

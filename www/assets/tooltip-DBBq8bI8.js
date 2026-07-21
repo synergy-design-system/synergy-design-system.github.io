@@ -1,1 +1,0 @@
-import{i as e}from"./preload-helper-xPQekRTU.js";import{n as t,t as n}from"./tooltip.component-C5JtJdQK.js";var r=e((()=>{t(),t(),n.define(`syn-tooltip`)}));export{r as t};
