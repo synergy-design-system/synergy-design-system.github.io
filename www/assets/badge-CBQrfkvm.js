@@ -1,0 +1,120 @@
+import{n as e}from"./rolldown-runtime-DaJ6WEGw.js";import{c as t,h as n,t as r}from"./lit-BfcklOOD.js";import{a as i,i as a,n as o,o as s,r as c,s as l,t as u,y as d}from"./synergy-element-zaPEO0fm.js";import{n as f,t as p}from"./class-map-D8k2AIVc.js";import{n as m,t as h}from"./localize-BNnpMTZD.js";import{n as g,t as _}from"./decorator-B3p9Y8B9.js";var v,y=e((()=>{r(),v=n`
+	/* stylelint-disable */
+  :host {
+    display: inline-flex;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(12px, 0.75em);
+    font-weight: var(--syn-font-weight-semibold);
+    letter-spacing: var(--syn-letter-spacing-normal);
+    line-height: 1;
+    border-radius: var(--syn-border-radius-small);
+    border: solid 1px var(--syn-color-neutral-0);
+    white-space: nowrap;
+    padding: 0.35em 0.6em;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: inherit;
+  }
+
+  /* Variant modifiers */
+  .badge--primary {
+    background-color: var(--syn-color-primary-600);
+    color: var(--syn-color-neutral-0);
+  }
+
+  .badge--success {
+    background-color: var(--syn-color-success-600);
+    color: var(--syn-color-neutral-0);
+  }
+
+  .badge--neutral {
+    background-color: var(--syn-color-neutral-600);
+    color: var(--syn-color-neutral-0);
+  }
+
+  .badge--warning {
+    background-color: var(--syn-color-warning-600);
+    color: var(--syn-color-neutral-0);
+  }
+
+  .badge--danger {
+    background-color: var(--syn-color-danger-600);
+    color: var(--syn-color-neutral-0);
+  }
+`})),b,x=e((()=>{r(),b=n`
+  .badge {
+    border: none;
+    border-radius: var(--syn-border-radius-pill);
+    font: var(--syn-body-small-bold);
+    height: var(--syn-spacing-large);
+    line-height: var(--syn-spacing-large);
+    min-width: var(--syn-spacing-large);
+    padding: 0 var(--syn-spacing-x-small);
+  }
+
+  /* Variant modifiers */
+  .badge--primary {
+    background-color: var(--syn-badge-informative-color-background);
+    color: var(--syn-badge-informative-color-text);
+  }
+
+  .badge--success {
+    background-color: var(--syn-badge-success-color-background);
+    color: var(--syn-badge-success-color-text);
+  }
+
+  .badge--neutral {
+    background-color: var(--syn-badge-neutral-color-background);
+    color: var(--syn-badge-neutral-color-text);
+  }
+
+  .badge--warning {
+    background-color: var(--syn-badge-warning-color-background);
+    color: var(--syn-badge-warning-color-text);
+  }
+
+  .badge--danger {
+    background-color: var(--syn-badge-error-color-background);
+    color: var(--syn-badge-error-color-text);
+  }
+
+  /**
+   * Special treatment: If the badge is empty, show it as a dot only
+   */
+  :host(:empty) .badge {
+    height: var(--syn-spacing-x-small);
+    min-width: initial;
+    padding: 0;
+    width: var(--syn-spacing-x-small);
+  }
+
+  .visually-hidden {
+    border: 0;
+    /* stylelint-disable-next-line property-no-deprecated */
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+`})),S,C,w=e((()=>{p(),r(),l(),s(),o(),h(),y(),x(),g(),a(),S=class extends u{constructor(...e){super(...e),this.localize=new m(this),this.variant=`primary`}static{this.styles=[i,v,b]}render(){return t`
+      <span
+        part="base"
+        class=${f({badge:!0,"badge--primary":this.variant===`primary`,"badge--success":this.variant===`success`,"badge--neutral":this.variant===`neutral`,"badge--warning":this.variant===`warning`,"badge--danger":this.variant===`danger`})}
+        role="status"
+      >
+        <slot>
+          <span class="visually-hidden">
+            ${this.localize.term(this.variant===`primary`||this.variant===`neutral`?`notification`:this.variant)}
+          </span>
+        </slot>
+      </span>
+    `}},c([d({reflect:!0})],S.prototype,`variant`,void 0),S=c([_(`SynBadge`)],S),C=S})),T=e((()=>{w(),w(),C.define(`syn-badge`)}));export{T as t};
