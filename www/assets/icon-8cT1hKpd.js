@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-DaJ6WEGw.js";import{n as t,t as n}from"./icon.component-BbPnVK5m.js";var r=e((()=>{t(),t(),n.define(`syn-icon`)}));export{r as t};

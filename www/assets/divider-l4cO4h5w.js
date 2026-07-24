@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-DaJ6WEGw.js";import{n as t,t as n}from"./divider.component-DrfdlL4r.js";var r=e((()=>{t(),t(),n.define(`syn-divider`)}));export{r as t};

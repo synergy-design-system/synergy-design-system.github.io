@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DaJ6WEGw.js";import{n as t,t as n}from"./option.component-DCEzGaa1.js";var r=e((()=>{n(),n(),t.define(`syn-option`)}));export{r as t};

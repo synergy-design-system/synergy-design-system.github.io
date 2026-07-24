@@ -20,16 +20,23 @@ Badges are used to draw attention and display statuses or counts.
 
 ## Usage Guidelines
 
-### Color
+### Variants & When to Use Them
 
-- Consistently apply one color choice for a cohesive look
-- Use default variants for standard notifications
-- Blue = neutral integration, green = more attention, red = maximum emphasis
-- Do not associate color variants with success or error states
+- **Primary** variant: Use for general status indicators, counts, or default emphasis.
+- **Success** variant: Use for positive states such as completed, confirmed, or available.
+- **Warning** variant: Use for cautionary states or information that needs attention.
+- **Critical** variant: Use for urgent, high-severity states that require immediate awareness.
+- **Error** variant: Use for failed, blocked, or problematic states.
+- ~~**Danger** variant~~: Do not use. This variant is deprecated and will be removed in a future major release. Use the error variant instead.
+- **Neutral** variant: Use for low-emphasis informational statuses that should remain visible but not draw strong attention.
+- Use one variant consistently per badge so the color matches the status meaning.
 
 ### Content
 
 - Use "+" for overflow values set by the application
+- Use an empty badge when you only need a compact visual status indicator without a numeric count or text label.
+- Reserve the dot-only badge for states that are already clear from the surrounding context, such as an anchored indicator on an icon or navigation item.
+- Do not rely on the dot-only badge as the only way to communicate critical meaning. Provide nearby text or another accessible cue when the status matters.
 
 ### Placement
 
@@ -83,10 +90,12 @@ Badges are used to draw attention and display statuses or counts.
 
 attribute: `variant`
 reflects: yes
-type: `'primary' | 'success' | 'neutral' | 'warning' | 'danger'`
+type: `'primary' | 'success' | 'neutral' | 'warning' | 'critical' | 'error' | 'danger'`
 default: `'primary'`
 
 The badge's theme variant.
+
+The `danger` variant is deprecated and will be removed in a future release. Use `error` instead.
 
 ## Available CSS Parts
 
@@ -113,7 +122,9 @@ Set the variant attribute to change the badge’s variant.
   <syn-badge variant="primary">primary</syn-badge>
   <syn-badge variant="success">success</syn-badge>
   <syn-badge variant="warning">warning</syn-badge>
-  <syn-badge variant="danger">danger</syn-badge>
+  <syn-badge variant="critical">critical</syn-badge>
+  <syn-badge variant="error">error</syn-badge>
+  <syn-badge variant="danger">danger*</syn-badge>
   <syn-badge variant="neutral">neutral</syn-badge>
 </div>
 ```
@@ -138,7 +149,7 @@ One of the most common use cases for badges is attaching them to buttons. DEV: T
 
   <syn-button>
     Errors
-    <syn-badge variant="danger" pill="">6</syn-badge>
+    <syn-badge variant="error" pill="">6</syn-badge>
   </syn-button>
 </div>
 ```
@@ -154,13 +165,13 @@ When including badges in menu items, use the suffix slot to make sure they’r
   <syn-menu-label>Messages</syn-menu-label>
   <syn-menu-item
     >Comments
-    <syn-badge slot="suffix" variant="neutral" pill=""
+    <syn-badge slot="suffix" variant="primary" pill=""
       >4</syn-badge
     ></syn-menu-item
   >
   <syn-menu-item
     >Replies
-    <syn-badge slot="suffix" variant="neutral" pill=""
+    <syn-badge slot="suffix" variant="primary" pill=""
       >12</syn-badge
     ></syn-menu-item
   >
@@ -177,7 +188,7 @@ Badges can be used without content to just show an status indicator.
 <div
   style="display: flex; position: relative; gap: var(--syn-spacing-3x-large)"
 >
-  <syn-popup active="" distance="-8" placement="right-start" skidding="-10">
+  <syn-popup active="" distance="-3" placement="right-start" skidding="-12">
     <syn-icon
       name="wallpaper"
       style="font-size: var(--syn-font-size-x-large)"
@@ -186,7 +197,7 @@ Badges can be used without content to just show an status indicator.
     <syn-badge></syn-badge>
   </syn-popup>
 
-  <syn-popup active="" distance="-8" placement="right-start" skidding="-10">
+  <syn-popup active="" distance="-10" placement="right-start" skidding="-14">
     <syn-icon
       name="wallpaper"
       style="font-size: var(--syn-font-size-x-large)"
