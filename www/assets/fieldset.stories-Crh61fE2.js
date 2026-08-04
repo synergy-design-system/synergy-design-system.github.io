@@ -1,0 +1,105 @@
+import{n as e,r as t}from"./rolldown-runtime-DkW27tQK.js";import{a as n,l as r}from"./preview-DKowTjrk.js";import{c as i,t as a}from"./lit-DgWh_IaA.js";import{a as o,i as s,n as c,o as l,r as u,t as d}from"./component-yQeR3V9a.js";import{t as f}from"./input-DK-nzLK5.js";import{t as p}from"./fieldset--fhTi6cu.js";var m=t({Default:()=>x,Disabled:()=>w,OneColumnLayout:()=>S,Screenshot:()=>T,TwoColumnLayout:()=>C,__namedExportsOrder:()=>E,default:()=>b}),h,g,_,v,y,b,x,S,C,w,T,E;function D(){return(D=e((()=>{p(),f(),a(),u(),r(),{args:h,argTypes:g}=s(`syn-fieldset`),{overrideArgs:_}=o(`syn-fieldset`),{generateTemplate:v}=l(`syn-fieldset`),y=(e=3,t=!0)=>Array.from({length:e},(e,n)=>t?i`<syn-input name="item-${n+1}" label="Item ${n+1}"></syn-input>\n`:`<syn-input name="item-${n+1}" label="Item ${n+1}"></syn-input>`),b={args:_([{name:`layout`,type:`attribute`,value:`two-columns`},{name:`legend`,type:`attribute`,value:`Legend`},{name:`description`,type:`attribute`,value:`Description text for the fieldset. This is optional and can be used to provide additional information about the fieldset.`},{name:`default`,type:`slot`,value:y(6,!1).map(String).join(`
+`)}],h),argTypes:g,component:`syn-fieldset`,parameters:{chromatic:{modes:n},docs:{description:{component:c(`fieldset`,`default`)}}},tags:[`Form`,`Structure`],title:`Components/syn-fieldset`},x={parameters:{controls:{disable:!1},docs:{description:{story:c(`fieldset`,`default`)}}},render:e=>v({args:e})},S={parameters:{controls:{disable:!1},docs:{description:{story:c(`fieldset`,`one-column-layout`)}}},render:()=>i`
+    <syn-fieldset
+      description="For container widths < 640px"
+      layout="one-column"
+      legend="One column layout"
+    >
+      ${y(6)}
+    </syn-fieldset>
+  `},C={parameters:{controls:{disable:!1},docs:{description:{story:c(`fieldset`,`two-column-layout`)}}},render:()=>i`
+    <syn-fieldset
+      description="For container widths ≥ 640px"
+      layout="two-columns"
+      legend="Two column layout"
+    >
+      ${y(6)}
+    </syn-fieldset>
+  `},w={parameters:{controls:{disable:!1},docs:{description:{story:c(`fieldset`,`disabled`)}}},render:()=>i`
+    <syn-fieldset
+      disabled
+      layout="two-columns"
+      legend="Disabled fieldset"
+    >
+      ${y(6)}
+    </syn-fieldset>
+  `},T=d({Default:x,OneColumnLayout:S,TwoColumnLayout:C,Disabled:w},750),x.parameters={...x.parameters,docs:{...x.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    controls: {
+      disable: false
+    },
+    docs: {
+      description: {
+        story: generateStoryDescription('fieldset', 'default')
+      }
+    }
+  },
+  render: args => generateTemplate({
+    args
+  })
+}`,...x.parameters?.docs?.source}}},S.parameters={...S.parameters,docs:{...S.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    controls: {
+      disable: false
+    },
+    docs: {
+      description: {
+        story: generateStoryDescription('fieldset', 'one-column-layout')
+      }
+    }
+  },
+  render: () => html\`
+    <syn-fieldset
+      description="For container widths < 640px"
+      layout="one-column"
+      legend="One column layout"
+    >
+      \${createFields(6)}
+    </syn-fieldset>
+  \`
+}`,...S.parameters?.docs?.source}}},C.parameters={...C.parameters,docs:{...C.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    controls: {
+      disable: false
+    },
+    docs: {
+      description: {
+        story: generateStoryDescription('fieldset', 'two-column-layout')
+      }
+    }
+  },
+  render: () => html\`
+    <syn-fieldset
+      description="For container widths ≥ 640px"
+      layout="two-columns"
+      legend="Two column layout"
+    >
+      \${createFields(6)}
+    </syn-fieldset>
+  \`
+}`,...C.parameters?.docs?.source}}},w.parameters={...w.parameters,docs:{...w.parameters?.docs,source:{originalSource:`{
+  parameters: {
+    controls: {
+      disable: false
+    },
+    docs: {
+      description: {
+        story: generateStoryDescription('fieldset', 'disabled')
+      }
+    }
+  },
+  render: () => html\`
+    <syn-fieldset
+      disabled
+      layout="two-columns"
+      legend="Disabled fieldset"
+    >
+      \${createFields(6)}
+    </syn-fieldset>
+  \`
+}`,...w.parameters?.docs?.source}}},T.parameters={...T.parameters,docs:{...T.parameters?.docs,source:{originalSource:`generateScreenshotStory({
+  Default,
+  OneColumnLayout,
+  TwoColumnLayout,
+  Disabled
+}, 750)`,...T.parameters?.docs?.source}}},E=[`Default`,`OneColumnLayout`,`TwoColumnLayout`,`Disabled`,`Screenshot`]})))()}export{m as n,D as r,x as t};

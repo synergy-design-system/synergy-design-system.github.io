@@ -1,0 +1,8 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{l as t,p as n}from"./blocks-CjiNIppL.js";import{i as r,r as i}from"./react-Bl2r1tuC.js";import{a}from"./chunk-W22LQPXL-G4bkWhvb.js";function o(e){let n={a:`a`,blockquote:`blockquote`,em:`em`,p:`p`,...r(),...e.components};return(0,c.jsxs)(c.Fragment,{children:[(0,c.jsx)(t,{title:`Detailed overview`}),`
+`,(0,c.jsx)(`h1`,{style:{marginBottom:0},children:`Detailed overview`}),`
+`,(0,c.jsx)(`p`,{style:{fontSize:`x-large`,color:`var(--syn-color-neutral-800)`},children:`Dive into Synergy now`}),`
+`,(0,c.jsx)(`p`,{children:`The presentation below gives a deeper understanding of the history, the motivation, the processes etc.`}),`
+`,(0,c.jsxs)(n.blockquote,{children:[`
+`,(0,c.jsx)(n.p,{children:(0,c.jsxs)(n.em,{children:[`Get the presentation's password on our `,(0,c.jsx)(n.a,{href:`https://mosaicplus.sick.com/display/SYN/Synergy`,rel:`nofollow`,children:`intranet page`}),` or contact us via Webex.`]})}),`
+`]}),`
+`,(0,c.jsx)(`iframe`,{style:{aspectRatio:`16 / 11`},width:`100%`,src:`https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsMKeFg6Rshg0QjgHtAUq2Y%2FSynergy-Presentation%3Fpage-id%3D157%253A128%26type%3Ddesign%26node-id%3D157-1281%26viewport%3D564%252C253%252C0.04%26t%3Da9HayozNdRpu9WRq-1%26scaling%3Dcontain%26starting-point-node-id%3D157%253A1281%26hotspot-hints%3D0%26mode%3Ddesign`,allowFullScreen:!0})]})}function s(e={}){let{wrapper:t}={...r(),...e.components};return t?(0,c.jsx)(t,{...e,children:(0,c.jsx)(o,{...e})}):o(e)}var c;function l(){return(l=e((()=>{c=a(),i(),n()})))()}l();export{s as default};
