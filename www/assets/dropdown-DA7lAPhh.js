@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{n as t,t as n}from"./dropdown.component-BVgmmHoy.js";function r(){return(r=e((()=>{t(),n.define(`syn-dropdown`)})))()}export{r as t};

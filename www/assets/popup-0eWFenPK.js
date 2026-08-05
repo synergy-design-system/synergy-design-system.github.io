@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{n as t,t as n}from"./popup.component-BrGMasMr.js";function r(){return(r=e((()=>{t(),n.define(`syn-popup`)})))()}export{r as t};

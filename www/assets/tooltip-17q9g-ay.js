@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{n as t,t as n}from"./tooltip.component-u5iKo0Yg.js";function r(){return(r=e((()=>{t(),n.define(`syn-tooltip`)})))()}export{r as t};

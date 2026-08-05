@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{n as t,t as n}from"./nav-item.component-Bm56b4hd.js";function r(){return(r=e((()=>{t(),n.define(`syn-nav-item`)})))()}export{r as t};

@@ -1,9 +1,0 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{l as t,p as n}from"./blocks-CjiNIppL.js";import{i as r,r as i}from"./react-Bl2r1tuC.js";import{a}from"./chunk-W22LQPXL-G4bkWhvb.js";import{n as o,t as s}from"./_docs-B6zVr8E7.js";import{E as c,F as l,H as u,I as d,M as f,N as p,R as m,V as h,h as g,i as _,k as v,n as y,r as b,t as x}from"./TokensForThemes-DbLl9WrP.js";function S(e){let n={h1:`h1`,table:`table`,tbody:`tbody`,td:`td`,th:`th`,tr:`tr`,...r(),...e.components};return(0,w.jsxs)(w.Fragment,{children:[(0,w.jsx)(t,{title:`Tokens/Border Radius`,tags:[`Design Tokens`]}),`
-`,(0,w.jsx)(n.h1,{id:``,children:s?.tokens?.[`border-radius`]?.title.value}),`
-`,(0,w.jsx)(v,{value:s?.tokens?.[`border-radius`]?.description?.value}),`
-`,(0,w.jsx)(x,{themes:y([`2025`,`2018`],({className:e})=>(0,w.jsx)(n.table,{children:(0,w.jsx)(n.tbody,{children:(0,w.jsxs)(w.Fragment,{children:[(0,w.jsxs)(n.tr,{children:[(0,w.jsx)(n.th,{children:s?.tokens?.[`border-radius`]?.title.value}),(0,w.jsx)(n.th,{children:`Raw Value`}),(0,w.jsx)(n.th,{children:`CSS Token`}),(0,w.jsx)(n.th,{children:`SCSS Token`}),(0,w.jsx)(n.th,{children:`JS Token`})]}),Object.entries(g(!0)).map(([t,r])=>(0,w.jsxs)(n.tr,{children:[(0,w.jsx)(n.td,{children:(0,w.jsx)(c,{className:`${e}-${t.toLowerCase()}`,value:r})}),(0,w.jsx)(n.td,{children:(0,w.jsx)(p,{value:`${e}-${t.toLowerCase()}`,cssProperty:`border-radius`})}),(0,w.jsx)(n.td,{children:(0,w.jsx)(h,{value:d(t),children:d(t)})}),(0,w.jsx)(n.td,{children:(0,w.jsx)(h,{value:m(t),children:m(t)})}),(0,w.jsx)(n.td,{children:(0,w.jsx)(h,{value:t,children:t})})]},`${t}-row`))]})})}))}),`
-`,(0,w.jsx)(`style`,{children:`
-.synborderradiuspill {
-width: 80px !important;
-}
-`})]})}function C(e={}){let{wrapper:t}={...r(),...e.components};return t?(0,w.jsx)(t,{...e,children:(0,w.jsx)(S,{...e})}):S(e)}var w;function T(){return(T=e((()=>{w=a(),i(),n(),u(),l(),o(),f(),_(),b()})))()}T();export{C as default};
