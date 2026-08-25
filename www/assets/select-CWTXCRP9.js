@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{n as t,t as n}from"./select.component-CNE9UkDt.js";function r(){return(r=e((()=>{n(),t.define(`syn-select`)})))()}export{r as t};
