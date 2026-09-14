@@ -1,5 +1,18 @@
 import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{l as t,p as n}from"./blocks-CjiNIppL.js";import{i as r,r as i}from"./react-Bl2r1tuC.js";import{a}from"./chunk-W22LQPXL-G4bkWhvb.js";import{n as o,t as s}from"./Changelog-2RX0-Vwd.js";var c;function l(){return(l=e((()=>{c=`# Changelog
 
+## 4.9.0
+
+### Patch Changes
+
+- [#1368](https://github.com/synergy-design-system/synergy-design-system/pull/1368) [\`259d2cd\`](https://github.com/synergy-design-system/synergy-design-system/commit/259d2cdb206417498665685b601fd306cf354238) Thanks [@schilchSICKAG](https://github.com/schilchSICKAG)! - Released on: 2026-09-14
+
+  fix: 🐛 mcp false positive ([#1367](https://github.com/synergy-design-system/synergy-design-system/issues/1367))
+
+  This release fixes an issue that newer Agents reported our llm rules as prompt injection.
+
+- Updated dependencies []:
+  - @synergy-design-system/metadata@4.9.0
+
 ## 4.8.0
 
 ### Minor Changes

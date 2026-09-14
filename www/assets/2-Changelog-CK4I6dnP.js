@@ -1,5 +1,13 @@
 import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{l as t,p as n}from"./blocks-CjiNIppL.js";import{i as r,r as i}from"./react-Bl2r1tuC.js";import{a}from"./chunk-W22LQPXL-G4bkWhvb.js";import{n as o,t as s}from"./Changelog-2RX0-Vwd.js";var c;function l(){return(l=e((()=>{c=`# Changelog
 
+## 4.9.0
+
+### Minor Changes
+
+- Released on: 2026-09-14
+
+  chore: ✨ Update Metadata and MCP with latest metadata
+
 ## 4.8.0
 
 ### Patch Changes
