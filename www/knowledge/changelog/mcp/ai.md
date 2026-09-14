@@ -4,6 +4,19 @@ Human-facing HTML page: /knowledge/changelog/mcp
 
 # Changelog
 
+## 4.7.0
+
+### Minor Changes
+
+- Released on: 2026-09-14
+
+  chore: ✨ Update Metadata and MCP with latest metadata
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @synergy-design-system/metadata@4.7.0
+
 ## 4.6.0
 
 ### Minor Changes
