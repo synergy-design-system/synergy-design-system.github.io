@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{n as t,t as n}from"./tag.component-eAFqc_Rc.js";function r(){return(r=e((()=>{n(),t.define(`syn-tag`)})))()}export{r as t};
