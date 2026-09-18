@@ -4,6 +4,8 @@ Human-facing HTML page: /knowledge/changelog/metadata
 
 # Changelog
 
+## 4.13.0
+
 ## 4.12.0
 
 ### Patch Changes

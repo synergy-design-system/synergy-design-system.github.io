@@ -1,6 +1,6 @@
 # Synergy Design System Docs Full Index
 
-Total entries: 87
+Total entries: 88
 
 This file is the exhaustive machine-readable index of all canonical docs entries, including both their human page and AI page URLs.
 Use the AI URLs when you need structured markdown content, and use the human URLs when you need a link to give people or cite in rendered documentation.
@@ -274,6 +274,11 @@ Use the AI URLs when you need structured markdown content, and use the human URL
   name: Breadcrumb
   human: /template/breadcrumb
   ai: /template/breadcrumb/ai.md
+- id: template:dialog
+  kind: template
+  name: Dialog
+  human: /template/dialog
+  ai: /template/dialog/ai.md
 - id: template:footer
   kind: template
   name: Footer
