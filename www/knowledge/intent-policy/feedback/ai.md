@@ -45,6 +45,11 @@ Contextual user feedback such as inline or toast notifications.
 <SynVueAlert duration="0" variant="warning">CONTENT</SynVueAlert>
 ```
 
+##### vue-web-components
+```html
+<syn-alert duration="0" variant="warning">CONTENT</syn-alert>
+```
+
 
 ### feedback.toast
 
@@ -83,6 +88,11 @@ Contextual user feedback such as inline or toast notifications.
 ##### vue
 ```html
 <SynVueAlert duration="4000" variant="success">CONTENT</SynVueAlert>
+```
+
+##### vue-web-components
+```html
+<syn-alert duration="4000" variant="success">CONTENT</syn-alert>
 ```
 
 
@@ -125,6 +135,11 @@ Contextual user feedback such as inline or toast notifications.
 <SynVueAlert duration="0" variant="error">CONTENT</SynVueAlert>
 ```
 
+##### vue-web-components
+```html
+<syn-alert duration="0" variant="error">CONTENT</syn-alert>
+```
+
 
 ### feedback.critical.inline
 
@@ -163,6 +178,11 @@ Contextual user feedback such as inline or toast notifications.
 ##### vue
 ```html
 <SynVueAlert duration="0" variant="critical">CONTENT</SynVueAlert>
+```
+
+##### vue-web-components
+```html
+<syn-alert duration="0" variant="critical">CONTENT</syn-alert>
 ```
 
 
@@ -205,6 +225,11 @@ Contextual user feedback such as inline or toast notifications.
 <SynVueAlert duration="0" variant="warning">CONTENT</SynVueAlert>
 ```
 
+##### vue-web-components
+```html
+<syn-alert duration="0" variant="warning">CONTENT</syn-alert>
+```
+
 
 ### feedback.success.inline
 
@@ -243,6 +268,11 @@ Contextual user feedback such as inline or toast notifications.
 ##### vue
 ```html
 <SynVueAlert duration="0" variant="success">CONTENT</SynVueAlert>
+```
+
+##### vue-web-components
+```html
+<syn-alert duration="0" variant="success">CONTENT</syn-alert>
 ```
 
 
@@ -285,6 +315,11 @@ Contextual user feedback such as inline or toast notifications.
 <SynVueAlert duration="4000" variant="error">CONTENT</SynVueAlert>
 ```
 
+##### vue-web-components
+```html
+<syn-alert duration="4000" variant="error">CONTENT</syn-alert>
+```
+
 
 ### feedback.critical.toast
 
@@ -323,6 +358,11 @@ Contextual user feedback such as inline or toast notifications.
 ##### vue
 ```html
 <SynVueAlert duration="4000" variant="critical">CONTENT</SynVueAlert>
+```
+
+##### vue-web-components
+```html
+<syn-alert duration="4000" variant="critical">CONTENT</syn-alert>
 ```
 
 
@@ -365,6 +405,11 @@ Contextual user feedback such as inline or toast notifications.
 <SynVueAlert duration="4000" variant="warning">CONTENT</SynVueAlert>
 ```
 
+##### vue-web-components
+```html
+<syn-alert duration="4000" variant="warning">CONTENT</syn-alert>
+```
+
 
 ### feedback.success.toast
 
@@ -403,6 +448,11 @@ Contextual user feedback such as inline or toast notifications.
 ##### vue
 ```html
 <SynVueAlert duration="4000" variant="success">CONTENT</SynVueAlert>
+```
+
+##### vue-web-components
+```html
+<syn-alert duration="4000" variant="success">CONTENT</syn-alert>
 ```
 
 
@@ -445,6 +495,11 @@ Contextual user feedback such as inline or toast notifications.
 <SynVueBadge>CONTENT</SynVueBadge>
 ```
 
+##### vue-web-components
+```html
+<syn-badge>CONTENT</syn-badge>
+```
+
 
 ### feedback.badge.success
 
@@ -483,6 +538,11 @@ Contextual user feedback such as inline or toast notifications.
 ##### vue
 ```html
 <SynVueBadge variant="success">CONTENT</SynVueBadge>
+```
+
+##### vue-web-components
+```html
+<syn-badge variant="success">CONTENT</syn-badge>
 ```
 
 
@@ -525,6 +585,11 @@ Contextual user feedback such as inline or toast notifications.
 <SynVueBadge variant="warning">CONTENT</SynVueBadge>
 ```
 
+##### vue-web-components
+```html
+<syn-badge variant="warning">CONTENT</syn-badge>
+```
+
 
 ### feedback.badge.critical
 
@@ -565,6 +630,11 @@ Contextual user feedback such as inline or toast notifications.
 <SynVueBadge variant="critical">CONTENT</SynVueBadge>
 ```
 
+##### vue-web-components
+```html
+<syn-badge variant="critical">CONTENT</syn-badge>
+```
+
 
 ### feedback.badge.error
 
@@ -603,6 +673,11 @@ Contextual user feedback such as inline or toast notifications.
 ##### vue
 ```html
 <SynVueBadge variant="error">CONTENT</SynVueBadge>
+```
+
+##### vue-web-components
+```html
+<syn-badge variant="error">CONTENT</syn-badge>
 ```
 
 
@@ -646,6 +721,11 @@ Contextual user feedback such as inline or toast notifications.
 <SynVueTag>CONTENT</SynVueTag>
 ```
 
+##### vue-web-components
+```html
+<syn-tag>CONTENT</syn-tag>
+```
+
 
 - Target: component:syn-tag-group
 - Reason: Grouped tags for concise display of multiple labels or states.
@@ -674,6 +754,11 @@ Contextual user feedback such as inline or toast notifications.
 ##### vue
 ```html
 <SynVueTagGroup>CONTENT</SynVueTagGroup>
+```
+
+##### vue-web-components
+```html
+<syn-tag-group>CONTENT</syn-tag-group>
 ```
 
 
@@ -714,5 +799,10 @@ Contextual user feedback such as inline or toast notifications.
 ##### vue
 ```html
 <SynVueValidate>CONTENT</SynVueValidate>
+```
+
+##### vue-web-components
+```html
+<syn-validate>CONTENT</syn-validate>
 ```
 

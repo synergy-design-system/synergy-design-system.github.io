@@ -45,6 +45,11 @@ Transient loading and processing indicators.
 <SynVueSpinner size="medium">CONTENT</SynVueSpinner>
 ```
 
+##### vue-web-components
+```html
+<syn-spinner size="medium">CONTENT</syn-spinner>
+```
+
 
 ### status.loading.action
 
@@ -83,6 +88,11 @@ Transient loading and processing indicators.
 ##### vue
 ```html
 <SynVueSpinner size="small">CONTENT</SynVueSpinner>
+```
+
+##### vue-web-components
+```html
+<syn-spinner size="small">CONTENT</syn-spinner>
 ```
 
 
@@ -125,6 +135,11 @@ Transient loading and processing indicators.
 <SynVueProgressBar>CONTENT</SynVueProgressBar>
 ```
 
+##### vue-web-components
+```html
+<syn-progress-bar>CONTENT</syn-progress-bar>
+```
+
 
 ### status.progress.circular
 
@@ -163,5 +178,10 @@ Transient loading and processing indicators.
 ##### vue
 ```html
 <SynVueProgressRing>CONTENT</SynVueProgressRing>
+```
+
+##### vue-web-components
+```html
+<syn-progress-ring>CONTENT</syn-progress-ring>
 ```
 

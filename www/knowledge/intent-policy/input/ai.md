@@ -45,6 +45,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueInput type="text">CONTENT</SynVueInput>
 ```
 
+##### vue-web-components
+```html
+<syn-input type="text">CONTENT</syn-input>
+```
+
 
 ### input.text.email
 
@@ -83,6 +88,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueInput type="email">CONTENT</SynVueInput>
+```
+
+##### vue-web-components
+```html
+<syn-input type="email">CONTENT</syn-input>
 ```
 
 
@@ -125,6 +135,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueInput type="tel">CONTENT</SynVueInput>
 ```
 
+##### vue-web-components
+```html
+<syn-input type="tel">CONTENT</syn-input>
+```
+
 
 ### input.text.url
 
@@ -163,6 +178,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueInput type="url">CONTENT</SynVueInput>
+```
+
+##### vue-web-components
+```html
+<syn-input type="url">CONTENT</syn-input>
 ```
 
 
@@ -205,6 +225,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueInput type="search">CONTENT</SynVueInput>
 ```
 
+##### vue-web-components
+```html
+<syn-input type="search">CONTENT</syn-input>
+```
+
 
 ### input.text.secret
 
@@ -243,6 +268,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueInput type="password">CONTENT</SynVueInput>
+```
+
+##### vue-web-components
+```html
+<syn-input type="password">CONTENT</syn-input>
 ```
 
 
@@ -285,6 +315,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueInput type="number">CONTENT</SynVueInput>
 ```
 
+##### vue-web-components
+```html
+<syn-input type="number">CONTENT</syn-input>
+```
+
 
 ### input.text.long
 
@@ -323,6 +358,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueTextarea resize="vertical">CONTENT</SynVueTextarea>
+```
+
+##### vue-web-components
+```html
+<syn-textarea resize="vertical">CONTENT</syn-textarea>
 ```
 
 
@@ -369,6 +409,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueRadioGroup>CONTENT</SynVueRadioGroup>
 ```
 
+##### vue-web-components
+```html
+<syn-radio-group>CONTENT</syn-radio-group>
+```
+
 
 - Target: component:syn-select
 - Reason: Single selection from a predefined options list.
@@ -397,6 +442,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueSelect>CONTENT</SynVueSelect>
+```
+
+##### vue-web-components
+```html
+<syn-select>CONTENT</syn-select>
 ```
 
 
@@ -429,6 +479,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueRadioButton>CONTENT</SynVueRadioButton>
 ```
 
+##### vue-web-components
+```html
+<syn-radio-button>CONTENT</syn-radio-button>
+```
+
 
 - Target: component:syn-radio
 - Reason: Single selectable radio option used within a radio-group.
@@ -459,6 +514,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueRadio>CONTENT</SynVueRadio>
 ```
 
+##### vue-web-components
+```html
+<syn-radio>CONTENT</syn-radio>
+```
+
 
 - Target: component:syn-option
 - Reason: Selectable option item used within select or optgroup structures for single-choice selection.
@@ -487,6 +547,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueOption>CONTENT</SynVueOption>
+```
+
+##### vue-web-components
+```html
+<syn-option>CONTENT</syn-option>
 ```
 
 
@@ -531,6 +596,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueSelect multiple>CONTENT</SynVueSelect>
 ```
 
+##### vue-web-components
+```html
+<syn-select multiple>CONTENT</syn-select>
+```
+
 
 - Target: component:syn-checkbox-group
 - Reason: Multi-select option set represented as grouped checkboxes or switches in a single form control context.
@@ -561,6 +631,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueCheckboxGroup>CONTENT</SynVueCheckboxGroup>
 ```
 
+##### vue-web-components
+```html
+<syn-checkbox-group>CONTENT</syn-checkbox-group>
+```
+
 
 - Target: component:syn-option
 - Reason: Selectable option item used within select or optgroup structures for multiple-choice selection.
@@ -589,6 +664,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueOption>CONTENT</SynVueOption>
+```
+
+##### vue-web-components
+```html
+<syn-option>CONTENT</syn-option>
 ```
 
 
@@ -631,6 +711,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueCombobox>CONTENT</SynVueCombobox>
 ```
 
+##### vue-web-components
+```html
+<syn-combobox>CONTENT</syn-combobox>
+```
+
 
 ### input.selection.searchable.multiple
 
@@ -669,6 +754,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueCombobox multiple>CONTENT</SynVueCombobox>
+```
+
+##### vue-web-components
+```html
+<syn-combobox multiple>CONTENT</syn-combobox>
 ```
 
 
@@ -711,6 +801,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueSwitch>CONTENT</SynVueSwitch>
 ```
 
+##### vue-web-components
+```html
+<syn-switch>CONTENT</syn-switch>
+```
+
 
 ### input.binary.deferred
 
@@ -749,6 +844,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueCheckbox>CONTENT</SynVueCheckbox>
+```
+
+##### vue-web-components
+```html
+<syn-checkbox>CONTENT</syn-checkbox>
 ```
 
 
@@ -791,6 +891,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueFile>CONTENT</SynVueFile>
 ```
 
+##### vue-web-components
+```html
+<syn-file>CONTENT</syn-file>
+```
+
 
 ### input.number.range
 
@@ -829,6 +934,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueRange>CONTENT</SynVueRange>
+```
+
+##### vue-web-components
+```html
+<syn-range>CONTENT</syn-range>
 ```
 
 
@@ -871,6 +981,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueRange>CONTENT</SynVueRange>
 ```
 
+##### vue-web-components
+```html
+<syn-range>CONTENT</syn-range>
+```
+
 
 ### input.date.day
 
@@ -909,6 +1024,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueInput type="date">CONTENT</SynVueInput>
+```
+
+##### vue-web-components
+```html
+<syn-input type="date">CONTENT</syn-input>
 ```
 
 
@@ -951,6 +1071,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueInput type="time">CONTENT</SynVueInput>
 ```
 
+##### vue-web-components
+```html
+<syn-input type="time">CONTENT</syn-input>
+```
+
 
 ### input.date.datetime-local
 
@@ -989,6 +1114,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueInput type="datetime-local">CONTENT</SynVueInput>
+```
+
+##### vue-web-components
+```html
+<syn-input type="datetime-local">CONTENT</syn-input>
 ```
 
 
@@ -1032,6 +1162,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueSelect>CONTENT</SynVueSelect>
 ```
 
+##### vue-web-components
+```html
+<syn-select>CONTENT</syn-select>
+```
+
 
 - Target: component:syn-optgroup
 - Reason: Grouped option container used to label and organize related select options.
@@ -1060,6 +1195,11 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueOptgroup>CONTENT</SynVueOptgroup>
+```
+
+##### vue-web-components
+```html
+<syn-optgroup>CONTENT</syn-optgroup>
 ```
 
 
@@ -1102,6 +1242,11 @@ Data-entry and selection intents for forms and controls.
 <SynVueCheckboxGroup>CONTENT</SynVueCheckboxGroup>
 ```
 
+##### vue-web-components
+```html
+<syn-checkbox-group>CONTENT</syn-checkbox-group>
+```
+
 
 ### input.grouping.fieldset
 
@@ -1140,5 +1285,10 @@ Data-entry and selection intents for forms and controls.
 ##### vue
 ```html
 <SynVueFieldset>CONTENT</SynVueFieldset>
+```
+
+##### vue-web-components
+```html
+<syn-fieldset>CONTENT</syn-fieldset>
 ```
 

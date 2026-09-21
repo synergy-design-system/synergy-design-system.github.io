@@ -45,6 +45,11 @@ Progressive disclosure of secondary information.
 <SynVueDetails>CONTENT</SynVueDetails>
 ```
 
+##### vue-web-components
+```html
+<syn-details>CONTENT</syn-details>
+```
+
 
 ### disclosure.accordion.grouped
 
@@ -85,6 +90,11 @@ Progressive disclosure of secondary information.
 <SynVueAccordion close-others>CONTENT</SynVueAccordion>
 ```
 
+##### vue-web-components
+```html
+<syn-accordion close-others>CONTENT</syn-accordion>
+```
+
 
 ### disclosure.popup.on-demand
 
@@ -123,5 +133,10 @@ Progressive disclosure of secondary information.
 ##### vue
 ```html
 <SynVuePopup>CONTENT</SynVuePopup>
+```
+
+##### vue-web-components
+```html
+<syn-popup>CONTENT</syn-popup>
 ```
 

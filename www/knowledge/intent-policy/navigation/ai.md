@@ -45,6 +45,11 @@ Information architecture and movement between sections or datasets.
 <ul class="syn-link-list"><li><a class="syn-link" href="#"><SynVueIcon name="keyboard_arrow_right"></SynVueIcon>Link</a></li><li><a class="syn-link" href="#"><SynVueIcon name="keyboard_arrow_right"></SynVueIcon>Link</a></li><li><a class="syn-link" href="#"><SynVueIcon name="keyboard_arrow_right"></SynVueIcon>Link</a></li><li><a class="syn-link" href="#"><SynVueIcon name="keyboard_arrow_right"></SynVueIcon>Link</a></li></ul>
 ```
 
+##### vue-web-components
+```html
+<ul class="syn-link-list"><li><a class="syn-link" href="#"><syn-icon name="keyboard_arrow_right"></syn-icon>Link</a></li><li><a class="syn-link" href="#"><syn-icon name="keyboard_arrow_right"></syn-icon>Link</a></li><li><a class="syn-link" href="#"><syn-icon name="keyboard_arrow_right"></syn-icon>Link</a></li><li><a class="syn-link" href="#"><syn-icon name="keyboard_arrow_right"></syn-icon>Link</a></li></ul>
+```
+
 
 ### navigation.tabs.section
 
@@ -87,6 +92,11 @@ Information architecture and movement between sections or datasets.
 <SynVueTabGroup>CONTENT</SynVueTabGroup>
 ```
 
+##### vue-web-components
+```html
+<syn-tab-group>CONTENT</syn-tab-group>
+```
+
 
 - Target: component:syn-tab
 - Reason: Single navigable tab item used to activate one related content panel.
@@ -117,6 +127,11 @@ Information architecture and movement between sections or datasets.
 <SynVueTab>CONTENT</SynVueTab>
 ```
 
+##### vue-web-components
+```html
+<syn-tab>CONTENT</syn-tab>
+```
+
 
 - Target: component:syn-tab-panel
 - Reason: Content panel associated with one tab in a tab-group navigation flow.
@@ -145,6 +160,11 @@ Information architecture and movement between sections or datasets.
 ##### vue
 ```html
 <SynVueTabPanel>CONTENT</SynVueTabPanel>
+```
+
+##### vue-web-components
+```html
+<syn-tab-panel>CONTENT</syn-tab-panel>
 ```
 
 
@@ -189,6 +209,11 @@ Information architecture and movement between sections or datasets.
 <SynVueMenu>CONTENT</SynVueMenu>
 ```
 
+##### vue-web-components
+```html
+<syn-menu>CONTENT</syn-menu>
+```
+
 
 - Target: component:syn-menu-item
 - Reason: Selectable action or destination entry inside a menu.
@@ -219,6 +244,11 @@ Information architecture and movement between sections or datasets.
 <SynVueMenuItem>CONTENT</SynVueMenuItem>
 ```
 
+##### vue-web-components
+```html
+<syn-menu-item>CONTENT</syn-menu-item>
+```
+
 
 - Target: component:syn-menu-label
 - Reason: Non-interactive grouping label used to organize related menu items.
@@ -247,6 +277,11 @@ Information architecture and movement between sections or datasets.
 ##### vue
 ```html
 <SynVueMenuLabel>CONTENT</SynVueMenuLabel>
+```
+
+##### vue-web-components
+```html
+<syn-menu-label>CONTENT</syn-menu-label>
 ```
 
 
@@ -289,6 +324,11 @@ Information architecture and movement between sections or datasets.
 <SynVuePagination>CONTENT</SynVuePagination>
 ```
 
+##### vue-web-components
+```html
+<syn-pagination>CONTENT</syn-pagination>
+```
+
 
 ### navigation.dropdown.compact-options
 
@@ -327,6 +367,11 @@ Information architecture and movement between sections or datasets.
 ##### vue
 ```html
 <SynVueDropdown>CONTENT</SynVueDropdown>
+```
+
+##### vue-web-components
+```html
+<syn-dropdown>CONTENT</syn-dropdown>
 ```
 
 
@@ -370,6 +415,11 @@ Information architecture and movement between sections or datasets.
 <SynVueBreadcrumb>CONTENT</SynVueBreadcrumb>
 ```
 
+##### vue-web-components
+```html
+<syn-breadcrumb>CONTENT</syn-breadcrumb>
+```
+
 
 - Target: component:syn-breadcrumb-item
 - Reason: Breadcrumb item representing one navigable hierarchy level.
@@ -398,6 +448,11 @@ Information architecture and movement between sections or datasets.
 ##### vue
 ```html
 <SynVueBreadcrumbItem>CONTENT</SynVueBreadcrumbItem>
+```
+
+##### vue-web-components
+```html
+<syn-breadcrumb-item>CONTENT</syn-breadcrumb-item>
 ```
 
 
@@ -441,6 +496,11 @@ Information architecture and movement between sections or datasets.
 <SynVueSideNav>CONTENT</SynVueSideNav>
 ```
 
+##### vue-web-components
+```html
+<syn-side-nav>CONTENT</syn-side-nav>
+```
+
 
 - Target: component:syn-nav-item
 - Reason: Single destination entry within side navigation structures.
@@ -469,6 +529,11 @@ Information architecture and movement between sections or datasets.
 ##### vue
 ```html
 <SynVueNavItem>CONTENT</SynVueNavItem>
+```
+
+##### vue-web-components
+```html
+<syn-nav-item>CONTENT</syn-nav-item>
 ```
 
 
@@ -512,6 +577,11 @@ Information architecture and movement between sections or datasets.
 <SynVueHeader><SynVuePrioNav slot="navigation"></SynVuePrioNav></SynVueHeader>
 ```
 
+##### vue-web-components
+```html
+<syn-header><syn-prio-nav slot="navigation"></syn-prio-nav></syn-header>
+```
+
 
 - Target: component:syn-nav-item
 - Reason: Priority navigation entry within a responsive overflow-capable navigation bar.
@@ -540,5 +610,10 @@ Information architecture and movement between sections or datasets.
 ##### vue
 ```html
 <SynVueNavItem>CONTENT</SynVueNavItem>
+```
+
+##### vue-web-components
+```html
+<syn-nav-item>CONTENT</syn-nav-item>
 ```
 

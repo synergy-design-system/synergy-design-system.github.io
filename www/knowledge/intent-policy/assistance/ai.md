@@ -45,6 +45,11 @@ Contextual micro-guidance for nearby controls or content.
 <SynVueTooltip>CONTENT</SynVueTooltip>
 ```
 
+##### vue-web-components
+```html
+<syn-tooltip>CONTENT</syn-tooltip>
+```
+
 
 ### assistance.icon.contextual
 
@@ -83,5 +88,10 @@ Contextual micro-guidance for nearby controls or content.
 ##### vue
 ```html
 <SynVueIcon>CONTENT</SynVueIcon>
+```
+
+##### vue-web-components
+```html
+<syn-icon>CONTENT</syn-icon>
 ```
 

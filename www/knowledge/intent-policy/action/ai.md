@@ -45,6 +45,11 @@ Contextual actions such as primary, submit, reset, or navigation actions.
 <SynVueButton type="button" variant="filled">CONTENT</SynVueButton>
 ```
 
+##### vue-web-components
+```html
+<syn-button type="button" variant="filled">CONTENT</syn-button>
+```
+
 
 ### action.submit
 
@@ -85,6 +90,11 @@ Contextual actions such as primary, submit, reset, or navigation actions.
 <SynVueButton type="submit" variant="filled">CONTENT</SynVueButton>
 ```
 
+##### vue-web-components
+```html
+<syn-button type="submit" variant="filled">CONTENT</syn-button>
+```
+
 
 ### action.reset
 
@@ -123,6 +133,11 @@ Contextual actions such as primary, submit, reset, or navigation actions.
 ##### vue
 ```html
 <SynVueButton type="reset" variant="text">CONTENT</SynVueButton>
+```
+
+##### vue-web-components
+```html
+<syn-button type="reset" variant="text">CONTENT</syn-button>
 ```
 
 
@@ -166,6 +181,11 @@ Contextual actions such as primary, submit, reset, or navigation actions.
 <SynVueButton href="#" variant="text">CONTENT</SynVueButton>
 ```
 
+##### vue-web-components
+```html
+<syn-button href="#" variant="text">CONTENT</syn-button>
+```
+
 
 - Target: style:syn-link
 - Reason: Class-based link navigation pattern for inline or standalone links.
@@ -192,6 +212,11 @@ Contextual actions such as primary, submit, reset, or navigation actions.
 ```
 
 ##### vue
+```html
+<a class="syn-link" href="#">Link</a>
+```
+
+##### vue-web-components
 ```html
 <a class="syn-link" href="#">Link</a>
 ```
@@ -236,6 +261,11 @@ Contextual actions such as primary, submit, reset, or navigation actions.
 <SynVueIconButton>CONTENT</SynVueIconButton>
 ```
 
+##### vue-web-components
+```html
+<syn-icon-button>CONTENT</syn-icon-button>
+```
+
 
 ### action.grouped
 
@@ -274,5 +304,10 @@ Contextual actions such as primary, submit, reset, or navigation actions.
 ##### vue
 ```html
 <SynVueButtonGroup>CONTENT</SynVueButtonGroup>
+```
+
+##### vue-web-components
+```html
+<syn-button-group>CONTENT</syn-button-group>
 ```
 

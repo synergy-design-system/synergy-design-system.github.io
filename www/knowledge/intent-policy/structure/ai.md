@@ -45,6 +45,11 @@ Structural interaction intent requiring composition, slots, and semantic roles.
 <SynVueDialog open><nav slot="footer"><SynVueButton variant="text"></SynVueButton><SynVueButton variant="filled"></SynVueButton></nav></SynVueDialog>
 ```
 
+##### vue-web-components
+```html
+<syn-dialog open><nav slot="footer"><syn-button variant="text"></syn-button><syn-button variant="filled"></syn-button></nav></syn-dialog>
+```
+
 
 ### structure.drawer.overlay
 
@@ -83,6 +88,11 @@ Structural interaction intent requiring composition, slots, and semantic roles.
 ##### vue
 ```html
 <SynVueDrawer>CONTENT</SynVueDrawer>
+```
+
+##### vue-web-components
+```html
+<syn-drawer>CONTENT</syn-drawer>
 ```
 
 
@@ -125,6 +135,11 @@ Structural interaction intent requiring composition, slots, and semantic roles.
 <SynVueHeader>CONTENT</SynVueHeader>
 ```
 
+##### vue-web-components
+```html
+<syn-header>CONTENT</syn-header>
+```
+
 
 ### structure.content.container
 
@@ -165,6 +180,11 @@ Structural interaction intent requiring composition, slots, and semantic roles.
 <SynVueCard>CONTENT</SynVueCard>
 ```
 
+##### vue-web-components
+```html
+<syn-card>CONTENT</syn-card>
+```
+
 
 ### structure.content.separator
 
@@ -203,5 +223,10 @@ Structural interaction intent requiring composition, slots, and semantic roles.
 ##### vue
 ```html
 <SynVueDivider>CONTENT</SynVueDivider>
+```
+
+##### vue-web-components
+```html
+<syn-divider>CONTENT</syn-divider>
 ```
 
