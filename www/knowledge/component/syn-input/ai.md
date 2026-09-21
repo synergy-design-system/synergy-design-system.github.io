@@ -616,7 +616,7 @@ Emitted when the form control has been checked for validity and its constraints 
 Inputs collect data from the user.
 
 ```html
-<syn-input spellcheck=""></syn-input>
+<syn-input></syn-input>
 ```
 
 ---
