@@ -1,4 +1,4 @@
-import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{c as t,l as n,p as r}from"./blocks-Tvq0jjN0.js";import{i,r as a}from"./react-BXJ34t_g.js";import{a as o}from"./chunk-W22LQPXL-EtH7qi1o.js";import{n as s,t as c}from"./react-DQUMYUu9.js";var l;function u(){return(u=e((()=>{l=`# Handling breaking changes between major versions
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{c as t,l as n,p as r}from"./blocks-Tvq0jjN0.js";import{i,r as a}from"./react-BXJ34t_g.js";import{a as o}from"./chunk-W22LQPXL-EtH7qi1o.js";import{n as s,t as c}from"./react-CZ5HqI2N.js";var l;function u(){return(u=e((()=>{l=`# Handling breaking changes between major versions
 
 This guide holds the required information for migrating from one major version of \`@synergy-design-system/assets\` to the next.
 
