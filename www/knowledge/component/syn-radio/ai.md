@@ -40,6 +40,11 @@ Radios allow the user to select a single option from a group.
 - If no safe default exists, require explicit user selection before submit.
 - Do not mix radios and checkboxes for the same decision set.
 
+### Validation and States
+
+- Use readonly on every radio in a group when users should see the current selection without changing it; setting it only on the selected radio leaves other options available.
+- Use disabled on individual radios only when those choices are unavailable, and explain why they cannot be selected.
+
 ## Accessibility
 
 - syn-radio is not a standalone control; always use syn-radio inside syn-radio-group so assistive technologies can interpret options as one exclusive choice set.
@@ -183,7 +188,7 @@ The focus event gives the user feedback that the Radio has been focused by the k
 
 ## Disabled
 
-Use the disabled attribute to disable a radio.
+Set disabled on an unavailable radio option and explain why it cannot be selected. Use readonly on every radio in the group when users should inspect the selection without changing it.
 
 ```html
 <syn-radio value="1" disabled="">Option</syn-radio>
@@ -193,7 +198,7 @@ Use the disabled attribute to disable a radio.
 
 ## Readonly
 
-Add the readonly attribute to draw a read-only radio.
+Set readonly on every syn-radio in the group when users should inspect the selected choice without changing it. Setting it only on the selected radio leaves other choices available.
 
 ```html
 <syn-radio-group value="1">

@@ -32,6 +32,11 @@ Checkboxes allow the user to toggle an option on or off.
 - List selections in a logical order, such as alphabetical or numerical.
 - Refrain from using a single checkbox when the action should take effect immediately - use syn-switch instead.
 
+### Validation and States
+
+- Use readonly when users need to see whether an existing choice is checked without being able to change it.
+- Use disabled only when the choice is unavailable; explain why users cannot select it rather than leaving an unexplained inactive option.
+
 ## Accessibility
 
 - Checkboxes should always look like checkboxes to meet user's expectations.
@@ -346,7 +351,7 @@ The focus event gives the user feedback that the Checkbox has been focused by th
 
 ## Disabled
 
-Use the disabled attribute to disable the checkbox.
+Use disabled when this choice is unavailable, and explain why it cannot be selected. Use readonly instead when users should see an existing checked state without changing it.
 
 ```html
 <syn-checkbox disabled="">Disabled</syn-checkbox>
@@ -356,7 +361,7 @@ Use the disabled attribute to disable the checkbox.
 
 ## Readonly
 
-Add the readonly attribute to draw a read-only checkbox.
+Use readonly when users need to see whether an existing choice is checked but must not change it. Use disabled only when the choice is unavailable.
 
 ```html
 <div

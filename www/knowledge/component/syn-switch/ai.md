@@ -33,6 +33,11 @@ Switches allow the user to toggle an option on or off.
 - Use adjectives to describe actions, as they are less ambiguous than verbs.
 - Limit use to binary choices, such as "on/off" or "yes/no".
 
+### Validation and States
+
+- Use readonly to display an existing on/off setting that users may inspect but cannot toggle here.
+- Use disabled only when changing the setting is unavailable; explain the condition that prevents toggling it.
+
 ## Accessibility
 
 - Consider alternatives to switches, as many users may find them confusing.
@@ -306,7 +311,7 @@ The focus event gives the user feedback that the Switch has been focused by the 
 
 ## Disabled
 
-Use the disabled attribute to disable the switch.
+Use disabled only when changing the setting is unavailable, and explain what prevents toggling it. Use readonly to show an existing on/off state without allowing changes.
 
 ```html
 <syn-switch disabled="">Disabled</syn-switch>
@@ -316,7 +321,7 @@ Use the disabled attribute to disable the switch.
 
 ## Readonly
 
-Add the readonly attribute to draw a read-only switch.
+Use readonly to display an existing on/off setting that users may inspect but cannot toggle here. Use disabled only when the setting is unavailable.
 
 ```html
 <div

@@ -34,6 +34,7 @@ Fieldsets are used to group related elements in a form.
 ### Disabled Behavior
 
 - When disabling a fieldset, ensure users still understand why input is blocked and what action is needed to re-enable it.
+- The disabled attribute makes all contained form controls unavailable. There is no fieldset-level readonly attribute; set readonly on supported child controls when users still need to inspect their values.
 - Do not use disabled groups to hide required steps in a form flow; prefer progressive disclosure patterns with clear triggers.
 
 ### Layout
@@ -230,7 +231,7 @@ For container widths of 640px or above, the nested elements within each row swit
 
 ## Disabled
 
-Enable the disabled toggle to disable all nested elements simultaneously.
+Use disabled when the entire section is unavailable; it disables contained form controls. Explain how to make the section available. To keep existing values inspectable instead, set readonly on supported child controls.
 
 ```html
 <syn-fieldset disabled="" layout="two-columns" legend="Disabled fieldset">

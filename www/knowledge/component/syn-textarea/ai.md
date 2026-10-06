@@ -34,6 +34,11 @@ Textareas collect data from the user and allow multiple lines of text.
 - Use placeholder text as an addition to label as it should not include essential information required to complete the field correctly.
 - Use help text to provide hints or examples of expected inputs.
 
+### Validation and States
+
+- Use readonly when users need to review or copy existing text without changing it.
+- Use disabled only when the textarea is unavailable; explain why and how it becomes available.
+
 ## Accessibility
 
 - Ensure textarea fields are part of a logical tab order and provide a clearly visible focus state when focused.
@@ -467,7 +472,7 @@ Use the placeholder attribute to add a placeholder.
 
 ## Readonly Textareas
 
-Add the readonly attribute to draw a read-only textarea.
+Use readonly when users need to review or copy existing text without changing it. Use disabled only when the textarea is unavailable.
 
 ```html
 <syn-textarea value="Read-only content" readonly=""></syn-textarea>
@@ -491,7 +496,7 @@ The focus event gives the user feedback that the Textarea has been focused by th
 
 ## Disabled
 
-Use the disabled attribute to disable a textarea.
+Use disabled only when the textarea is unavailable, and explain when users can edit it. Use readonly to display existing text without allowing edits.
 
 ```html
 <syn-textarea

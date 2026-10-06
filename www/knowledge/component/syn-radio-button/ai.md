@@ -47,6 +47,11 @@ Radios buttons allow the user to select a single option from a group using a but
 - All radio buttons in the group must be styled similarly, e.g., each one is labelled with both text and icon.
 - Avoid styling options only with icons if they are not common symbols, to prevent ambiguous interpretations.
 
+### Validation and States
+
+- Use readonly on every radio button in a group when the current selection is for inspection only; leaving other buttons enabled still lets users change the choice.
+- Use disabled on individual buttons only when those options are unavailable, and explain why users cannot choose them.
+
 ## Accessibility
 
 - syn-radio-button is not a standalone control; use it only inside syn-radio-group so assistive technologies interpret it as part of one exclusive choice set.
@@ -218,7 +223,7 @@ The focus event gives the user feedback that the radio button has been focused b
 
 ## Disabled
 
-Use the disabled attribute to disable a radio button.
+Set disabled on an unavailable radio-button option and explain why it cannot be selected. Use readonly on every option when the current selection is for inspection only.
 
 ```html
 <syn-radio-group label="Select an option" name="b" value="1">
@@ -232,7 +237,7 @@ Use the disabled attribute to disable a radio button.
 
 ## Readonly
 
-Add the read-only attribute to render a readonly radio button. Please note that you need to enable the readonly state for each individual radio button.
+Set readonly on every syn-radio-button in the group to show the current selection without allowing changes. Setting it only on the selected option leaves other buttons available.
 
 ```html
 <div
