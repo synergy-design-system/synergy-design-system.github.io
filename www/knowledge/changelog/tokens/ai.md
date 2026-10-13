@@ -4,6 +4,8 @@ Human-facing HTML page: /knowledge/changelog/tokens
 
 # Changelog
 
+## 3.29.0
+
 ## 3.28.0
 
 ### Minor Changes
