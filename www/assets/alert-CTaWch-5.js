@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./alert.component-CYJsBMgX.js";function r(){return(r=e((()=>{t(),n.define(`syn-alert`)})))()}export{r as t};

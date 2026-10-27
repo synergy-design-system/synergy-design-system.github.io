@@ -1,0 +1,3 @@
+import{a as e,n as t}from"./rolldown-runtime-sJBDdmOt.js";import{c as n,p as r}from"./blocks-Dl-D6zgk.js";import{t as i}from"./react-DlPsW1c0.js";import{n as a,t as o}from"./CHARTING_README-BwKQd9ro.js";function s(e){let t=u.findIndex(t=>t.match(/^(#{1,6})\s+(.+?)\s*#*\s*$/)?.[2]===e);if(t===-1)throw Error(`Chart series documentation section not found: ${e}`);let n=u[t].match(/^(#{1,6})\s+/)?.[1].length??6,r=u.findIndex((e,r)=>{if(r<=t)return!1;let i=e.match(/^(#{1,6})\s+/);return i!==null&&i[1].length<=n});return u.slice(t,r===-1?void 0:r).join(`
+`)}function c({section:e}){return l.createElement(n,null,s(e))}var l,u;function d(){return(d=t((()=>{l=e(i(),1),r(),a(),u=o.split(`
+`)})))()}export{d as n,c as t};

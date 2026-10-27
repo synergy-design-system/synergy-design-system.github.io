@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./dropdown.component-CP8CeTC9.js";function r(){return(r=e((()=>{t(),n.define(`syn-dropdown`)})))()}export{r as t};

@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./option.component-_lGaEJiE.js";function r(){return(r=e((()=>{n(),t.define(`syn-option`)})))()}export{r as t};

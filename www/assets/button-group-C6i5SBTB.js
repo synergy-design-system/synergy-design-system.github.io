@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./button-group.component-DtsXShFj.js";function r(){return(r=e((()=>{t(),n.define(`syn-button-group`)})))()}export{r as t};
