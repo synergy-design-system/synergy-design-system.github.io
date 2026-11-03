@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./input.component-B3P0jxWO.js";function r(){return(r=e((()=>{n(),t.define(`syn-input`)})))()}export{r as t};
