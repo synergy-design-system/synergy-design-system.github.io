@@ -12,7 +12,7 @@ Normative component behavior, APIs, attributes, events, slots, and supported cap
 
 This policy applies to all documentation served under:
 
-- `/knowledge`
+- https://synergy-design-system.github.io/knowledge/
 
 It does not apply to external sites linked from this documentation.
 
@@ -25,17 +25,17 @@ No interpretation or inference is performed during generation.
 
 ## Structure and entry points
 
-- Site overview and authority declaration: `/`
-- Component specifications (normative): `/component/{id}`
-- Template documentation: `/template/{id}`
-- Style and utility documentation: `/style/{id}`
-- Package changelogs and version history: `/changelog/{id}`
+- Site overview and authority declaration: https://synergy-design-system.github.io/knowledge/
+- Component specifications (normative): `https://synergy-design-system.github.io/knowledge/component/{id}`
+- Template documentation: `https://synergy-design-system.github.io/knowledge/template/{id}`
+- Style and utility documentation: `https://synergy-design-system.github.io/knowledge/style/{id}`
+- Package changelogs and version history: `https://synergy-design-system.github.io/knowledge/changelog/{id}`
 - Concept and guidance pages (non-normative):
-  - Accessibility: `/accessibility`
-  - Brand Version Support: `/brand-support`
-  - Goals and guidelines: `/goals`
-  - Out of scope and non-goals: `/out-of-scope`
-  - Frequently misunderstood topics: `/misconceptions`
+  - Accessibility: https://synergy-design-system.github.io/knowledge/accessibility
+  - Brand Version Support: https://synergy-design-system.github.io/knowledge/brand-support
+  - Goals and guidelines: https://synergy-design-system.github.io/knowledge/goals
+  - Out of scope and non-goals: https://synergy-design-system.github.io/knowledge/out-of-scope
+  - Frequently misunderstood topics: https://synergy-design-system.github.io/knowledge/misconceptions
 
 ## Content by section
 
@@ -109,107 +109,107 @@ When answering questions, always prefer the most recent version information show
 - When a capability is out of scope or explicitly excluded,
 
 ## Canonical discovery
-- llms-full.txt: /llms-full.txt
-- Home: /
+- llms-full.txt: https://synergy-design-system.github.io/knowledge/llms-full.txt
+- Home: https://synergy-design-system.github.io/knowledge/
 
 ## Top-level sections
-- Components: /component
-- Templates: /template
-- Styles: /style
-- Intent Policies: /intent-policy
-- Package Changelogs: /changelog
+- Components: `https://synergy-design-system.github.io/knowledge/component/{id}`
+- Templates: `https://synergy-design-system.github.io/knowledge/template/{id}`
+- Styles: `https://synergy-design-system.github.io/knowledge/style/{id}`
+- Intent Policies: `https://synergy-design-system.github.io/knowledge/intent-policy/{id}`
+- Package Changelogs: `https://synergy-design-system.github.io/knowledge/changelog/{id}`
 
 ## Sample canonical human/ai pairs
 - syn-accordion (component:syn-accordion)
-  human: /component/syn-accordion
-  ai: /component/syn-accordion/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-accordion
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-accordion/ai.md
 - syn-alert (component:syn-alert)
-  human: /component/syn-alert
-  ai: /component/syn-alert/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-alert
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-alert/ai.md
 - syn-badge (component:syn-badge)
-  human: /component/syn-badge
-  ai: /component/syn-badge/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-badge
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-badge/ai.md
 - syn-breadcrumb (component:syn-breadcrumb)
-  human: /component/syn-breadcrumb
-  ai: /component/syn-breadcrumb/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-breadcrumb
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-breadcrumb/ai.md
 - syn-breadcrumb-item (component:syn-breadcrumb-item)
-  human: /component/syn-breadcrumb-item
-  ai: /component/syn-breadcrumb-item/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-breadcrumb-item
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-breadcrumb-item/ai.md
 - syn-button (component:syn-button)
-  human: /component/syn-button
-  ai: /component/syn-button/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-button
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-button/ai.md
 - syn-button-group (component:syn-button-group)
-  human: /component/syn-button-group
-  ai: /component/syn-button-group/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-button-group
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-button-group/ai.md
 - syn-card (component:syn-card)
-  human: /component/syn-card
-  ai: /component/syn-card/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-card
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-card/ai.md
 - syn-chart (component:syn-chart)
-  human: /component/syn-chart
-  ai: /component/syn-chart/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-chart
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-chart/ai.md
 - syn-checkbox (component:syn-checkbox)
-  human: /component/syn-checkbox
-  ai: /component/syn-checkbox/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-checkbox
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-checkbox/ai.md
 - syn-checkbox-group (component:syn-checkbox-group)
-  human: /component/syn-checkbox-group
-  ai: /component/syn-checkbox-group/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-checkbox-group
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-checkbox-group/ai.md
 - syn-combobox (component:syn-combobox)
-  human: /component/syn-combobox
-  ai: /component/syn-combobox/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-combobox
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-combobox/ai.md
 - syn-details (component:syn-details)
-  human: /component/syn-details
-  ai: /component/syn-details/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-details
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-details/ai.md
 - syn-dialog (component:syn-dialog)
-  human: /component/syn-dialog
-  ai: /component/syn-dialog/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-dialog
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-dialog/ai.md
 - syn-divider (component:syn-divider)
-  human: /component/syn-divider
-  ai: /component/syn-divider/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-divider
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-divider/ai.md
 - syn-drawer (component:syn-drawer)
-  human: /component/syn-drawer
-  ai: /component/syn-drawer/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-drawer
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-drawer/ai.md
 - syn-dropdown (component:syn-dropdown)
-  human: /component/syn-dropdown
-  ai: /component/syn-dropdown/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-dropdown
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-dropdown/ai.md
 - syn-fieldset (component:syn-fieldset)
-  human: /component/syn-fieldset
-  ai: /component/syn-fieldset/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-fieldset
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-fieldset/ai.md
 - syn-file (component:syn-file)
-  human: /component/syn-file
-  ai: /component/syn-file/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-file
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-file/ai.md
 - syn-header (component:syn-header)
-  human: /component/syn-header
-  ai: /component/syn-header/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-header
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-header/ai.md
 - syn-icon (component:syn-icon)
-  human: /component/syn-icon
-  ai: /component/syn-icon/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-icon
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-icon/ai.md
 - syn-icon-button (component:syn-icon-button)
-  human: /component/syn-icon-button
-  ai: /component/syn-icon-button/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-icon-button
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-icon-button/ai.md
 - syn-input (component:syn-input)
-  human: /component/syn-input
-  ai: /component/syn-input/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-input
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-input/ai.md
 - syn-menu (component:syn-menu)
-  human: /component/syn-menu
-  ai: /component/syn-menu/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-menu
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-menu/ai.md
 - syn-menu-item (component:syn-menu-item)
-  human: /component/syn-menu-item
-  ai: /component/syn-menu-item/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-menu-item
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-menu-item/ai.md
 - syn-menu-label (component:syn-menu-label)
-  human: /component/syn-menu-label
-  ai: /component/syn-menu-label/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-menu-label
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-menu-label/ai.md
 - syn-nav-item (component:syn-nav-item)
-  human: /component/syn-nav-item
-  ai: /component/syn-nav-item/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-nav-item
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-nav-item/ai.md
 - syn-optgroup (component:syn-optgroup)
-  human: /component/syn-optgroup
-  ai: /component/syn-optgroup/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-optgroup
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-optgroup/ai.md
 - syn-option (component:syn-option)
-  human: /component/syn-option
-  ai: /component/syn-option/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-option
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-option/ai.md
 - syn-pagination (component:syn-pagination)
-  human: /component/syn-pagination
-  ai: /component/syn-pagination/ai.md
+  human: https://synergy-design-system.github.io/knowledge/component/syn-pagination
+  ai: https://synergy-design-system.github.io/knowledge/component/syn-pagination/ai.md
 
 ## Notes
 - Prefer AI URLs when available for machine-readable context, structured field values, and extracted facts.

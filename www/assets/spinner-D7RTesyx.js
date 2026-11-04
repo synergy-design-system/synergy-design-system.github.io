@@ -1,1 +1,0 @@
-import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{n as t,t as n}from"./spinner.component-BK_liAmB.js";function r(){return(r=e((()=>{t(),n.define(`syn-spinner`)})))()}export{r as t};
