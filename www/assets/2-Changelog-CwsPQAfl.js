@@ -1,5 +1,18 @@
 import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{l as t,p as n}from"./blocks-CxR-002Q.js";import{i as r,r as i}from"./react-DITjJg24.js";import{a}from"./chunk-W22LQPXL-UcXBRgVI.js";import{n as o,t as s}from"./Changelog-FaY1zhDY.js";var c;function l(){return(l=e((()=>{c=`# Changelog
 
+## 4.26.0
+
+### Minor Changes
+
+- Released on: 2026-11-06
+  
+  chore: ✨ Update Metadata and MCP with latest metadata
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @synergy-design-system/metadata@4.26.0
+
 ## 4.25.1
 
 ### Patch Changes

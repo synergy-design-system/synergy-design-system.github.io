@@ -1,4 +1,4 @@
-import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{c as t,l as n,p as r}from"./blocks-CxR-002Q.js";import{i,r as a}from"./react-DITjJg24.js";import{a as o}from"./chunk-W22LQPXL-UcXBRgVI.js";import{n as s,t as c}from"./react-BvGNZ5Qd.js";var l;function u(){return(u=e((()=>{l=`# Handling breaking changes between major versions
+import{n as e}from"./rolldown-runtime-sJBDdmOt.js";import{c as t,l as n,p as r}from"./blocks-CxR-002Q.js";import{i,r as a}from"./react-DITjJg24.js";import{a as o}from"./chunk-W22LQPXL-UcXBRgVI.js";import{n as s,t as c}from"./react-Byyvxjpb.js";var l;function u(){return(u=e((()=>{l=`# Handling breaking changes between major versions
 
 This guide holds the required information for migrating from one major version of \`@synergy-design-system/components\` to the next.
 As all our wrappers are based on this package, the changes also hold true for all wrapper packages.
