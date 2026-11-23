@@ -4,6 +4,10 @@ Human-facing HTML page: /knowledge/changelog/tokens
 
 # Changelog
 
+## 3.33.1
+
+No changes in this release.
+
 ## 3.33.0
 
 ### Minor Changes
